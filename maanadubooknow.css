@@ -1,0 +1,59 @@
+.body{
+    background-color:black;
+}
+.movies{
+margin-left:50px;
+}
+.trailers{
+margin-left: 80px;
+}
+.sports{
+margin-left: 80px;
+}
+.history{
+margin-left: 80px;
+}
+.div1{
+padding:20px;
+border:1px solid black;
+background-color: lightcyan;
+width: 100%;
+}
+
+.content{
+        margin-left: 1200px;
+        color: rgb(78, 180, 198);
+        margin-top: -18px;
+}
+.div2{
+        border: 1px solid black;
+        background-color: lightblue;
+        width:1488px;
+        height:100px;
+}
+
+.div3{
+        border:1px solid black;
+        background-color:rgb(78, 180, 198);
+        width: 1490px;
+        height: 150px;
+        margin-top: 15px;
+
+}
+.time1{
+        margin-top: 30px;
+        
+}
+.list1{
+        display: flex;
+        justify-content: space-evenly;
+        
+}
+.list2{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 30px;
+
+}
+

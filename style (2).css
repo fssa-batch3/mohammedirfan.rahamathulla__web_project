@@ -1,0 +1,281 @@
+.body{
+                background-color:black;
+}.title1{
+        margin-left: 50px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .movies{
+        margin-left:50px;
+        color:black;
+        font-size: 20px;
+    }
+    .trailers{
+        margin-left: 80px;
+        color:black;
+        font-size: 20px;
+    }
+    .sports{
+        margin-left: 80px;
+        color:black;
+        font-size: 20px;
+    }
+    .history{
+    margin-left: 80px;
+    color:black;
+        font-size: 20px;
+    }
+    .div1{
+    padding:20px;
+    border:1px solid black;
+    background-color:rgb(78, 180, 198);
+    }
+     
+    .thisweek{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+  
+    .row{
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: -100px;
+               
+    }
+    .content1{
+        margin-left: 40px;
+    }
+    .showtrailer{
+            width:200px;
+            height:40px;
+            font-weight:bold;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 55px;
+            background-color:lightblue;
+            border: transparent;
+    }
+    .showtrailer:hover{
+                transform: scale(1.1);
+    }
+   
+    .showtrailer2{
+            width:200px;
+            height:40px;
+            margin-left:150px;
+            margin-top: -40px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: lightblue;
+            border: transparent;     
+    }
+    .showtrailer2:hover{
+                transform: scale(1.1);
+    }
+ 
+    .showtrailer3{
+              width:200px;
+             height:40px;
+             margin-left:760px;
+             margin-top: -40px;
+             font-weight: bold;
+             font-size: 18px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             background-color: lightblue;
+             border: transparent;     
+    }
+    .showtrailer3:hover{
+        transform: scale(1.1);
+}
+  
+    .showtrailer4{
+    width:200px;
+    height:40px;
+    margin-left:1112px;
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:lightblue;
+    border: transparent;     
+    }
+    .showtrailer4:hover{
+                transform: scale(1.1);
+    }
+    .teddy{
+    margin-left: 100px;
+    }
+    .releasedate{
+            margin-left: 100px;
+            margin-top:-10px;
+    }
+    .language{
+            margin-left: 100px;
+            margin-top: -10px;             
+    }
+    .cuckoo1{
+            margin-left:450px;
+            margin-top:-100px;
+    }
+    .releasedate1{
+            margin-left:450px;
+            margin-top:-10px;
+    }
+    .language1{
+            margin-left: 450px;
+            margin-top:-10px;
+    }
+    .godfather2{
+            margin-left: 800px;
+            margin-top: -100px;
+    }
+    .releasedate2{
+            margin-left: 800px;
+            margin-top:-10px;
+    }
+    .language2{
+            margin-left: 800px;
+            margin-top:-10px;
+    }
+    .tkn3{
+    margin-left: 1150px;
+    margin-top:-100px;
+    }
+    .releasedate3{
+            margin-left: 1150px;
+            margin-top:-10px;
+    }
+    .language3{
+            margin-left:1150px;
+            margin-top: -10px;
+    }
+    
+   .div0{
+                border:1px solid black;
+                background-color:rgb(78, 180, 198);
+   }   
+  
+.showtrailer5{
+                margin-left: 50px;
+                width: 200px;
+                height:40px;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: lightblue;
+                border: transparent;     
+}
+.showtrailer5:hover{
+                transform: scale(1.1);
+}
+
+.row1{
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: -100px;
+               
+}
+.showtrailer6{
+        
+        margin-left: 150px;
+        margin-top:-40px;
+        width: 200px;
+        height:40px;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         background-color:lightblue;
+        border: transparent;     
+}
+.showtrailer6:hover{
+                transform: scale(1.1);
+}
+
+.showtrailer7{
+        margin-left: 750px;
+        margin-top:-30px;
+        width: 200px;
+        height:40px;
+        margin-top: -40px;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: lightblue;
+        border: transparent;     
+}
+.showtrailer7:hover{
+                transform: scale(1.1);
+}
+
+.showtrailer8{
+        margin-left: 1140px;
+        margin-top:-30px;
+        width: 200px;
+        height:40px;
+        margin-top: -40px;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: lightblue;
+        border: transparent;     
+}
+.showtrailer8{
+                transform: scale(1.1);
+}
+.valimai1{
+                margin-left:100px;
+}
+.releasedate4{
+                margin-left: 100px;
+                margin-top: -10px;
+}
+.language4{
+                margin-left: 100px;
+                margin-top: -10px;
+}
+.master1{
+        margin-left:450px;
+        margin-top:-100px;
+}
+.releasedate5{
+        margin-left: 450px;
+        margin-top: -10px;
+}
+.language5{
+        margin-left: 450px;
+        margin-top: -10px;
+}
+.vikram1{
+        margin-left:800px;
+        margin-top:-100px;
+}
+.releasedate6{
+        margin-left: 800px;
+        margin-top: -10px;
+}
+.language6{
+        margin-left: 800px;
+        margin-top: -10px;
+}
+.maanadu1{
+        margin-left:1150px;
+        margin-top:-100px;
+}
+.releasedate7{
+        margin-left: 1150px;
+        margin-top: -10px;
+}
+.language7{
+        margin-left: 1150px;
+        margin-top: -10px;
+}
+.text{
+        color: white;
+        margin-left: 80px;
+}
+.img{
+        width: 200px;
+        height: 270px;
+        margin-left: 50px;
+}

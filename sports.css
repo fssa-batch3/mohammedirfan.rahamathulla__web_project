@@ -1,0 +1,292 @@
+.body{
+        background-color:black;
+
+}.title1{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .movies{
+        margin-left:50px;
+    }
+    .trailers{
+        margin-left: 80px;
+    }
+    .sports{
+        margin-left: 80px;
+    }
+    .history{
+    margin-left: 80px;
+    }
+    .div1{
+    padding:20px;
+    order:1px solid white;
+    background-color:rgb(251, 184, 60);
+    }
+      
+    .thisweek{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .mircb{
+            width: 200px;
+            height: 280px;
+            margin-left:50px;
+    }
+    .content1{
+        margin-left: 40px;
+    }
+    .showdetails{
+            width:200px;
+            height:40px;
+            margin-left: -204px;
+             font-weight:bold;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: -204px;
+            background-color:orange;
+            border: transparent;
+    }
+    .showdetails:hover{
+                transform: scale(1.1);
+    }
+    .srhrcb{
+            width: 200px;
+            height: 270px;
+            margin-left: 400px;
+            margin-top:-290px;
+    }
+    .showdetails2{
+            width:200px;
+            height:40px;
+            margin-left:400px;
+            margin-top: -30px;
+            font-weight:bold;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:orange;
+            border: transparent;
+    }
+    .showdetails2:hover{
+        transform: scale(1.1);
+}
+    .lsgrcb{
+            width: 200px;
+            height:280px;
+            margin-left:750px;
+            margin-top:-300px;
+    }
+    .showdetails3{
+              width:200px;
+             height:40px;
+             margin-left:750px;
+             margin-top: -30px;
+             font-weight:bold;
+             font-size: 18px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             background-color:orange;
+             border: transparent;
+ 
+    }
+    .showdetails3:hover{
+        transform: scale(1.1);
+    }
+    .cskrr{
+    width: 200px;
+    height: 280px;
+    margin-left:1100px;
+    margin-top:-300px;
+    }
+    .showdetails4{
+    width:200px;
+    height:40px;
+    margin-left:1100px;
+    margin-top: -30px;
+    font-weight:bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:orange;
+    border: transparent;
+    }
+    .showdetails4:hover{
+        transform: scale(1.1);
+    }
+    .teddy{
+    margin-left: 100px;
+    }
+    .releasedate{
+            margin-left: 100px;
+            margin-top:-10px;
+    }
+    .language{
+            margin-left: 100px;
+            margin-top: -10px;             
+    }
+    .cuckoo1{
+            margin-left:450px;
+            margin-top:-100px;
+    }
+    .releasedate1{
+            margin-left:450px;
+            margin-top:-10px;
+    }
+    .language1{
+            margin-left: 450px;
+            margin-top:-10px;
+    }
+    .godfather2{
+            margin-left: 800px;
+            margin-top: -100px;
+    }
+    .releasedate2{
+            margin-left: 800px;
+            margin-top:-10px;
+    }
+    .language2{
+            margin-left: 800px;
+            margin-top:-10px;
+    }
+    .tkn3{
+    margin-left: 1150px;
+    margin-top:-100px;
+    }
+    .releasedate3{
+            margin-left: 1150px;
+            margin-top:-10px;
+    }
+    .language3{
+            margin-left:1150px;
+            margin-top: -10px;
+    }
+    
+   .div0{
+                border:1px solid white;
+                background-color:rgb(211, 138, 28);
+   }   
+   .argsaud{
+        margin-left: 50px;
+        margin-top:30px;
+        width:200px;
+        height:280px;
+        } 
+.showdetail{
+                margin-left: 50px;
+                width: 200px;
+                height:40px;
+                margin-top: -30px;
+                 font-weight:bold;
+                 font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                 background-color:orange;
+                 border: transparent;
+}
+.showdetail:hover{
+        transform: scale(1.1);
+}
+.panarab{
+        margin-left: 400px;
+        margin-top:-310px;
+        width:200px;
+        height:280px;     
+}
+.showdetails5{
+        margin-left: 400px;
+        margin-top:-30px;
+        width: 200px;
+        height:40px;
+        font-weight:bold;
+         font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color:orange;
+        border: transparent;
+}
+.showdetails5:hover{
+        transform: scale(1.1);
+}
+.arabaus{
+        margin-left: 750px;
+        margin-top:-310px;
+        width:200px;
+        height:280px;
+}
+.showdetails6{
+        margin-left: 750px;
+        margin-top:-30px;
+        width: 200px;
+        height:40px;
+        font-weight:bold;
+         font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color:orange;
+        border: transparent;
+}
+.showdetails6:hover{
+        transform: scale(1.1);
+}
+.nepoman{
+        margin-left: 1100px;
+        margin-top:-310px;
+        width:200px;
+        height:280px;
+}
+.showdetails7{
+        margin-left: 1100px;
+        margin-top:-30px;
+        width: 200px;
+        height:40px;
+        font-weight:bold;
+         font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color:orange;
+        border: transparent;
+}
+.showdetails7:hover{
+        transform: scale(1.1);
+}
+.valimai1{
+                margin-left:100px;
+}
+.releasedate4{
+                margin-left: 100px;
+                margin-top: -10px;
+}
+.language4{
+                margin-left: 100px;
+                margin-top: -10px;
+}
+.master1{
+        margin-left:450px;
+        margin-top:-100px;
+}
+.releasedate5{
+        margin-left: 450px;
+        margin-top: -10px;
+}
+.language5{
+        margin-left: 450px;
+        margin-top: -10px;
+}
+.vikram1{
+        margin-left:800px;
+        margin-top:-100px;
+}
+.releasedate6{
+        margin-left: 800px;
+        margin-top: -10px;
+}
+.language6{
+        margin-left: 800px;
+        margin-top: -10px;
+}
+.maanadu1{
+        margin-left:1150px;
+        margin-top:-100px;
+}
+.releasedate7{
+        margin-left: 1150px;
+        margin-top: -10px;
+}
+.language7{
+        margin-left: 1150px;
+        margin-top: -10px;
+}
+

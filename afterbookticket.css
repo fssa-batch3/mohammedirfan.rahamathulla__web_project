@@ -1,0 +1,140 @@
+.title1{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.movies{
+    margin-left:650px;
+}
+.trailers{
+    margin-left: 80px;
+}
+.sports{
+    margin-left: 80px;
+}
+.history{
+margin-left: 80px;
+}
+.div1{
+padding:20px;
+border:1px solid orange;
+background-color: orange;
+}
+.headerbtn{
+    width: 100px;
+    height: 30px;
+    margin-left: 1170px;
+    margin-top: -45px;
+    background-color: yellow;
+}
+.mastertamil{
+                margin-left: 100px;
+                color:white;
+                margin-top: 30px;
+}
+.section1{
+            border: 1px solid rgb(43, 40, 40);
+            background-color: rgb(43, 40, 40);
+            height: 120px;       
+}
+.ua{
+        margin-left: 100px;
+        color:white;
+        border:1px solid white;
+        border-radius: 15px;
+        width:30px;
+        height: 20px;
+        margin-top: -10px;
+}
+.thriller{
+            margin-left: 150px;
+            color:white;
+            border:1px solid white;
+            border-radius: 15px;
+            width: 55px;
+            height: 20px;
+            margin-top: -38px;
+}
+.comedy{
+    
+        margin-left: 230px;
+        color:white;
+        border:1px solid white;
+        border-radius: 15px;
+        width: 55px;
+        height: 20px;
+        margin-top: -38px;
+
+}
+.date-day{
+        
+            border-radius: 10px;
+            width:35px;
+            height:60px;
+            
+}
+
+.date-day1{
+    border-radius: 10px;
+    width:35px;
+    height:60px;
+    margin-top: -61px;
+    margin-left: 37px;
+}
+
+.date-day2{
+    margin-top: -59px;
+    margin-left: 80px;
+    border-radius: 10px;
+    width:35px;
+    height:60px;
+    
+}
+
+.date-day3{
+    margin-top: -58px;
+    margin-left: 120px;
+    border-radius: 10px;
+    width:35px;
+    height:60px;
+}
+
+.date-day4{
+    margin-top: -60px;
+    margin-left: 165px;
+    border-radius: 10px;
+    width:35px;ba
+    height:60px;
+}
+
+.date-day5{
+    margin-top: -55px;
+    margin-left: 220px;
+    border-radius: 10px;
+    width:35px;
+    height:60px;
+}
+.tamilt{
+        width: 70px;
+        height: 20px;
+        margin-left: 700px;
+        margin-top:-40px;
+        border-bottom: 2px solid red;
+
+}
+.filterpr{
+    border:none ;
+    margin-left: 850px;
+    margin-top: -35px;
+}
+.showtimings{
+                margin-top: -35px;
+                margin-left:1050px;
+                border:none;
+}
+
+
+
+
+
+
+
