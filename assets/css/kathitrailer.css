@@ -1,0 +1,187 @@
+.body{
+    background-color:black;
+}
+.title1{
+position: relative;
+left: 50px;
+font-weight: bold;
+}
+.movie{
+position:relative;
+bottom:55px;
+left: 750px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+
+}
+.movie:hover{
+color: white;
+}
+.trailers{
+position:relative;
+bottom:55px;
+left:780px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+color: black;
+}
+.trailers:hover{
+color: white;
+}
+
+.about{
+position:relative;
+bottom:55px;
+left: 810px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+color: black;
+}
+.about:hover{
+color: white;
+}
+.div0{
+border:1px solid black;
+background-color:rgb(78, 180, 198);
+height: 60px;
+} 
+
+.theaterlist{
+position:relative;
+bottom:55px;
+left: 840px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+color: black;
+}
+.theaterlist:hover{
+color: white;
+}
+.more{
+    position:relative;
+    bottom:55px;
+    left: 870px;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    }
+    .more:hover{
+    color: white;
+    } 
+
+.masterimg{
+            width: 200px;
+            height: 280px;
+            position:relative;
+            top: 50px;
+            
+}
+.incinemas{
+            width:202px;
+            height:30px;
+            position: relative;
+            top: 20px;
+            border: none;       
+}
+.master{
+            position: relative;
+            bottom: 230px;
+            left: 300px;
+            color:white;
+          
+}
+
+.time{
+    position: relative;
+    left: 300px;
+    bottom: 255px;
+        color:white;
+}
+.genres{
+    position: relative;
+    left: 430px;
+    bottom: 255px;
+    margin-top:-40px;
+    color:white;
+}
+.releaseddate{
+    position: relative;
+    left: 590px;
+    bottom: 255px;
+    color:white;
+    margin-top: -40px;
+}
+.booktickets{
+                position: relative;
+                left: 300px;
+                bottom: 240px;
+                width: 120px;
+                height: 40px;
+                background-color:lightcyan;
+                font-weight:bold;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color:rgb(78, 180, 198);
+                border: transparent;
+}
+.booktickets:hover{
+    transform: scale(1.1);
+}
+.aboutthemovie{
+               position: relative;
+               bottom:170px;
+               right: 650px;
+                color: white;
+}
+.ateenager{
+    position: relative;
+    bottom: 170px;
+            color: white;
+}
+.cast{
+    position: relative;
+    bottom: 170px;
+    text-align: center;
+    padding: 10px;
+}
+
+.images{
+        border-radius: 20px;
+        justify-content: space-evenly;
+}
+.div{
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        border-radius: 20px;
+        margin: 0 30%;
+}
+
+.cast img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    
+}
+.section1{
+        position: relative;
+        left: 400px;
+}
+.section2{
+            position: relative;
+            left:400px;
+}
+h1{
+        color: white;
+        text-align: center;
+        position: relative;
+        bottom: 280px;
+        
+}

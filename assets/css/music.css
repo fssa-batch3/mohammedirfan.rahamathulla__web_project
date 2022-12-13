@@ -1,0 +1,201 @@
+.body{
+    background-color: black;
+}.title1{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.movie{
+    margin-left:50px;
+    color:black;
+    font-size: 20px;
+}
+.trailers{
+    margin-left: 80px;
+    color:black;
+    font-size: 20px;
+}
+.sports{
+    margin-left: 80px;
+    color:black;
+    font-size: 20px;
+}
+.history{
+margin-left: 80px;
+color:black;
+    font-size: 20px;
+}
+.div1{
+padding:20px;
+border:1px solid black;
+background-color:rgb(78, 180, 198);
+}
+.div0{
+    border:1px solid black;
+    background-color:rgb(78, 180, 198);
+} 
+
+.masterimg{
+            width: 220px;
+            height: 310px;
+            margin-left: 50px;
+            margin-top: -120px;
+        
+            
+}
+
+
+.master{
+            margin-left: 380px;
+            color:white;
+            margin-top: -270px;
+}
+
+
+.booktickets:hover{
+    transform: scale(1.1);
+}
+.aboutthemovie{
+                margin-left: 380px;
+                margin-top: 0px;
+                color: white;
+}
+.ateenager{
+            margin-left: 380px;
+            margin-top: 30px;
+            color: white;
+}
+
+ 
+.buynow{
+    width:100px;
+    height:30px;
+    margin-left:380px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;       
+}
+.buynow:hover{
+    transform: scale(1.1);
+}
+.ice1{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -50px;
+        margin-top:140px;
+}
+
+.content1{
+    margin-left: 220px;
+    margin-top: 20px;
+    color: white;
+}
+.content2{
+    margin-left: 650px;
+    margin-top: -70px;
+    color: white;
+}
+.content3{
+    margin-left: 1100px;
+    margin-top: -70px;
+    color: white;
+}
+.ice2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -50px;
+    margin-top:140px;
+}
+
+.content4{
+    margin-left: 210px;
+    margin-top: 20px;
+    color: white;
+}
+.content5{
+    margin-left: 650px;
+    margin-top: -70px;
+    color: white;
+}
+.content6{
+    margin-left: 1100px;
+    margin-top: -70px;
+    color: white;
+}
+.buynow1{
+    width:100px;
+    height:30px;
+    margin-left:220px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(78, 180, 198);
+    border: transparent;      
+}
+
+
+.buynow2{
+    width:100px;
+    height:30px;
+    margin-left:660px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;      
+}
+
+
+.buynow3{
+    width:100px;
+    height:30px;
+    margin-left:1110px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;      
+}
+
+.buynow4{
+    width:100px;
+    height:30px;
+    margin-left:220px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;      
+}
+
+.buynow5{
+    width:100px;
+    height:30px;
+    margin-left:660px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;      
+}
+
+
+.buynow6{
+    width:100px;
+    height:30px;
+    margin-left:1100px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(78, 180, 198);
+    border: transparent;      
+}
+

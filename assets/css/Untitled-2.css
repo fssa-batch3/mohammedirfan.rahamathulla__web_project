@@ -1,0 +1,63 @@
+
+
+.hero {
+    height: 100vh;
+    
+    width: 100%;
+}
+.villan {
+    height: 90vh;
+    
+    margin: 3%;
+    border: 1px solid black;
+    background-color: black;
+}
+.section1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.poster {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.poster img {
+    height: 400px;
+}
+.poster_details {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.poster_details h2 {
+    color: white;
+}
+.rating {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating h3 {
+    color: white;
+}
+.about_movie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_movie-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_movie-2 h3 {
+    color: white;
+}
