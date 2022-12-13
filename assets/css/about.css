@@ -25,28 +25,18 @@ left:780px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-color: black;
+
 }
 .trailers:hover{
 color: white;
 }
-.sports{
-position:relative;
-bottom:55px;
-left: 810px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-color: balck;
-}
-.sports:hover{
-color: white;
-}
+
+
 .about{
 position:relative;
 bottom:55px;
 left: 840px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 
@@ -64,7 +54,7 @@ height: 60px;
 position:relative;
 bottom:55px;
 left: 870px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 

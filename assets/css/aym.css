@@ -10,7 +10,7 @@ font-weight: bold;
 position:relative;
 bottom:55px;
 left: 750px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 
@@ -22,31 +22,20 @@ color: white;
 position:relative;
 bottom:55px;
 left:780px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-color: black;
-}
-.trailers:hover{
-color: white;
-}
-.sports{
-position:relative;
-bottom:55px;
-left: 810px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 
 }
-.sports:hover{
+.trailers:hover{
 color: white;
 }
+
 .about{
 position:relative;
 bottom:55px;
 left: 840px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 }
@@ -66,7 +55,7 @@ left: 870px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-color: black;
+
 }
 .theaterlist:hover{
 color: white;
