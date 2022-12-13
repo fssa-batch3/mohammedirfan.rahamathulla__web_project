@@ -22,7 +22,6 @@ color: white;
 position:relative;
 bottom:55px;
 left:780px;
-color:black;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -46,7 +45,7 @@ color: white;
 position:relative;
 bottom:55px;
 left: 840px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -64,7 +63,7 @@ height: 60px;
 position:relative;
 bottom:55px;
 left: 870px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -168,7 +167,7 @@ color: white;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-                background-color:lightcyan;
+
                 font-weight:bold;
                 font-size: 16px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

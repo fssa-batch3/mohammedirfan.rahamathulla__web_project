@@ -38,7 +38,7 @@ left: 810px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-color: black;
+
 }
 .about:hover{
 color: white;
@@ -53,7 +53,6 @@ height: 60px;
 position:relative;
 bottom:55px;
 left: 770px;
-color:black;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -68,7 +67,7 @@ color: white;
     color:black;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+
     }
     .more:hover{
     color: white;
