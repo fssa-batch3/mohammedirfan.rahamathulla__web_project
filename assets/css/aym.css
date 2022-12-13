@@ -37,7 +37,7 @@ left: 810px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-color: balck;
+
 }
 .sports:hover{
 color: white;
@@ -49,7 +49,6 @@ left: 840px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-color: black;
 }
 .about:hover{
 color: white;
@@ -168,7 +167,7 @@ color: white;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-                background-color:lightcyan;
+            
                 font-weight:bold;
                 font-size: 16px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

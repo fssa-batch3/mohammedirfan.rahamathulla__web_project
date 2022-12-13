@@ -22,10 +22,10 @@ color: white;
 position:relative;
 bottom:55px;
 left:780px;
-
+color:black;
 font-size: 20px;
 text-decoration: none;
-color: black;
+
 }
 .trailers:hover{
 color: white;
@@ -34,9 +34,10 @@ color: white;
 position:relative;
 bottom:55px;
 left: 810px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
+color: balck;
 }
 .sports:hover{
 color: white;
@@ -45,10 +46,10 @@ color: white;
 position:relative;
 bottom:55px;
 left: 840px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
-
+color: black;
 }
 .about:hover{
 color: white;
@@ -63,15 +64,14 @@ height: 60px;
 position:relative;
 bottom:55px;
 left: 870px;
-color:black;
+
 font-size: 20px;
 text-decoration: none;
-
+color: black;
 }
 .theaterlist:hover{
 color: white;
-}
- 
+} 
 
 .masterimg{
             width: 200px;
