@@ -43,11 +43,11 @@
 
 
 .content{
-        margin-left: 1200px;
+      
         color: rgb(78, 180, 198);
         margin-top: -65px;
         margin-left: 1300px;
-        color: black;
+       
 }
 .div2{
         border: 1px solid black;
@@ -81,7 +81,7 @@
 .list2{
     display: flex;
     padding: 0px 20px 0px 20px;
-    position: relative;
+ 
     position: relative;
     bottom:10px;
     margin-top: 30px;
