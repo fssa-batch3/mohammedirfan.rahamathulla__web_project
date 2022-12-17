@@ -5,6 +5,7 @@
         position: relative;
         left: 50px;
         font-weight: bold;
+        font-family: 'Oswald', sans-serif;
     }
     .movie{
         position:relative;
@@ -12,6 +13,7 @@
         left: 800px;
         color:black;
         font-size: 20px;
+        font-family: 'Oswald', sans-serif;
     }
     .trailers{
         position:relative;
@@ -19,13 +21,7 @@
         left: 850px;
         color:black;
         font-size: 20px;
-    }
-    .sports{
-        position:relative;
-        bottom:43px;
-        left: 900px;
-        color:black;
-        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
     }
     .about{
         position:relative;
@@ -33,6 +29,7 @@
         left: 950px;
         color:black;
         font-size: 20px;
+        font-family: 'Oswald', sans-serif;
     }
  
     .div0{
@@ -53,7 +50,8 @@
             height:30px;
             position: relative;
             top: 20px;
-            background-color:rgb(78, 180, 198) ;        
+            background-color:rgb(78, 180, 198);   
+            font-family: 'Oswald', sans-serif;     
 }
 .master{
             position: relative;
@@ -67,7 +65,8 @@
     position: relative;
     left: 300px;
     bottom: 255px;
-        color:white;
+    color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
@@ -75,6 +74,7 @@
     bottom: 255px;
     margin-top:-40px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .releaseddate{
     position: relative;
@@ -89,10 +89,9 @@
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-                
+                font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color:rgb(78, 180, 198);
                 border: transparent;
 }
@@ -141,4 +140,8 @@
 .section2{
             position: relative;
             left:400px;
+}
+.video{
+    margin-left: 450px;
+    margin-top: -300px;
 }

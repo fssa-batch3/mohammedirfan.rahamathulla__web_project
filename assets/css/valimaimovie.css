@@ -5,6 +5,7 @@
 position: relative;
 left: 50px;
 font-weight: bold;
+font-family: 'Oswald', sans-serif;
 }
 .movie{
 position:relative;
@@ -13,7 +14,7 @@ left: 750px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-
+font-family: 'Oswald', sans-serif;
 }
 .movie:hover{
 color: white;
@@ -25,28 +26,17 @@ left:780px;
 color:black;
 font-size: 20px;
 text-decoration: none;
-
+font-family: 'Oswald', sans-serif;
 }
 .trailers:hover{
 color: white;
 }
-.sports{
-position:relative;
-bottom:55px;
-left: 810px;
 
-font-size: 20px;
-text-decoration: none;
-
-}
-.sports:hover{
-color: white;
-}
 .about{
 position:relative;
 bottom:55px;
-left: 840px;
-
+left: 815px;
+font-family: 'Oswald', sans-serif;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -60,18 +50,6 @@ background-color:rgb(78, 180, 198);
 height: 60px;
 } 
 
-.theaterlist{
-position:relative;
-bottom:55px;
-left: 870px;
-
-font-size: 20px;
-text-decoration: none;
-color: black;
-}
-.theaterlist:hover{
-color: white;
-} 
 .masterimg{
             width: 200px;
             height: 280px;
@@ -84,13 +62,15 @@ color: white;
             height:30px;
             position: relative;
             top: 20px;
-            background-color:rgb(78, 180, 198) ;        
+            background-color:rgb(78, 180, 198);
+            font-family: 'Oswald', sans-serif;        
 }
 .master{
             position: relative;
             bottom: 230px;
             left: 300px;
             color:white;
+            font-family: 'Oswald', sans-serif;
           
 }
 .rating{
@@ -107,7 +87,7 @@ color: white;
             height: 25px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Oswald', sans-serif;
             background-color:rgb(78, 180, 198);
             border: transparent;
 }
@@ -121,7 +101,7 @@ color: white;
              width:40px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Oswald', sans-serif;
             background-color:rgb(78, 180, 198);
             border: transparent;
 }
@@ -134,7 +114,7 @@ color: white;
             bottom: 255px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Oswald', sans-serif;
             background-color:rgb(78, 180, 198);
             border: transparent;
 }
@@ -146,6 +126,7 @@ color: white;
     left: 300px;
     bottom: 255px;
         color:white;
+        font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
@@ -153,6 +134,7 @@ color: white;
     bottom: 255px;
     margin-top:-40px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .releaseddate{
     position: relative;
@@ -160,6 +142,7 @@ color: white;
     bottom: 255px;
     color:white;
     margin-top: -40px;
+    font-family: 'Oswald', sans-serif;
 }
 .booktickets{
                 position: relative;
@@ -167,10 +150,9 @@ color: white;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-            
+                font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color:rgb(78, 180, 198);
                 border: transparent;
 }
@@ -181,16 +163,20 @@ color: white;
                position: relative;
                bottom: 200px;
                 color: white;
+                font-family: 'Oswald', sans-serif;
 }
 .ateenager{
     position: relative;
     bottom: 200px;
             color: white;
+            font-family: 'Oswald', sans-serif;
+            
 }
 .cast{
     position: relative;
     bottom: 170px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 .images{
         border-radius: 20px;

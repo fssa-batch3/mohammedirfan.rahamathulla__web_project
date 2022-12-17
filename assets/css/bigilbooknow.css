@@ -5,14 +5,16 @@
     position: relative;
     left: 50px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
     }
     .movie{
     position:relative;
     bottom:43px;
     left: 780px;
-
+    color: black;
     font-size: 20px;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
     
     }
     .movie:hover{
@@ -22,10 +24,10 @@
     position:relative;
     bottom:43px;
     left:820px;
-
+    color: black;
     font-size: 20px;
     text-decoration: none;
-    
+    font-family: 'Oswald', sans-serif;
     }
     .trailers:hover{
     color: white;
@@ -34,11 +36,11 @@
     .about{
     position:relative;
     bottom:43px;
-    left: 810px;
-
+    left: 860px;
+    color: black;
     font-size: 20px;
     text-decoration: none;
- 
+    font-family: 'Oswald', sans-serif;
     }
     .about:hover{
     color: white;
@@ -47,33 +49,7 @@
     border:1px solid black;
     background-color:rgb(78, 180, 198);
     height: 60px;
-    } 
-    
-    .theaterlist{
-    position:relative;
-    bottom:55px;
-    left: 770px;
-    
-    font-size: 20px;
-    text-decoration: none;
-   
     }
-    .theaterlist:hover{
-    color: white;
-    }
-    .more{
-        position:relative;
-        bottom:55px;
-        left: 800px;
-        font-size: 20px;
-        text-decoration: none;
-       
-        }
-        .more:hover{
-        color: white;
-        }
-
-
 .content{
         
         color: rgb(78, 180, 198);

@@ -5,6 +5,7 @@
 position: relative;
 left: 50px;
 font-weight: bold;
+font-family: 'Oswald', sans-serif;
 }
 .movie{
 position:relative;
@@ -13,6 +14,7 @@ left: 750px;
 color:black;
 font-size: 20px;
 text-decoration: none;
+font-family: 'Oswald', sans-serif;
 
 }
 .movie:hover{
@@ -22,7 +24,7 @@ color: white;
 position:relative;
 bottom:55px;
 left:780px;
-
+font-family: 'Oswald', sans-serif;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -35,7 +37,7 @@ color: white;
 position:relative;
 bottom:55px;
 left: 810px;
-
+font-family: 'Oswald', sans-serif;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -53,7 +55,7 @@ height: 60px;
 position:relative;
 bottom:55px;
 left: 840px;
-
+font-family: 'Oswald', sans-serif;
 font-size: 20px;
 text-decoration: none;
 color: black;
@@ -65,7 +67,7 @@ color: white;
     position:relative;
     bottom:55px;
     left: 870px;
-
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -126,12 +128,14 @@ p{
         position: relative;
         bottom: 170px;
         left: 100px;
+        font-family: 'Oswald', sans-serif;
 }
 h2{
         color: white;
         position: relative;
         left: 1000px;
         bottom: 380px;
+        font-family: 'Oswald', sans-serif;
 }
 button{
         background-color: rgb(78, 180, 198);

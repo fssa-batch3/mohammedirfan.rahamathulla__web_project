@@ -2,13 +2,14 @@
     width: 100%;
 }
 .form{
-            margin-top: -750px;
+            margin-top: -700px;
             margin-left: 600px;
 }
 .signup{
             margin-left: 100px;
 }
-.welcome{
-            margin-left: 625px;
-            margin-top: -350px;
+
+h2{
+    margin-top: -150px;
+    margin-left: 660px;
 }

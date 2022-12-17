@@ -1,0 +1,158 @@
+.body{
+        background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjB0aWNrZXRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+}
+
+.title1{
+position: relative;
+left: 50px;
+font-weight: bold;
+font-family: 'Oswald', sans-serif;
+}
+.movie{
+position:relative;
+bottom:55px;
+left: 750px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+
+}
+.movie:hover{
+color: white;
+}
+.trailers{
+position:relative;
+bottom:55px;
+left:780px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+
+}
+.trailers:hover{
+color: white;
+}
+
+.about{
+position:relative;
+bottom:55px;
+left: 810px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+
+}
+.about:hover{
+color: white;
+}
+.div0{
+border:1px solid black;
+background-color:rgb(78, 180, 198);
+height: 60px;
+} 
+
+.theaterlist{
+position:relative;
+bottom:55px;
+left: 770px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+font-family: 'Oswald', sans-serif;
+}
+.theaterlist:hover{
+color: white;
+}
+.more{
+    position:relative;
+    bottom:55px;
+    left: 800px;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    }
+    .more:hover{
+    color: white;
+    }
+.thisweek{
+        color: white;
+        position: relative;
+        left: 60px;
+        font-family: 'Oswald', sans-serif;
+}
+.btn{
+        position: relative;
+        left: 1090px;
+        bottom: 58px;
+        width: 70px;
+        height: 30px;
+        background-color:rgb(78, 180, 198);
+        font-family: 'Oswald', sans-serif;
+}
+.btn:hover{
+        color:white;
+        border: none;
+}
+   
+
+
+.movies {
+        margin: 0 10%;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        
+       
+    }
+
+.list1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.list1:hover{
+              transform: scale(1.1);
+}
+.list1 h2 {
+        color: white;
+        font-size: 20px;
+}
+.list1 img {
+    width: 200px;
+    height: 280px;
+}
+.list1 a button {
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px solid black;
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:rgb(78, 180, 198);
+}
+.list1 a button:hover{
+                        transform: scale(1.1);
+}  
+.thismonth{
+    color: white;
+    position: relative;
+    left: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+.nextmonth{
+    color: white;
+    position: relative;
+    left: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+

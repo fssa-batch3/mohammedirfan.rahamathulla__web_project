@@ -10,9 +10,10 @@ font-weight: bold;
 position:relative;
 bottom:55px;
 left: 750px;
-
+color: black;
 font-size: 20px;
 text-decoration: none;
+font-family: 'Oswald', sans-serif;
 
 }
 .movie:hover{
@@ -22,9 +23,10 @@ color: white;
 position:relative;
 bottom:55px;
 left:780px;
-
+color:black;
 font-size: 20px;
 text-decoration: none;
+font-family: 'Oswald', sans-serif;
 
 }
 .trailers:hover{
@@ -35,9 +37,10 @@ color: white;
 position:relative;
 bottom:55px;
 left: 810px;
-
+color: black;
 font-size: 20px;
 text-decoration: none;
+font-family: 'Oswald', sans-serif;
 
 }
 .about:hover{
@@ -48,31 +51,6 @@ border:1px solid black;
 background-color:rgb(78, 180, 198);
 height: 60px;
 } 
-
-.theaterlist{
-position:relative;
-bottom:55px;
-left: 840px;
-
-font-size: 20px;
-text-decoration: none;
-
-}
-.theaterlist:hover{
-color: white;
-}
-.more{
-    position:relative;
-    bottom:55px;
-    left: 870px;
-   
-    font-size: 20px;
-    text-decoration: none;
-
-    }
-    .more:hover{
-    color: white;
-    } 
 
 .masterimg{
             width: 200px;
@@ -100,7 +78,8 @@ color: white;
     position: relative;
     left: 300px;
     bottom: 255px;
-        color:white;
+    color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
@@ -108,6 +87,7 @@ color: white;
     bottom: 255px;
     margin-top:-40px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .releaseddate{
     position: relative;
@@ -115,6 +95,7 @@ color: white;
     bottom: 255px;
     color:white;
     margin-top: -40px;
+    font-family: 'Oswald', sans-serif;
 }
 .booktickets{
                 position: relative;
@@ -128,6 +109,7 @@ color: white;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color:rgb(78, 180, 198);
                 border: transparent;
+                font-family: 'Oswald', sans-serif;
 }
 .booktickets:hover{
     transform: scale(1.1);
@@ -137,17 +119,20 @@ color: white;
                bottom:170px;
                right: 650px;
                 color: white;
+                font-family: 'Oswald', sans-serif;
 }
 .ateenager{
     position: relative;
     bottom: 170px;
-            color: white;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
 .cast{
     position: relative;
     bottom: 170px;
     text-align: center;
     padding: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .images{
@@ -184,4 +169,9 @@ h1{
         position: relative;
         bottom: 280px;
         
+}
+
+.video{
+    margin-left: 450px;
+    margin-top: -300px;
 }

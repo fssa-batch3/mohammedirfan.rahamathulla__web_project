@@ -1,46 +1,54 @@
 .body{
-    background-color: black;
+    background-color:black;
 }
 .title1{
-        position: relative;
-        left: 50px;
-        font-weight: bold;
-    }
-    .movie{
-        position:relative;
-        bottom:43px;
-        left: 800px;
-        color:black;
-        font-size: 20px;
-    }
-    .trailers{
-        position:relative;
-        bottom:43px;
-        left: 850px;
-        color:black;
-        font-size: 20px;
-    }
-    .sports{
-        position:relative;
-        bottom:43px;
-        left: 900px;
-        color:black;
-        font-size: 20px;
-    }
-    .about{
-        position:relative;
-        bottom:43px;
-        left: 950px;
-        color:black;
-        font-size: 20px;
-    }
- 
-    .div0{
-        border:1px solid black;
-        background-color:rgb(78, 180, 198);
-        height: 60px;
-} 
+position: relative;
+left: 50px;
+font-weight: bold;
+font-family: 'Oswald', sans-serif;
+}
+.movie{
+position:relative;
+bottom:55px;
+left: 750px;
+color: black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+}
+.movie:hover{
+color: white;
+}
+.trailers{
+position:relative;
+bottom:55px;
+left:780px;
+color:black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+}
+.trailers:hover{
+color: white;
+}
 
+.about{
+position:relative;
+bottom:55px;
+left: 810px;
+color: black;
+font-size: 20px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+}
+.about:hover{
+color: white;
+}
+.div0{
+border:1px solid black;
+background-color:rgb(78, 180, 198);
+height: 60px;
+} 
 .masterimg{
             width: 200px;
             height: 280px;
@@ -53,14 +61,15 @@
             height:30px;
             position: relative;
             top: 20px;
-            background-color:rgb(78, 180, 198) ;        
+            border: none; 
+            font-family: 'Oswald', sans-serif;      
 }
 .master{
             position: relative;
             bottom: 230px;
             left: 300px;
             color:white;
-          
+            font-family: 'Oswald', sans-serif;
 }
 
 .time{
@@ -68,20 +77,23 @@
     left: 300px;
     bottom: 255px;
         color:white;
+        font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
-    left: 360px;
+    left: 430px;
     bottom: 255px;
     margin-top:-40px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .releaseddate{
     position: relative;
-    left: 440px;
+    left: 590px;
     bottom: 255px;
     color:white;
     margin-top: -40px;
+    font-family: 'Oswald', sans-serif;
 }
 .booktickets{
                 position: relative;
@@ -89,10 +101,9 @@
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-                
+                font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color:rgb(78, 180, 198);
                 border: transparent;
 }
@@ -102,16 +113,22 @@
 .aboutthemovie{
                position: relative;
                bottom:170px;
+               right: 650px;
                 color: white;
+                font-family: 'Oswald', sans-serif;
 }
 .ateenager{
     position: relative;
     bottom: 170px;
             color: white;
+            font-family: 'Oswald', sans-serif;
 }
 .cast{
     position: relative;
     bottom: 170px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .images{
@@ -141,4 +158,17 @@
 .section2{
             position: relative;
             left:400px;
+}
+h1{
+        color: white;
+        text-align: center;
+        position: relative;
+        bottom: 280px;
+        font-family: 'Oswald', sans-serif;
+        
+}
+
+.video{
+    margin-left: 450px;
+    margin-top: -300px;
 }
