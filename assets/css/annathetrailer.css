@@ -5,7 +5,6 @@
 position: relative;
 left: 50px;
 font-weight: bold;
-font-family: 'Oswald', sans-serif;
 }
 .movie{
 position:relative;
@@ -15,6 +14,7 @@ color: black;
 font-size: 20px;
 text-decoration: none;
 font-family: 'Oswald', sans-serif;
+
 }
 .movie:hover{
 color: white;
@@ -27,6 +27,7 @@ color:black;
 font-size: 20px;
 text-decoration: none;
 font-family: 'Oswald', sans-serif;
+
 }
 .trailers:hover{
 color: white;
@@ -40,6 +41,7 @@ color: black;
 font-size: 20px;
 text-decoration: none;
 font-family: 'Oswald', sans-serif;
+
 }
 .about:hover{
 color: white;
@@ -49,6 +51,7 @@ border:1px solid black;
 background-color:rgb(78, 180, 198);
 height: 60px;
 } 
+
 .masterimg{
             width: 200px;
             height: 280px;
@@ -61,23 +64,22 @@ height: 60px;
             height:30px;
             position: relative;
             top: 20px;
-            border: none; 
-            font-family: 'Oswald', sans-serif;      
+            border: none;       
 }
 .master{
             position: relative;
             bottom: 230px;
             left: 300px;
             color:white;
-            font-family: 'Oswald', sans-serif;
+          
 }
 
 .time{
     position: relative;
     left: 300px;
     bottom: 255px;
-        color:white;
-        font-family: 'Oswald', sans-serif;
+    color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
@@ -101,11 +103,13 @@ height: 60px;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-                font-family: 'Oswald', sans-serif;
+            
                 font-weight:bold;
                 font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color:rgb(78, 180, 198);
                 border: transparent;
+                font-family: 'Oswald', sans-serif;
 }
 .booktickets:hover{
     transform: scale(1.1);
@@ -120,8 +124,8 @@ height: 60px;
 .ateenager{
     position: relative;
     bottom: 170px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
 .cast{
     position: relative;
@@ -164,7 +168,6 @@ h1{
         text-align: center;
         position: relative;
         bottom: 280px;
-        font-family: 'Oswald', sans-serif;
         
 }
 

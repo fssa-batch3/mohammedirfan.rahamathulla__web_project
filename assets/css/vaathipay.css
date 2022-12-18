@@ -19,8 +19,10 @@ font-size: 25px;
     left: 660px;
     background-color: rgb(78, 180, 198);
     color:black ;
-    border: none;
-    
+    border: none;  
+}
+.paybtn:hover{
+        transform: scale(1.1);
 }
 
 

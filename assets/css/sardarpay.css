@@ -25,5 +25,8 @@ font-family: 'Oswald', sans-serif;
     font-family: 'Oswald', sans-serif;
     
 }
+.paybtn:hover{
+    transform: scale(1.1);
+}
 
 

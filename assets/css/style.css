@@ -156,3 +156,85 @@ color: white;
     font-family: 'Oswald', sans-serif;
 }
 
+.contact{
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    color: white;
+}
+.copy{
+    color: white;
+    font-size: 23px;
+    position: relative;
+    top: 70px;
+    right: 200px;
+}
+.con{
+    font-size: 23px;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+.line{
+    border-right: 2px solid gray;
+    height: 150px;
+    position: relative;
+    top: 45px;
+    right: 40px;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 20px;
+}
+/* .insta{
+    padding: 5px;
+    border: 1px solid gray;
+    width: 31px;
+    height: 30px;
+    border-radius: 60px;
+    background-image: linear-gradient(315deg, #7110D2, #DE46A9);
+    color: white;
+}
+.fb{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 31px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    background-color: #3B5998;
+    color: white;
+}
+.wa{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 70px;
+    position: relative;
+    width: 31px;
+    height: 30px;
+    left: 30px;
+    background-color: #25D366;
+    color: white;
+}
+.twiter{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    position: relative;
+    width: 31px;
+    height: 30px;
+    left: 20px;
+    background-color: #00ACEE;
+    color: white;
+} */
+.contact{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 30% ;
+}
