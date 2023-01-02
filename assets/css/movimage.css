@@ -1,55 +1,6 @@
 .body{
     background-color:black;
 }
-.title1{
-position: relative;
-left: 50px;
-font-weight: bold;
-font-family: 'Oswald', sans-serif;
-}
-.movie{
-position:relative;
-bottom:55px;
-left: 750px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-
-}
-.movie:hover{
-color: white;
-}
-.trailers{
-position:relative;
-bottom:55px;
-left:780px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-
-}
-.trailers:hover{
-color: white;
-}
-.about{
-position:relative;
-bottom:55px;
-left: 815px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-}
-.about:hover{
-color: white;
-}
-.div0{
-border:1px solid black;
-background-color:rgb(78, 180, 198);
-height: 60px;
-} 
 
 .masterimg{
             width: 200px;
@@ -59,24 +10,27 @@ height: 60px;
             
 }
 .incinemas{
-            width:202px;
+            width:200px;
             height:30px;
             position: relative;
             top: 20px;
-            background-color:rgb(78, 180, 198) ;        
+            background-color:white;
+            font-family: 'Oswald', sans-serif;        
 }
 .master{
             position: relative;
             bottom: 230px;
             left: 300px;
             color:white;
-          
+            font-family: 'Oswald', sans-serif;
 }
 .rating{
             position: relative;
             left: 300px;
             bottom: 230px;
             color:white;
+            font-family: 'Oswald', sans-serif;
+            
 }
 .ratenow{
             position: relative;
@@ -86,9 +40,10 @@ height: 60px;
             height: 25px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color:rgb(78, 180, 198);
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
             border: transparent;
+            cursor: pointer;
 }
 .ratenow:hover{
         transform: scale(1.1);
@@ -100,8 +55,8 @@ height: 60px;
              width:40px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color:rgb(78, 180, 198);
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
             border: transparent;
 }
 .twod:hover{
@@ -113,9 +68,10 @@ height: 60px;
             bottom: 255px;
             font-weight:bold;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color:rgb(78, 180, 198);
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
             border: transparent;
+            cursor: pointer;
 }
 .tamil:hover{
     transform: scale(1.1);
@@ -125,6 +81,7 @@ height: 60px;
     left: 300px;
     bottom: 255px;
         color:white;
+        font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
@@ -132,6 +89,7 @@ height: 60px;
     bottom: 255px;
     margin-top:-40px;
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 .releaseddate{
     position: relative;
@@ -139,6 +97,7 @@ height: 60px;
     bottom: 255px;
     color:white;
     margin-top: -40px;
+    font-family: 'Oswald', sans-serif;
 }
 .booktickets{
                 position: relative;
@@ -146,12 +105,13 @@ height: 60px;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-               
+                font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                background-color:rgb(78, 180, 198);
+                background-color:yellow;
                 border: transparent;
+                cursor: pointer;
+                border-radius: 10px;
 }
 .booktickets:hover{
     transform: scale(1.1);
@@ -164,12 +124,13 @@ height: 60px;
 .ateenager{
     position: relative;
     bottom: 200px;
-            color: white;
+    color: white;
 }
 .cast{
     position: relative;
     bottom: 170px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 .images{
         border-radius: 20px;

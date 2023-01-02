@@ -1,56 +1,6 @@
 .body{
     background-color:black;
 }
-.title1{
-position: relative;
-left: 50px;
-font-weight: bold;
-}
-.movie{
-position:relative;
-bottom:55px;
-left: 750px;
-color: black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-
-}
-.movie:hover{
-color: white;
-}
-.trailers{
-position:relative;
-bottom:55px;
-left:780px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-
-}
-.trailers:hover{
-color: white;
-}
-
-.about{
-position:relative;
-bottom:55px;
-left: 810px;
-color: black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-
-}
-.about:hover{
-color: white;
-}
-.div0{
-border:1px solid black;
-background-color:rgb(78, 180, 198);
-height: 60px;
-} 
 
 .masterimg{
             width: 200px;
@@ -60,30 +10,82 @@ height: 60px;
             
 }
 .incinemas{
-            width:202px;
+            width:200px;
             height:30px;
             position: relative;
             top: 20px;
-            border: none;       
+            background-color:white;
+            font-family: 'Oswald', sans-serif;        
 }
 .master{
             position: relative;
             bottom: 230px;
             left: 300px;
             color:white;
-          
+            font-family: 'Oswald', sans-serif;
 }
-
+.rating{
+            position: relative;
+            left: 300px;
+            bottom: 230px;
+            color:white;
+            font-family: 'Oswald', sans-serif;
+            
+}
+.ratenow{
+            position: relative;
+            left: 370px;
+            bottom: 275px;
+            width: 75px;
+            height: 25px;
+            font-weight:bold;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
+            border: transparent;
+            cursor: pointer;
+}
+.ratenow:hover{
+        transform: scale(1.1);
+}
+.twod{
+            position: relative;
+            left: 300px;
+            bottom: 255px;
+             width:40px;
+            font-weight:bold;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
+            border: transparent;
+}
+.twod:hover{
+    transform: scale(1.1);
+}
+.tamil{
+            position: relative;
+            left: 330px;
+            bottom: 255px;
+            font-weight:bold;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+            background-color:yellow;
+            border: transparent;
+            cursor: pointer;
+}
+.tamil:hover{
+    transform: scale(1.1);
+}
 .time{
     position: relative;
     left: 300px;
     bottom: 255px;
-    color:white;
-    font-family: 'Oswald', sans-serif;
+        color:white;
+        font-family: 'Oswald', sans-serif;
 }
 .genres{
     position: relative;
-    left: 430px;
+    left: 360px;
     bottom: 255px;
     margin-top:-40px;
     color:white;
@@ -91,7 +93,7 @@ height: 60px;
 }
 .releaseddate{
     position: relative;
-    left: 590px;
+    left: 440px;
     bottom: 255px;
     color:white;
     margin-top: -40px;
@@ -103,38 +105,33 @@ height: 60px;
                 bottom: 240px;
                 width: 120px;
                 height: 40px;
-            
+                font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                background-color:rgb(78, 180, 198);
+                background-color:yellow;
                 border: transparent;
-                font-family: 'Oswald', sans-serif;
+                cursor: pointer;
+                border-radius: 10px;
 }
 .booktickets:hover{
     transform: scale(1.1);
 }
 .aboutthemovie{
                position: relative;
-               bottom:170px;
-               right: 650px;
+               bottom: 200px;
                 color: white;
-                font-family: 'Oswald', sans-serif;
 }
 .ateenager{
     position: relative;
-    bottom: 170px;
+    bottom: 200px;
     color: white;
-    font-family: 'Oswald', sans-serif;
 }
 .cast{
     position: relative;
     bottom: 170px;
     text-align: center;
-    padding: 10px;
     font-family: 'Oswald', sans-serif;
 }
-
 .images{
         border-radius: 20px;
         justify-content: space-evenly;
@@ -162,16 +159,4 @@ height: 60px;
 .section2{
             position: relative;
             left:400px;
-}
-h1{
-        color: white;
-        text-align: center;
-        position: relative;
-        bottom: 280px;
-        
-}
-
-.video{
-    margin-left: 450px;
-    margin-top: -300px;
 }

@@ -1,209 +1,70 @@
-.body{
-    background-color:black;
-}
-.title1{
-position: relative;
-left: 50px;
-font-weight: bold;
-font-family: 'Oswald', sans-serif;
-}
-.movie{
-position:relative;
-bottom:55px;
-left: 750px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-}
-.movie:hover{
-color: white;
-}
-.trailers{
-position:relative;
-bottom:55px;
-left:780px;
-font-family: 'Oswald', sans-serif;
-font-size: 20px;
-text-decoration: none;
-color: black;
-}
-.trailers:hover{
-color: white;
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
+.main{
+    display: flex;
+    justify-content: flex-start;
+   
+}
+.movietime{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    padding-left: 40px;
+}
+.movietime h1 {
+    color:white;
+}
+.movietime h3{
+    color:white;
+}
+a button{
+    width:70px;
+
+}
+a p{
+    color:white;
+}
+.book{
+    width:140px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.abouthead{
+    margin-top: 50px;
+}
 .about{
-position:relative;
-bottom:55px;
-left: 815px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
+    margin-left:30px ;
+    margin-top: 10px;
 }
-.about:hover{
-color: white;
-}
-.div0{
-border:1px solid black;
-background-color:rgb(78, 180, 198);
-height: 60px;
-} 
-
- 
-
-.masterimg{
-            width: 200px;
-            height: 280px;
-            position:relative;
-            top: 50px;
-            
-}
-.incinemas{
-            width:200px;
-            height:30px;
-            position: relative;
-            top: 20px;
-            background-color:rgb(78, 180, 198); 
-            font-family: 'Oswald', sans-serif;       
-}
-.master{
-            position: relative;
-            bottom: 230px;
-            left: 300px;
-            color:white;
-            font-family: 'Oswald', sans-serif;
-          
-}
-.rating{
-            position: relative;
-            left: 300px;
-            bottom: 230px;
-            color:white;
-            font-family: 'Oswald', sans-serif;
-}
-.ratenow{
-            position: relative;
-            left: 370px;
-            bottom: 275px;
-            width: 75px;
-            height: 25px;
-            font-weight:bold;
-            font-size: 16px;
-            font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
-            border: transparent;
-}
-.ratenow:hover{
-        transform: scale(1.1);
-}
-.twod{
-            position: relative;
-            left: 300px;
-            bottom: 255px;
-             width:40px;
-            font-weight:bold;
-            font-size: 16px;
-            font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
-            border: transparent;
-}
-.twod:hover{
-    transform: scale(1.1);
-}
-.tamil{
-            position: relative;
-            left: 330px;
-            bottom: 255px;
-            font-weight:bold;
-            font-size: 16px;
-            font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
-            border: transparent;
-}
-.tamil:hover{
-    transform: scale(1.1);
-}
-.time{
-    position: relative;
-    left: 300px;
-    bottom: 255px;
-        color:white;
-        font-family: 'Oswald', sans-serif;
-}
-.genres{
-    position: relative;
-    left: 360px;
-    bottom: 255px;
-    margin-top:-40px;
-    color:white;
-    font-family: 'Oswald', sans-serif;
-}
-.releaseddate{
-    position: relative;
-    left: 440px;
-    bottom: 255px;
-    color:white;
-    margin-top: -40px;
-    font-family: 'Oswald', sans-serif;
-}
-.booktickets{
-                position: relative;
-                left: 300px;
-                bottom: 240px;
-                width: 120px;
-                height: 40px;
-                font-family: 'Oswald', sans-serif;
-                font-weight:bold;
-                font-size: 16px;
-                background-color:rgb(78, 180, 198);
-                border: transparent;
-}
-.booktickets:hover{
-    transform: scale(1.1);
-}
-.aboutthemovie{
-               position: relative;
-               bottom: 200px;
-                color: white;
-                font-family: 'Oswald', sans-serif;
-}
-.ateenager{
-    position: relative;
-    bottom: 200px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
+.castimages{
+    display: flex;
+    gap:30px;
+    margin-left: 50px;
 }
 .cast{
-    position: relative;
-    bottom: 170px;
-    font-family: 'Oswald', sans-serif;
-}
-.images{
-        border-radius: 20px;
-        justify-content: space-evenly;
-}
-.div{
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: white;
-        border-radius: 20px;
-        margin: 0 30%;
-}
+    margin-left: 40px;
+    position:relative ;
+    top:60px;
 
-.cast img {
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    
 }
-.section1{
-        position: relative;
-        left: 400px;
+.castimages{
+    text-align: center;
+    margin-top: 60px;
 }
-.section2{
-            position: relative;
-            left:400px;
+.cast1 img{
+    width:100px;
+    border-radius: 90px;
+}
+.cast2 img{
+    width:100px;
+    border-radius: 90px;
+}
+.cast3 img{
+    width:100px;
+    border-radius: 90px;
 }

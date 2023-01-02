@@ -1,53 +1,7 @@
 .body{
     background-color:black;
 }
-.title1{
-position: relative;
-left: 50px;
-font-weight: bold;
-font-family: 'Oswald', sans-serif;
-}
-.movie{
-position:relative;
-bottom:55px;
-left: 750px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-}
-.movie:hover{
-color: white;
-}
-.trailers{
-position:relative;
-bottom:55px;
-left:780px;
-color:black;
-font-size: 20px;
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-}
-.trailers:hover{
-color: white;
-}
-.about{
-position:relative;
-bottom:55px;
-left: 815px;
-font-size: 20px;
-text-decoration: none;
-color: black;
-font-family: 'Oswald', sans-serif;
-}
-.about:hover{
-color: white;
-}
-.div0{
-border:1px solid black;
-background-color:rgb(78, 180, 198);
-height: 60px;
-}  
+
 .masterimg{
             width: 200px;
             height: 280px;
@@ -60,7 +14,7 @@ height: 60px;
             height:30px;
             position: relative;
             top: 20px;
-            background-color:rgb(78, 180, 198);
+            background-color:white;
             font-family: 'Oswald', sans-serif;        
 }
 .master{
@@ -69,7 +23,6 @@ height: 60px;
             left: 300px;
             color:white;
             font-family: 'Oswald', sans-serif;
-          
 }
 .rating{
             position: relative;
@@ -77,6 +30,7 @@ height: 60px;
             bottom: 230px;
             color:white;
             font-family: 'Oswald', sans-serif;
+            
 }
 .ratenow{
             position: relative;
@@ -87,8 +41,9 @@ height: 60px;
             font-weight:bold;
             font-size: 16px;
             font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
+            background-color:yellow;
             border: transparent;
+            cursor: pointer;
 }
 .ratenow:hover{
         transform: scale(1.1);
@@ -101,7 +56,7 @@ height: 60px;
             font-weight:bold;
             font-size: 16px;
             font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
+            background-color:yellow;
             border: transparent;
 }
 .twod:hover{
@@ -114,8 +69,9 @@ height: 60px;
             font-weight:bold;
             font-size: 16px;
             font-family: 'Oswald', sans-serif;
-            background-color:rgb(78, 180, 198);
+            background-color:yellow;
             border: transparent;
+            cursor: pointer;
 }
 .tamil:hover{
     transform: scale(1.1);
@@ -152,8 +108,10 @@ height: 60px;
                 font-family: 'Oswald', sans-serif;
                 font-weight:bold;
                 font-size: 16px;
-                background-color:rgb(78, 180, 198);
+                background-color:yellow;
                 border: transparent;
+                cursor: pointer;
+                border-radius: 10px;
 }
 .booktickets:hover{
     transform: scale(1.1);
@@ -162,13 +120,11 @@ height: 60px;
                position: relative;
                bottom: 200px;
                 color: white;
-                font-family: 'Oswald', sans-serif;
 }
 .ateenager{
     position: relative;
     bottom: 200px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
+    color: white;
 }
 .cast{
     position: relative;
