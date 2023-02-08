@@ -1,4 +1,8 @@
-container{
+body{
+    background-color: black;
+    height: 300px;
+}
+.container{
     border-style: solid;
     max-width:fit-content;
     padding:30px 30px 50px 30px;
@@ -26,17 +30,19 @@ container{
 }
 .btn{
     position:relative;
-    top:20px;
     left:70px;
     background-color: rgb(72, 72, 206);
-    color:white;
-    padding:5px 30px;
+    color:yellow;
+    font-weight: bold;
+    padding:10px 30px;
     border-radius: 10px;
     border-color:white;
+    cursor: pointer;
+    top: 10px;
 }
 .btn1{
     position:relative;
-    top:40px;
+    top:20px;
     left:20px;
     background-color: rgb(245, 245, 249);
     color:black;
@@ -46,7 +52,7 @@ container{
 }
 .btn2{
     position:relative;
-    top:60px;
+    top:40px;
     left:20px;
     background-color: rgb(69, 69, 205);
     color:white;
@@ -57,16 +63,17 @@ container{
 .heading{
     margin-left:70px;
     font-size:xx-large;
-    color: white;
+    color:black;
+    
 }
 .facebook{
     position: relative;
-    top:70px;
+    top:50px;
     right:180px;
 }
 .google{
     position: relative;
-    top:45px;
+    top:25px;
     right:155px;
 }
 .flex{
@@ -84,11 +91,17 @@ container{
         bottom:50px;
 }
 .font{
-    color:white;
+    color:black;
 }
 .font-box{
-    color:white;
+    color:black;
 }
 .password{
-    color:white;
+    color:black;
+}
+
+@media only screen and (max-width:900px) {
+       .img{
+            height: 1200px;
+       }
 }

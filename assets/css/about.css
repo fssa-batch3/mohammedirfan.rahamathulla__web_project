@@ -49,6 +49,7 @@ img{
 }
 .images{
         display: flex;
+
 }
 .images > div{
         margin: 5px;
@@ -122,4 +123,85 @@ h3{
 }
 .footer .credit span{
     color:var(--green);
+}
+@media only screen and (max-width:900px) {
+    .header{
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        padding:0;
+    }
+    .header{
+        background-color: black;
+        padding: .5rem 9%;
+        position: sticky;  
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+       
+}
+    .header .logo{
+        font-size: 16px;
+        margin-left:unset;
+    }
+
+    .header .navbar a{
+        font-size: 16px;
+    }
+    .footer .box-container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .footer .box-container .box h3{
+        font-size:90%;
+        margin-bottom: 20px;
+        
+    }
+    h3{
+        margin-right: 14rem;
+    }
+    .header .logo i{
+        font-size:100%;      
+    }
+    .header .navbar a{
+        
+        color: white;
+        text-decoration: none;
+        margin-right:10px;
+        margin-left:10px;
+        padding:unset;
+    }
+    .image-slider{
+        width: 80%;
+        height:auto;
+        margin: 50px auto;
+        box-shadow: -1px 1px 10px #00000021;
+        border-radius: 20px;
+         overflow: hidden; 
+    }
+    .footer .box-container .box a{
+        font-size:70%;
+        margin-bottom:10px;
+        margin-right:unset;
+        margin-left:unset;
+    }
+    .footer .credit{
+        padding:unset;
+        padding-top:unset;
+        margin-top:unset;
+        font-size:100%;
+    }
+    .movies{
+     
+        height: auto;
+        
+        }
+        .images{
+            display: unset;
+            flex-direction: row;
+            
+    }
+
 }

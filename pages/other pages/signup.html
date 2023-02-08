@@ -3,30 +3,29 @@
         <link rel="stylesheet" href="../../assets/css/signup.css">
     </head>
 <body>
-    <img class="img" src="https://variety.com/wp-content/uploads/2015/07/interior-rendering-of-dolby-cinema.jpg?w=1024" height="900px" width="1430px">
+    <img class="img" src="https://media.istockphoto.com/id/1059163838/photo/dark-modern-movie-thearter-cinema.jpg?s=612x612&w=0&k=20&c=k-diqGefE7DoeA5ZYsqDeOGWhTnlF1_8JSWBxTQRrK4=" height="900px" width="1430px">
     <div class="flex">
-    <img class="img-small" src="https://variety.com/wp-content/uploads/2015/07/interior-rendering-of-dolby-cinema.jpg?w=1024" height="500px" width="600px">
+    <img class="img-small" src="https://t4.ftcdn.net/jpg/01/26/39/95/360_F_126399549_kZ8tglJXdeKIX6U4UkTMHvvyovaT8uui.jpg" height="500px" width="600px">
 <section class="container">
     <h1 class="heading"> Log-in </h1>
     <div>
         <option class="font">Email</option>
-        <input class="box"/>
+        <input class="box"  id="email"/>
     </div>
     <div>
         <option class="font-box">Password</option>
-        <input class="box"/>
+        <input class="box" type="password" id="password" />
         
     </div>
     <div>
         <option class="font-box">Phone Number</option>
-        <input class="box"/>
-        <p class="password"> Forget Password?</p>
+        <input class="box"  id="phonenumber" />
     </div>
     
     <div>
-    <a href="../../index.html"> <button class="btn" type="button" >Log In</button></a>
+    <button class="btn" type="button" id="button"  onclick="irfan()">Log In</button>
     </div>
-    <a href="../../index.html"><input type="button" value="Signup" class="signup"></a>
+   
     <div>
         <button class="btn1" type="button" >Continue with Google</button>
         <img class="google" src="../../assets/Images/google-logo.png" height="20px" width="20px">
@@ -37,40 +36,27 @@
     </div>
 </section>
     </div>
-</body>
-</html><html>
-    <head> <title> login page </title>
-        <link rel="stylesheet" href="../../assets/css/style.css">
-    </head>
-<body>
-    <img class="img" src="https://variety.com/wp-content/uploads/2015/07/interior-rendering-of-dolby-cinema.jpg?w=1024" height="900px" width="1430px">
-    <div class="flex">
-    <img class="img-small" src="https://variety.com/wp-content/uploads/2015/07/interior-rendering-of-dolby-cinema.jpg?w=1024" height="500px" width="600px">
-<section class="container">
-    <h1 class="heading"> Log-in </h1>
-    <div>
-        <option class="font">PhoneNumber</option>
-        <input class="box"/>
-    </div>
-    <div>
-        <option class="font-box">Password</option>
-        <input class="box"/>
-       
-        <p class="password"> Forget Password?</p>
-    </div>
-    <div>
-    <a href="../../index.html"> <button class="btn" type="button" >Log In</button></a>
-    </div>
-    <a href="../../index.html"><input type="button" value="Signin" class="signup"></a>
-    <div>
-        <button class="btn1" type="button" >Continue with Google</button>
-        <img class="google" src="../../assets/Images/google-logo.png" height="20px" width="20px">
-    </div>
-    <div>
-        <button class="btn2" type="button" >Continue with facebook</button>
-        <img class="facebook" src="../../assets/Images/Facebook-logo.png" height="30px" width="50px">
-    </div>
-</section>
-    </div>
+
+    
+
+            <script>
+                
+                function irfan(){
+                    user_data = JSON.parse(localStorage.getItem('user_data')) || [];
+
+                    user_data.push({
+                                    email : document.getElementById("email").value,
+
+                                    password : document.getElementById("password").value,
+
+                                    phonenumber : document.getElementById("phonenumber").value,
+
+                    });
+                                    localStorage.setItem("user_data", JSON.stringify(user_data)); 
+                                   }               
+
+
+                  
+            </script>
 </body>
 </html>

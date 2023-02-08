@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *{
     font-family: 'Andika', sans-serif;;
 }
+
 body{
 background-color:black;
 } 
 .header{
-    background-color: black;
+    background-color: rgb(100, 100, 100);
     padding: .5rem 9%;
     position: sticky;  
-    top: 10px;
+    top: 0.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid white;
+    border: black;
    
 }
 .header .logo{
@@ -23,18 +26,30 @@ background-color:black;
 }
 .header .logo i{
     color: #ffce26;
+    font-size:40px;
    
 }
 .header .navbar a{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     margin-left: 32px;
-    padding: 8px;
+    padding-bottom: 13px;
 }
 .header .navbar a:hover{
     color: #ffce26;
 }
+.btn{   
+display: inline-block;
+padding-left: 16px;
+border: 1px solid white;
+border-radius: 8px;  
+width: 80px;
+height: 18px;
+
+}
+
+
 p{
     border: 1px solid white;
     width: 20px;
@@ -75,9 +90,9 @@ img{
     margin-left: 300px;
     margin-top: 50px;
 }
-h3{
-    color: white;
-    text-align: center;
+.screen{
+        margin-left: 650px;
+        color: white;
 }
 .option{
     width: 70px;
@@ -102,6 +117,7 @@ h4{
 a{
     text-decoration: none;
 }
+
 .footer .box-container{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -112,19 +128,25 @@ a{
     font-size: 20px;
     color: gray;
     padding: 1rem 0;
+    margin-left: 8.5rem;
     
 }
-h3{
-    margin-right: 1rem;
+.footer .box-container .box h3:hover{
+    color:#FFCE26;
 }
+
 .footer .box-container .box a{
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     color: gray;
     padding: 1rem 0;
     margin-right: 2rem;
-    margin-left: 1.5rem;
-    text-decoration: none;
+    margin-left: 7.5rem;
+    text-decoration: none;    
+}
+
+.footer .box-container .box a:hover{
+    color: #FFCE26;
 }
 
 .footer .box-container .box a i{
@@ -147,3 +169,115 @@ h3{
 .footer .credit span{
     color:var(--green);
 }
+@media only screen and (max-width:900px) {
+    .header{
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        padding:0;
+        margin-right: 250px;
+    }
+    .header{
+        background-color: black;
+        padding: .5rem 9%;
+        position: sticky;  
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        
+       
+}
+    .header .logo{
+        font-size: 16px;
+        margin-left:unset;
+    }
+
+    .header .navbar a{
+        font-size: 16px;
+    }
+    img{
+        width: 50%;
+        height: 20%;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+  .text1{
+        margin-right: 100px;
+    }
+    .footer .box-container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .footer .box-container .box h3{
+        font-size:90%;
+        margin-bottom: 20px;
+        
+    }
+    h3{
+        margin-right: 14rem;
+    }
+    .header .logo i{
+        font-size:100%;      
+    }
+    .header .navbar a{
+        
+        color: white;
+        text-decoration: none;
+        margin-right:10px;
+        margin-left:10px;
+        padding:unset;
+    }
+    .image-slider{
+        width: 80%;
+        height:auto;
+        margin: 50px auto;
+        box-shadow: -1px 1px 10px #00000021;
+        border-radius: 20px;
+         overflow: hidden; 
+    }
+    .footer .box-container .box a{
+        font-size:70%;
+        margin-bottom:10px;
+        margin-right:unset;
+        margin-left:unset;
+    }
+    .footer .credit{
+        padding:unset;
+        padding-top:unset;
+        margin-top:unset;
+        font-size:100%;
+    }
+    
+    .list{
+        display: flex;
+        gap: 5px;
+        margin-left: 50px;
+        margin-top: -30px;
+      
+  }
+    .list1{
+        display: flex;
+        gap: 5px;
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    .list2{
+        display: flex;
+        gap: 0px;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .option{
+        width: 70px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: black;
+        border: 1px solid yellow;
+        color: white;
+        margin-left: 450px;
+    }
+  
+ 
+  
