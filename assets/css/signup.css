@@ -1,107 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+*{box-sizing: border-box;}
 body{
-    background-color: black;
-    height: 300px;
+    height: 100%;
+  
 }
-.container{
-    border-style: solid;
-    max-width:fit-content;
-    padding:30px 30px 50px 30px;
-    border-radius: 0px 20px 20px 0px;
-    background-color:rgba(243, 243, 243, 0.868);
-    border-color:rgba(243, 243, 243, 0.868);
-    box-shadow: 5px 0px 0px 0px;
+body{
+    margin: 0;
+    display: grid;
+    place-items:center;
+    background: #1a1a1a;
+    color:#f9f9f9;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.box{
-    width:250px;
-    height:30px;
-    border-radius: 5px;
+.email{
+    position: relative;
 }
-.img{
-    filter: blur(7px);
+.main h1{
+    font-family: 'Andika', sans-serif;
+   margin: 10px auto;
 }
-.img-small{
-    border-radius: 20px 0px 0px 20px;
+.main h2{
+    font-family: 'Andika', sans-serif;
+    margin: 10px auto;
+    text-align: center;
 }
-.password{
-    position:relative;
-    left:130px;
-    bottom:10px;
-    color:rgb(110, 105, 105);
+.email input {
+    width:100%;
+    height: 70px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background:white;
+    border: 0;
+    padding-left: 126px;
+    font-size: 16px;
+    font-family:  'Andika', sans-serif;
+    color:rgb(255,255,255/96%);
+    transition: 0.3s;
 }
-.btn{
-    position:relative;
-    left:70px;
-    background-color: rgb(72, 72, 206);
-    color:yellow;
-    font-weight: bold;
-    padding:10px 30px;
-    border-radius: 10px;
-    border-color:white;
-    cursor: pointer;
-    top: 10px;
-}
-.btn1{
-    position:relative;
-    top:20px;
-    left:20px;
-    background-color: rgb(245, 245, 249);
-    color:black;
-    padding:10px 10px 10px 50px;
-    border-radius: 10px;
-    border-color:white;
-}
-.btn2{
-    position:relative;
-    top:40px;
-    left:20px;
-    background-color: rgb(69, 69, 205);
-    color:white;
-    padding:10px 10px 10px 50px;
-    border-radius: 10px;
-    border-color:white;
-}
-.heading{
-    margin-left:70px;
-    font-size:xx-large;
-    color:black;
+.email label{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    transform-origin: 0% 0%;
+    pointer-events: none;
+    top:4px;
+    margin-top: 30px;
+    left:4px;
+    height: 52px;
+    width:110px;
+    border-radius: 27px;
     
+    color:#FFCE26;
+    transition: 0.3s;
 }
-.facebook{
-    position: relative;
-    top:50px;
-    right:180px;
+.email input::placeholder {
+    color:rgb(255,255,255 / 50%);
 }
-.google{
-    position: relative;
-    top:25px;
-    right:155px;
-}
-.flex{
-    display:flex;
-    position:relative;
-    bottom:700px;
-    left:250px;
-}
-.font-box{
-    margin-top:10px;
-}
-.signup{
-        position: relative;
-        left: 100px;
-        bottom:50px;
-}
-.font{
-    color:black;
-}
-.font-box{
-    color:black;
-}
-.password{
-    color:black;
+.email
+:is(input:focus,  input:valid) {
+    padding-left:20px;
 }
 
-@media only screen and (max-width:900px) {
-       .img{
-            height: 1200px;
-       }
+.email
+:is(input:focus, input:valid)
+~  label {
+    translate: 0 -20px;
+
+}
+button{
+    padding: 10px;
+    background-color: #FFCE26;
+    width: 100px;
+    border-radius: 20px;
+   margin-left: 100px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
 }

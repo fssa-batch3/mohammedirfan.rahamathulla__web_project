@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+
+<head lan="eng">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SIGN IN</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../../assets/css/signup.css">
+
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <h1>BOOK IRFU TICKETS</h1>
+<form role="form" onsubmit="signIn(event)">
+        <div class="input">
+            <h2>SIGN IN</h2>
+
+            
+            <div class="email" >
+                <input required type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required id="emailid" />
+                <label>EMAIL</label>
+            </div>
+
+            
+
+            <div class="email" >
+                <input required type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" placeholder="Enter your password" required id="password" />
+                <label>PASSWORD</label>
+            </div>
+
+
+            
+
+            <button type="submit">SUBMIT</button>
+
+
+
+        </div>
+    </form>
+    </div>
+
+    <script>
+        const signIn = e => {
+            
+            let email = document.getElementById("email").value,
+                password = document.getElementById('password').value;
+
+            let userData = JSON.parse(localStorage.getItem('userData')) || [];
+
+            let exist = userData.length &&
+            JSON.parse(localStorage.getItem('userData')).some(data =>
+            data.email.toLowerCase() == email.toLowerCase()&& 
+            data.password.toLowerCase() == password.toLowerCase()
+            );
+
+            if(!exist){
+                alert("Incorrect User Credentials");
+                // document.querySelector('form').reset();
+            }
+            else{
+                localStorage.setItem("unique_id", JSON.stringify(email))
+                alert("Your Login is Successful");
+                location.href = "./profile.html";
+            }
+            e.preventDefault();
+            
+        }
+    </script>
+
+</body>
+
+
+</html>

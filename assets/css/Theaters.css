@@ -11,12 +11,12 @@ body{
     background-color: rgb(100, 100, 100);
     padding: .5rem 9%;
     position: sticky;  
-    top: 0.5px;
+    top: 0.1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: black;
-   
+    z-index: 1;
 }
 .header .logo{
     font-size: 25px;
