@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form>
+            <label>Movie_name</label>
+            <input type="text" id="Movie_name">
+
+            <label>Genre</label>
+            <input type="text" id="Genre">
+
+            <label>Language</label>
+            <input type="text" id="Language">
+
+            <label>Dates</label>
+            <input type="date" id="Dates">
+
+            <label>Actors</label>
+            <input type="text" id="Actors">
+
+            <label>Director</label>
+            <input type="text" id="Director">
+            
+            <label>Music_Director</label>
+            <input type="text" id="MusicDirector">
+
+            <label>Synopsis</label>
+            <input type="text" id="Synopsis">
+
+            <label>Image url</label>
+            <input type="url" id="image_url">
+
+            <label for="">timing</label>
+            <input type="time">
+
+            <select name="" id="timing">
+                    <option value="">am</option>
+                    <option value="">pm</option>
+            </select>
+
+            <label for="">timing</label>
+            <input type="time">
+
+            <select name="" id="timing">
+                    <option value="">am</option>
+                    <option value="">pm</option>
+            </select>
+
+            <label for="">timing</label>
+            <input type="time">
+
+            <select name="" id="timing">
+                    <option value="">am</option>
+                    <option value="">pm</option>
+            </select>
+
+            <label for="">timing</label>
+            <input type="time">
+
+            <select name="" id="timing">
+                    <option value="">am</option>
+                    <option value="">pm</option>
+            </select>
+
+            <label>link file</label>
+            <input type="text" id="link_file">
+
+            <button type="submit">Edit details</button>
+
+        </form>
+        
+
+        <script>
+        //get value from local storage
+        let unique_id =JSON.parse(localStorage.getItem("unique_id"));
+        let movie_detail = JSON.parse(localStorage.getItem("movie_detail"));
+        console.log(movie_detail);
+        console.log(unique_id);
+        function Cinema_data() {
+            return uuid == unique_id;
+        }
+        Movie_data = movie_detail.find(Cinema_data);
+        console.log(Movie_data);
+
+        document.getElementById("Movie_name").value = Movie_data[0]['Movie_name'];
+        document.getElementById("Genre").value = Movie_data['genre'];
+        document.getElementById("Language").value = Movie_data['language'];
+        document.getElementById("Dates").value = Movie_data["dates"];
+        document.getElementById("Actors").value = Movie_data["actors"];
+        document.getElementById("Director").value = Movie_data["director"];
+        document.getElementById("MusicDirector").value = Movie_data["music_director"];
+        document.getElementById("Synopsis").value = Movie_data["synopsis"];
+        document.getElementById("image_url").value = Movie_data["image_link"];
+        document.getElementById("timing").value = Movie_data["timing"];
+        document.getElementById("link_file").value = Movie_data["link_file"];
+        </script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script> -->
+
+</body>
+</html>

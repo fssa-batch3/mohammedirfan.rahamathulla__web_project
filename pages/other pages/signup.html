@@ -6,6 +6,7 @@
     <title>SIGN UP</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assets/css/signup.css">
+    <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
 
 </head>
 
@@ -57,6 +58,7 @@
     let phone_number = document.getElementById("phone_number").value
     let password = document.getElementById("password").value
     let con_password = document.getElementById("con_password").value
+    let my_uuid = uuidv4();
     
     let userData = JSON.parse(localStorage.getItem("userData")) || [];
     let exist = userData.length &&
@@ -68,7 +70,7 @@
             if(!exist){
                 if(password == con_password){
                     // push into objects
-                    userData.push({"name":name, "email":email, "phone_number": phone_number,"password": password});
+                    userData.push({"name":name, "email":email, "phone_number": phone_number,"password": password,"my_uuid":my_uuid});
                     // store data into local storage
                     localStorage.setItem("userData", JSON.stringify(userData));
                     // after store data, reset form
