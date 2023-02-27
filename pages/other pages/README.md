@@ -48,10 +48,10 @@
 
  This is project is about movie ticket booking website user can book ticket easily.
     The following are :
-    #Wireframe (https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g?usp=sharing)
-     Userflow:https://drive.google.com/drive/folders/1L0bQnCEoDZg-VpVupI1R9dvGtlTz4ZsQ
+    #Wireframe <link href="https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g?usp=sharing">
+     Userflow:<link>https://drive.google.com/drive/folders/1L0bQnCEoDZg-VpVupI1R9dvGtlTz4ZsQ</link>
      Problem Statement:https://docs.google.com/document/d/1rs2TVivp9fQNSx7cBx77KQ-8_JMzbii-/edit
-     #Wireframe (https://github.com/pandao/editor.md)
+     #Wireframe[Heading link](https://github.com/pandao/editor.md "Heading link")
 
 User CRUD features :
 
