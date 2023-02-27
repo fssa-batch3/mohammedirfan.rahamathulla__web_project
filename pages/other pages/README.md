@@ -44,13 +44,14 @@
             ├── edit_order.html                 # Compiled files
             └── order_details.html              # Compiled files -->
 
-<h1> 100 Days Project</h1>
+## 100 Days Project
 
-    This is project is about movie ticket booking website user can book ticket easily.
+ This is project is about movie ticket booking website user can book ticket easily.
     The following are :
-     Wireframe:https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g
+    #Wireframe (https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g?usp=sharing)
      Userflow:https://drive.google.com/drive/folders/1L0bQnCEoDZg-VpVupI1R9dvGtlTz4ZsQ
      Problem Statement:https://docs.google.com/document/d/1rs2TVivp9fQNSx7cBx77KQ-8_JMzbii-/edit
+     #Wireframe (https://github.com/pandao/editor.md)
 
 User CRUD features :
 
