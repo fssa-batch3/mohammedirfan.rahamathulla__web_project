@@ -47,10 +47,10 @@
 <h1> 100 Days Project</h1>
 
     This is project is about movie ticket booking website user can book ticket easily.
-    The following are : 
-     Wireframe : https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g
-     Userflow : https://drive.google.com/drive/folders/1L0bQnCEoDZg-VpVupI1R9dvGtlTz4ZsQ
-     Problem Statement : https://docs.google.com/document/d/1rs2TVivp9fQNSx7cBx77KQ-8_JMzbii-/edit
+    The following are :
+     Wireframe:https://drive.google.com/drive/folders/16GlWk9JSYjYO4zB1pmJa6HM9uVTuv55g
+     Userflow:https://drive.google.com/drive/folders/1L0bQnCEoDZg-VpVupI1R9dvGtlTz4ZsQ
+     Problem Statement:https://docs.google.com/document/d/1rs2TVivp9fQNSx7cBx77KQ-8_JMzbii-/edit
 
 User CRUD features :
 
