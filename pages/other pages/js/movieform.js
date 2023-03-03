@@ -17,10 +17,10 @@ function upload(e) {
      
 
     // hear i give var name for local storage data (initially there is no data so we mentioned or (||) symbol to get empty array)
-    let movie_detail = JSON.parse(localStorage.getItem('movie_detail')) || [];
+    let Movie_detail = JSON.parse(localStorage.getItem('Movie_detail')) || [];
 
     // hear we give some condition for uploading details to restict same unique id
-    let exist = movie_detail.some(data =>
+    let exist = Movie_detail.some(data =>
             data.movie_name  == movie_name.toLowerCase()
             // data.Genre.toLowerCase() === Genre.toLowerCase() ||
             // data.Language.toLowerCase() === Language.toLowerCase() ||
@@ -34,9 +34,9 @@ function upload(e) {
     // if condition fail
     if(!exist){
         
-        movie_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,timing,uuid});
+        Movie_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,timing,uuid});
         localStorage.setItem('unique_id',uuid);
-        localStorage.setItem('movie_detail', JSON.stringify(movie_detail));
+        localStorage.setItem('Movie_detail', JSON.stringify(Movie_detail));
        
         document.querySelector('form').reset();
         alert('Detail submitted Successfully✅' );

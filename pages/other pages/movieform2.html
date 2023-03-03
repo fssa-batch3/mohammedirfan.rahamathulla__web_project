@@ -1,104 +1,194 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 </head>
+
 <body>
-        <form>
-            <label>Movie_name</label>
-            <input type="text" id="Movie_name">
+        <form class="form">
 
-            <label>Genre</label>
-            <input type="text" id="Genre">
+                <label>Enter UUID</label>
+                <input type="text" id="uuid">
+                <button type="submit" id="find_Movie_detail">Find movie</button>
 
-            <label>Language</label>
-            <input type="text" id="Language">
+                <label>Movie_name</label>
+                <input type="text" id="Movie_name">
 
-            <label>Dates</label>
-            <input type="date" id="Dates">
+                <label>Genre</label>
+                <input type="text" id="Genre">
 
-            <label>Actors</label>
-            <input type="text" id="Actors">
+                <label>Language</label>
+                <input type="text" id="Language">
 
-            <label>Director</label>
-            <input type="text" id="Director">
-            
-            <label>Music_Director</label>
-            <input type="text" id="MusicDirector">
+                <label>Dates</label>
+                <input type="date" id="Dates">
 
-            <label>Synopsis</label>
-            <input type="text" id="Synopsis">
+                <label>Actors</label>
+                <input type="text" id="Actors">
 
-            <label>Image url</label>
-            <input type="url" id="image_url">
+                <label>Director</label>
+                <input type="text" id="Director">
 
-            <label for="">timing</label>
-            <input type="time">
+                <label>Music_Director</label>
+                <input type="text" id="MusicDirector">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+                <label>Synopsis</label>
+                <input type="text" id="Synopsis">
 
-            <label for="">timing</label>
-            <input type="time">
+                <label>Image url</label>
+                <input type="url" id="image_url">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+                <!-- <label for="">timing</label>
+                <input type="time">
 
-            <label for="">timing</label>
-            <input type="time">
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+                <label for="">timing</label>
+                <input type="time">
 
-            <label for="">timing</label>
-            <input type="time">
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+                <label for="">timing</label>
+                <input type="time">
 
-            <label>link file</label>
-            <input type="text" id="link_file">
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
 
-            <button type="submit">Edit details</button>
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select> -->
+
+                <label>link file</label>
+                <input type="text" id="link_file">
+
+                <button type="submit" id="edit">Edit details</button>
+                <button type="submit" id="delete">Delete Details</button>
 
         </form>
-        
 
         <script>
-        //get value from local storage
-        let unique_id =JSON.parse(localStorage.getItem("unique_id"));
-        let movie_detail = JSON.parse(localStorage.getItem("movie_detail"));
-        console.log(movie_detail);
-        console.log(unique_id);
-        function Cinema_data() {
-            return uuid == unique_id;
-        }
-        Movie_data = movie_detail.find(Cinema_data);
-        console.log(Movie_data);
+                //get value from local storage
+                const form = document.querySelector('.form');
+                const unique_id = document.getElementById("uuid");
 
-        document.getElementById("Movie_name").value = Movie_data[0]['Movie_name'];
-        document.getElementById("Genre").value = Movie_data['genre'];
-        document.getElementById("Language").value = Movie_data['language'];
-        document.getElementById("Dates").value = Movie_data["dates"];
-        document.getElementById("Actors").value = Movie_data["actors"];
-        document.getElementById("Director").value = Movie_data["director"];
-        document.getElementById("MusicDirector").value = Movie_data["music_director"];
-        document.getElementById("Synopsis").value = Movie_data["synopsis"];
-        document.getElementById("image_url").value = Movie_data["image_link"];
-        document.getElementById("timing").value = Movie_data["timing"];
-        document.getElementById("link_file").value = Movie_data["link_file"];
+                // let Movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
+
+                const findMovieDetails = document.getElementById("find_Movie_detail");
+                const movie_name = document.getElementById("Movie_name")
+                const genre = document.getElementById("Genre")
+                const date = document.getElementById("Dates")
+                const language = document.getElementById("Language")
+                const actors = document.getElementById("Actors")
+                const director = document.getElementById("Director")
+                const music_director = document.getElementById("MusicDirector")
+                const synopsis = document.getElementById("Synopsis")
+                // const timing = document.getElementById("Timing")
+                const image_url = document.getElementById("image_url")
+                const link_file = document.getElementById("link_file")
+
+                findMovieDetails.addEventListener("click", (event) => {
+                        event.preventDefault()
+                        const uniqueId = unique_id.value;
+                        const Movie_detail = JSON.parse(localStorage.getItem('Movie_detail'));
+                        console.log(Movie_detail);
+                        const movie = Movie_detail.find(details =>
+                                details.uuid === uniqueId
+                        );
+
+                        if (movie) {
+                                movie_name.value = movie.movie_name;
+                                genre.value = movie.genre;
+                                date.value = movie.dates;
+                                language.value = movie.language;
+                                actors.value = movie.actors;
+                                director.value = movie.director;
+                                music_director.value = movie.music_Director;
+                                synopsis.value = movie.synopsis;
+                                // timing.value = movie.timing;
+                                image_url.value = movie.image_url;
+                                link_file.value = movie.link_file;
+
+                                document.getElementById("edit").addEventListener("click", (event) => {
+                                        event.preventDefault();
+
+                                        let movName = movie_name.value;
+                                        movGenre = genre.value;
+                                        movDate = date.value;
+                                        movLanguage = language.value;
+                                        movActors = actors.value;
+                                        movDirector = director.value;
+                                        movMusicDirector = music_director.value;
+                                        movSynopsis = synopsis.value;
+                                        // movTiming = timing.value;
+                                        movLinkFile = image_url.value;
+                                        movImageUrl = link_file.value;
+
+
+
+                                        // Update movie deatils in localstorage
+                                        movie.movie_name = movName;
+                                        movie.genre = movGenre;
+                                        movie.date = movDate;
+                                        movie.language = movLanguage;
+                                        movie.actors = movActors;
+                                        movie.director = movDirector;
+                                        movie.music_director = movMusicDirector;
+                                        movie.synopsis = movSynopsis;
+                                        // movie.timing = movTiming;
+                                        movie.image_url = movLinkFile;
+                                        movie.link_file = movImageUrl;
+                                        localStorage.setItem('Movie_detail', JSON.stringify(Movie_detail));
+
+                                        alert("Updated movie details successfully!!✅")
+
+                                        document.querySelector("form").reset();
+                                        document.getElementById("edit").setAttribute("disabled", true);
+                                }
+
+                                );
+
+                        }
+                });
+
+                //delete page
+                //  delete page
+                document.getElementById("delete").addEventListener("click", (event) => {
+                        event.preventDefault();
+
+                        const uniqueId = unique_id.value;
+                        const Movie_detail = JSON.parse(localStorage.getItem('Movie_detail'));
+                        const movieIndex = Movie_detail.findIndex(detail =>
+                                detail.uuid === uniqueId
+                        );
+
+                        if (movieIndex > -1) {
+                                Movie_detail.splice(movieIndex, 1);
+                                localStorage.setItem('Movie_detail', JSON.stringify(Movie_detail));
+                                alert("Movie details deleted successfully");
+                                document.querySelector('form').reset();
+
+
+                        }
+
+                })
+
         </script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script> -->
 
 </body>
+
 </html>
