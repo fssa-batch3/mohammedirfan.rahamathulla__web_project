@@ -574,6 +574,20 @@
                             
                         }
             </script> -->
+
+            <button onclick="getParameters()"> Get URL parameters </button>
+    <script>
+    function getParameters() {
+        let urlString = 
+"https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
+        let paramString = urlString.split('avatar.html?')[1];
+        let queryString = new URLSearchParams(paramString);
+        for(let pair of queryString.entries()) {
+            console.log("Key is:" + pair[0]);
+            console.log("Value is:" + pair[1]);
+        }
+    }
+    </script>
             </body>
             </html>
 
