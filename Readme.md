@@ -56,6 +56,58 @@
 
 User CRUD features :
 
+<h2>Registration of User detail.</h2>
+<h3>Scenario :</h3> creating an in my website.
+<h3>Steps :</h3>
+
+<ul>
+    <li>Navigation to signup (register) page.</li>
+    <li>Entered required details in the form.</li>
+    <li>Click on submit button</li>
+</ul>
+<h3>Expected Result:</h3>
+<ul>
+        <li>It will redirected to login page by showing "registered successfully" in an alert box</li>
+        <li>If you already registered and if you try to register again by mistake, it will show "user already exixts" in an alert box </li>
+ </ul>
+
+ <h2>Login of user</h2>
+ <h3>Scenario :</h3>
+ Read profile
+ Edit profile
+ Delete profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
 Registration of User detail.
 
  -Login
