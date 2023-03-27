@@ -70,9 +70,10 @@
             </div>
         </div>
         <div class="credit"> Created by <span> Mr. Irfu</span> | All Rights Reserved </div>
-   
+        <script src="./js/movieform.js"></script>
         <script>
-
+        
+            let image_link = JSON.parse(localStorage.getItem("image_link"));
             const row_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
             const row_2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
              const row_3 = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]
@@ -86,7 +87,7 @@
                     console.log(div_all);
                     
                     img = document.createElement("img");
-                    img.setAttribute("src","https://c4.wallpaperflare.com/wallpaper/810/33/235/movies-avatar-1680x1050-entertainment-movies-hd-art-wallpaper-preview.jpg");
+                    img.setAttribute("src",image_link);
                     div_all.prepend(img);
 
                     h3 = document.createElement("h3");
@@ -126,7 +127,7 @@
                     select.append(option5);
 
                     a = document.createElement("a");
-                    a.setAttribute("href","./avatarpay.html");
+                    a.setAttribute("href","./avatarpay.html?");
                     div_all.append(a);
 
                 for(i=0; i<row_1.length; i++){

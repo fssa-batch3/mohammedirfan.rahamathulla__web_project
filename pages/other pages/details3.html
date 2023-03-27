@@ -15,6 +15,7 @@
 <body>
   <main>
    
+    
     <style>
       * {box-sizing: border-box;}
       
@@ -114,18 +115,17 @@
         <a href="./movielist.html">Movies list</a>
         <a href="./Trailer.html">Trailers</a>
         <a href="./t-shirt.html">Fans dress</a>
-        <a href="./review.html">Review page</a>    
-        <a href="./stadium.html">Stadium</a>      
+        <a href="./review.html">Review page</a>          
         <a href="./signup.html">SIGNUP</a>
         <a href="./signin.html">SIGNIN</a>
         <input type="text" placeholder="Search..">
-      </div>        
+      </div>  
 
   <section class="content">
             <!-- <div class="img1">
                 
-                  <img src="https://c4.wallpaperflare.com/wallpaper/695/1024/947/amazing-avatar-hd-wallpaper-preview.jpg" alt="img" class="img" >
-            </div>
+                 <img src="https://c4.wallpaperflare.com/wallpaper/695/1024/947/amazing-avatar-hd-wallpaper-preview.jpg" alt="img" class="img" > -->
+          <!--    </div>
 
             <div class="text">
                     <h2>AVATAR THE WAY OF WATER - English 3D</h2><br>
@@ -249,9 +249,9 @@
         <div class="box">
             <h3>Quick links</h3>
             <a href="../../index.html"> <i class="fas fa-chevron-right"></i> Movies </a>
-            <a href="./Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
-            <a href="./about.html"> <i class="fas fa-chevron-right"></i> About us </a>
-            <a href="./theatres.html"> <i class="fas fa-chevron-right"></i> Cinemas </a>    
+            <a href="../other pages/Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
+            <a href="../other pages/about.html"> <i class="fas fa-chevron-right"></i> About us </a>
+            <a href="../other pages/theatres.html"> <i class="fas fa-chevron-right"></i> theatres </a>    
         </div>
         <div class="box">
             <h3>contact info</h3>
@@ -386,23 +386,20 @@
 
           //   }
           // ]
-          let  movie_row1 = JSON.parse(localStorage.getItem('Movie_detail'));
+
           const urlParam = new URLSearchParams(window.location.search)
           const thisId = urlParam.get("id")
-          const thisMovie = JSON.parse(localStorage.getItem("Movie_detail")).find((e)=> e.uuid == thisId)
+          const thisMovie = JSON.parse(localStorage.getItem("Trailer_detail")).find((e)=> e.uuid == thisId)
           window.localStorage.setItem("image_link",JSON.stringify(thisMovie["image_link"]))
            
             let div_img1 = document.createElement("div");
             div_img1.setAttribute("class","img1");
             document.querySelector("section.content").append(div_img1);
 
-            
-
-
             let img = document.createElement("img");
             img.setAttribute("class","img");
             img.setAttribute("src",thisMovie["image_link"])
-            img.setAttribute("alt",thisMovie["movie_name"])
+            img.setAttribute("alt",thisMovie["image_link"])
             div_img1.append(img);
 
             let div_text = document.createElement("div");
@@ -416,7 +413,7 @@
             div_text.append(h2);
 
             let h3 = document.createElement("h3");
-            h3.innerText = "TAMIL| U/A"
+            h3.innerText = "English | U/A"
             div_text.append(h3);
             
             let p_genre = document.createElement("p");
@@ -429,9 +426,9 @@
             div_text.append(p_director);
 
                         
-            let p_musicDirector = document.createElement("p");
-            p_musicDirector.innerText = thisMovie["music_Director"]
-            div_text.append(p_musicDirector);
+            let p_musicdirector = document.createElement("p");
+            p_musicdirector.innerText = thisMovie["music_director"]
+            div_text.append(p_musicdirector);
 
             let p_synopsis = document.createElement("p");
             p_synopsis.innerText = thisMovie["synopsis"]
@@ -476,7 +473,7 @@
    
 
     
-                for(i=0; i < 5; i++){
+                for(i=0; i<5; i++){
                   let div_theatre = document.createElement("div");
             div_theatre.setAttribute("class","theatre");
 
@@ -498,7 +495,7 @@
             div_theatre.append(div_time);
 
             a = document.createElement("a");
-            a.setAttribute("href",`./avatarseats.html?id=${movie_row1[i]["uuid"]}`);
+            a.setAttribute("href","../other pages/avatarseats.html");
             div_time.append(a);
 
             para = document.createElement("p");
@@ -506,7 +503,7 @@
             a.append(para);
 
             a2 = document.createElement("a");
-            a2.setAttribute("href",`./avatarseats.html?id=${movie_row1[i]["uuid"]}`);
+            a2.setAttribute("href","../other pages/avatarseats.html");
             div_time.append(a2);
 
            para2 = document.createElement("p");

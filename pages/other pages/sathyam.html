@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SATHYAM CINEMAS PAGE</title>
-    <link rel="stylesheet" href="../../assets/css/Trailer.css">
+    <title>ROHINI CINEMAS PAGE</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,136 +13,221 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../../index.html" class="logo"> <i class="fa fa-ticket" style="font-size: 40px;"></i>IRFU TICKETS</a>
-        <Nav class="navbar">
-             <a href="../other pages/Trailer.html">Trailer</a>
-             <a href="../other pages/about.html">About</a>
-             <a href="../other pages/Theaters.html">Theaters</a>
+        <style>
+            * {box-sizing: border-box;}
             
-        </Nav>
-     
-     </header>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+              z-index: 50;
+            }
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #e9e9e9;
+              
+            }
+            
+            .topnav a {
+              float: left;
+              display: block;
+              color: rgb(0, 0, 0);
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+              margin-left: 10px;
+              
+            }
+            
+            
+            .topnav a:hover {
+              background-color: #9c9696;
+              color: black;
+            }
+            
+            .topnav a.active {
+              /* background-color: #2196F3; */
+              color: black;
+            }
+            
+            .topnav .search-container {
+              float: right;
+              margin-right: 50px;
+            }
+            
+            .topnav input[type=text] {
+              padding: 6px;
+              margin-top: 8px;
+              font-size: 17px;
+              border: none;
+            }
+            
+            .topnav .search-container button {
+              float: right;
+              padding: 6px 10px;
+              margin-top: 8px;
+              margin-right: 16px;
+              background: #ddd;
+              font-size: 17px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .topnav .search-container button:hover {
+              background: #ccc;
+            }
+            
+            @media screen and (max-width: 600px) {
+              .topnav .search-container {
+                float: none;
+              }
+              .topnav a, .topnav input[type=text], .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+              }
+              .topnav input[type=text] {
+                border: 1px solid #ccc;  
+                
+              }
+            }
+            </style>
 
-                <h2 class="text">Movies in Sathyam Cinemas</h2>
+    
 
-                <div class="movies-three">
-                                            <!--     
-                                                <div class="movielist">
-                                                    <a href="./Ratchasan.html"><img src="https://img.onmanorama.com/content/dam/mm/en/entertainment/entertainment-news/images/2020/8/19/ratsasan.jpg" alt="Ratchasan"></a>
+     <div class="topnav">
+        <a href="#" class="logo"> <i class="fa fa-ticket"></i>IRFU TICKETS</a>
+      <a href="./pages/other pages/Theaters.html">Cinemas</a>
+      <a href="./pages/other pages/movielist.html">Movies list</a>
+      <a href="./pages/other pages/Trailer.html">Trailers</a>
+      <a href="./pages/other pages/">Fans theory</a>
+      <a href="./pages/other pages/t-shirt.html">Fans dress</a>
+      <a href="./pages/other pages/review.html">Review page</a>          
+      <a href="./pages/other pages/signup.html">SIGNUP</a>
+      <a href="./pages/other pages/signin.html">SIGNIN</a>
+    </div> 
+    
 
-                                                    <p> 
-                                                        RATCHASAN<br>
-                                                    
-                                                        (U/A)-Action
-                                                    </p>
+    <h2 class="text">Movies in Sathyam Cinemas </h2>
+    <div class="movies-one">
 
-                                            </div>
+            <!-- <div class="movielist">
+                    <a href="../other pages/Thuppaki2.html"><img src="https://i.pinimg.com/originals/aa/82/6f/aa826f98f59e5abf6b82527a4d756161.jpg" alt="Thuppaki"></a>
 
-                                                <div class="movielist">
-                                                    <a href="./drishyam.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020527.jpg" alt="Drishyam-2"></a>
+                    <p> 
+                        THUPPAKI<br>
+                      
+                        (U/A)-Action
+                   </p>
 
-                                                        <p> 
-                                                            DRISHYAM 2<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
-                                                </div>
+            </div>
 
-                                                <div class="movielist">
-                                                        <a href="./Connect.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00022049.jpg" alt="Connect"></a>
+            <div class="movielist">
+                    <a href="../other pages/Ayan.html"><img src="https://wallpaperaccess.com/full/4138932.jpg" alt="Ayan"></a>
 
-                                                        <p> 
-                                                            CONNECT<br>
-                                                        
-                                                            (U/A)-Action . Horror
-                                                    </p>
-                                                </div>
+                    <p> 
+                        AYAN<br>
+                      
+                        (U/A)-Action . Thriller
+                   </p>
+            </div>
 
-                                                <div class="movielist">
-                                                        <a href="./Raangi.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00022031.jpg" alt="Raangi"></a>
+            <div class="movielist">
+                    <a href="./pages/other pages/vadachennaitrailer.html"><img src="https://wallpapercave.com/wp/wp8451274.jpg" alt="Vaalu"></a>
 
-                                                        <p> 
-                                                            RAANGI<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
-                                                </div> -->
+                    <p> 
+                        VAALU<br>
+                      
+                        (U/A)-Action . Thriller
+                   </p>
+            </div>
 
-                                            </div>
+            <div class="movielist">
+                    <a href="./pages/other pages/sardar.html"><img src="https://sensongsmp3.tv/wp-content/uploads/2017/03/meesaya-murukku-mp3-sensongsmp3co.jpg" alt="Meesaya muruku"></a>
 
-                                            <div class="movies-four">
+                    <p> 
+                        MEESAYA MURUKU<br>
+                      
+                        (U/A)-Action . Thriller
+                   </p>
+            </div> -->
 
-                                                <!-- <div class="movielist">
-                                                        <a href="./vikrammovie.html"><img src="https://images.indianexpress.com/2022/06/vikram-movie-.jpg" alt="Vikram"></a>
+     </div>
 
-                                                        <p> 
-                                                            VIKRAM<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
-                                                </div>
+<div class="movies-two">
+<!-- 
+        <div class="movielist">
+               <a href="./varisu.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020528.jpg" alt="Varisu"></a>
 
-                                                <div class="movielist">
-                                                        <a href="./Mankatha.html"><img src="https://images.cinemaexpress.com/uploads/user/imagelibrary/2021/8/31/original/40.jpg" alt="Mankatha"></a>
+                <p> 
+                    VARISU<br>
+                  
+                    (U/A)-Action . Comedy
+               </p>
+        </div>
 
-                                                        <p> 
-                                                            MANKATHA<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
-                                                </div>
+        <div class="movielist">
+                <a href="./thunivu.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00021458.jpg" alt="Thunivu"></a>
 
-                                                <div class="movielist">
-                                                        <a href="./Petta.html"><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-6nrodpon2aotstge73knj9enn1-20181221011522.Medi.jpeg" alt="Petta"></a>
+                <p> 
+                    THUNIVU<br>
+                  
+                    (U/A)-Action . Thriller
+               </p>
+        </div>
 
-                                                        <p> 
-                                                            PETTA<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
-                                                </div>
+        <div class="movielist">
+                <a href="./vaathi.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00021224.jpg" alt="Vaathi"></a>
 
-                                                <div class="movielist">
-                                                        <a href="./Jawan.html"><img src="https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020333.jpg" alt="Jawan"></a>
+                <p> 
+                    VAATHI<br>
+                  
+                    (U/A)-Action . Thriller
+               </p>
+        </div>
 
-                                                        <p> 
-                                                            JAWAN<br>
-                                                        
-                                                            (U/A)-Action . Thriller
-                                                    </p>
+        <div class="movielist">
+                <a href="./naisekar.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdU25AhGfFKFxGIirh-7BUGxUfp1crzie05wBrmHw_CCyiA4FEAlv9zyMmicxniZgK8rA&usqp=CAU" alt="Niasekar"></a>
 
-                                                </div> -->
-                                            </div>
-                                            <section class="footer">
-                                                <div class="box-container">
-                                                    <div class="box">
-                                                        <h3>Quick links</h3>
-                                                        <a href="../../index.html"> <i class="fas fa-chevron-right"></i> Movies </a>
-                                                        <a href="../other pages/Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
-                                                        <a href="../other pages/about.html"> <i class="fas fa-chevron-right"></i> About us </a>
-                                                        <a href="../other pages/Theaters.html"> <i class="fas fa-chevron-right"></i> Theaters </a>    
-                                                    </div>
-                                                    <div class="box">
-                                                        <h3>contact info</h3>
-                                                        <a href="#"> <i class="fas fa-phone"></i> +91-8939470586 </a>
-                                                        <a href="#"> <i class="fas fa-envelope"></i> mohammedirfan.rahamathulla@fssa.freshworks.com </a>
-                                                        <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai-603202 </a>
-                                                    </div>
-                                                    <div class="box">
-                                                        <h3>follow us</h3>
-                                                        <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-                                                        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-                                                        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-                                                        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-                                                    </div>
-                                                </div>
-                                                <div class="credit"> Created by <span> Mr. Irfu</span> | All Rights Reserved </div>
-                                            </section>  
+                <p> 
+                    Naisekar<br>
+                  
+                    (U/A)-Action . Thriller
+               </p>
+        </div> -->
+
+</div>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="../../index.html"> <i class="fas fa-chevron-right"></i> Movies </a>
+            <a href="../other pages/Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
+            <a href="../other pages/about.html"> <i class="fas fa-chevron-right"></i> About us </a>
+            <a href="../other pages/Theaters.html"> <i class="fas fa-chevron-right"></i> Theaters </a>    
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91-8939470586 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> mohammedirfan.rahamathulla@fssa.freshworks.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai-603202 </a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+    </div>
+    <div class="credit"> Created by <span> Mr. Irfu</span> | All Rights Reserved </div>
+</section>  
 <script>
-    
-    //row -3
-
     for(i=0;i<4;i++){
         let div_movielist;
         let anchor;
@@ -150,37 +235,37 @@
         let para;
         let  movie_row1 = [
             {
-                "name" :"RATCHASAN",
-                "image" :"https://img.onmanorama.com/content/dam/mm/en/entertainment/entertainment-news/images/2020/8/19/ratsasan.jpg",
+                "name" :"THUPPAKI",
+                "image" :"https://i.pinimg.com/originals/aa/82/6f/aa826f98f59e5abf6b82527a4d756161.jpg",
              
-                "link" : "../other pages/ratchasan.html"
+                "link" : "../other pages/Thuppaki2.html"
 
             },
             {
-                "name" :"DHRISHYAM - 2",
-                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020527.jpg",
+                "name" :"AYAN",
+                "image" :"https://wallpaperaccess.com/full/4138932.jpg",
                 
-                "link" : "../other pages/drishyam2.html"
+                "link" : "../other pages/Ayan.html"
 
             },
             {
-                "name" :"CONNECT",
-                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00022049.jpg",
+                "name" :"VAALU",
+                "image" :"https://wallpapercave.com/wp/wp8451274.jpg",
 
-                "link" : "../other pages/connect.html"
+                "link" : "../other pages/vaalu.html"
 
             },
             {
-                "name" :"RAANGI",
-                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00022031.jpg",
-                "link" : "../other pages/raangi.html"
+                "name" :"MEESAYA MURUKU",
+                "image" :"https://sensongsmp3.tv/wp-content/uploads/2017/03/meesaya-murukku-mp3-sensongsmp3co.jpg",
+                "link" : "../other pages/meesayamuruku.html"
 
             }
         ]
 
         div_movielist = document.createElement("div");
         div_movielist.setAttribute("class","movielist");
-        document.querySelector("div.movies-three").append(div_movielist);
+        document.querySelector("div.movies-one").append(div_movielist);
         
         
 
@@ -199,9 +284,8 @@
         
     }
 
-    //row - 4
+    //row - 2
 
-    
     for(i=0;i<4;i++){
         let div_movielist;
         let anchor;
@@ -209,37 +293,37 @@
         let para;
         let  movie_row1 = [
             {
-                "name" :"VIKRAM",
-                "image" :"https://images.indianexpress.com/2022/06/vikram-movie-.jpg",
+                "name" :"VARISU",
+                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020528.jpg",
              
-                "link" : "../other pages/vikrammovie.html"
+                "link" : "../other pages/varisu.html"
 
             },
             {
-                "name" :"MANKATHA",
-                "image" :"https://images.cinemaexpress.com/uploads/user/imagelibrary/2021/8/31/original/40.jpg",
+                "name" :"THUNIVU",
+                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00021458.jpg",
                 
-                "link" : "../other pages/mankatha.html"
+                "link" : "../other pages/thunivu.html"
 
             },
             {
-                "name" :"PETTA",
-                "image" :"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-6nrodpon2aotstge73knj9enn1-20181221011522.Medi.jpeg",
+                "name" :"VAATHI",
+                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00021224.jpg",
 
-                "link" : "../other pages/petta.html"
+                "link" : "../other pages/vaathi.html"
 
             },
             {
-                "name" :"JAWAAN",
-                "image" :"https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00020333.jpg",
-                "link" : "../other pages/Jawan.html"
+                "name" :"NAISEKAR",
+                "image" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdU25AhGfFKFxGIirh-7BUGxUfp1crzie05wBrmHw_CCyiA4FEAlv9zyMmicxniZgK8rA&usqp=CAU",
+                "link" : "../other pages/naisekar.html"
 
             }
         ]
 
         div_movielist = document.createElement("div");
         div_movielist.setAttribute("class","movielist");
-        document.querySelector("div.movies-four").append(div_movielist);
+        document.querySelector("div.movies-two").append(div_movielist);
         
         
 
@@ -253,10 +337,10 @@
 
         para=document.createElement("p");
         para.innerText=movie_row1[i]["name"];
-     
         div_movielist.append(para);
         
     }
+
 </script>
 
 </body>

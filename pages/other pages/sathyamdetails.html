@@ -15,111 +15,15 @@
 <body>
   <main>
    
-    <style>
-      * {box-sizing: border-box;}
-      
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: 50;
-      }
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #e9e9e9;
-        
-      }
-      
-      .topnav a {
-        float: left;
-        display: block;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        margin-left: 10px;
-        
-      }
-      
-      
-      .topnav a:hover {
-        background-color: #9c9696;
-        color: black;
-      }
-      
-      .topnav a.active {
-        /* background-color: #2196F3; */
-        color: black;
-      }
-      
-      .topnav .search-container {
-        float: right;
-        margin-right: 50px;
-      }
-      
-      .topnav input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-      }
-      
-      .topnav .search-container button {
-        float: right;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .topnav .search-container button:hover {
-        background: #ccc;
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav .search-container {
-          float: none;
-        }
-        .topnav a, .topnav input[type=text], .topnav .search-container button {
-          float: none;
-          display: block;
-          text-align: left;
-          width: 100%;
-          margin: 0;
-          padding: 14px;
-        }
-        .topnav input[type=text] {
-          border: 1px solid #ccc;  
-          
-        }
-        .topnav input[type=text] {
-            border: 1px solid #ccc;  
-            
-          }
-          .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-      }
-      </style>
-      </head>
-      <body>
-      
-      <div class="topnav">
-          <a href="../../index.html" class="logo"> <i class="fa fa-ticket"></i>IRFU TICKETS</a>
-        <a href="./Theaters.html">Cinemas</a>
-        <a href="./movielist.html">Movies list</a>
-        <a href="./Trailer.html">Trailers</a>
-        <a href="./t-shirt.html">Fans dress</a>
-        <a href="./review.html">Review page</a>    
-        <a href="./stadium.html">Stadium</a>      
-        <a href="./signup.html">SIGNUP</a>
-        <a href="./signin.html">SIGNIN</a>
-        <input type="text" placeholder="Search..">
-      </div>        
+      <header class="header">
+        <a href="../../index.html" class="logo"> <i class="fa fa-ticket" style="font-size: 40px;"></i>IRFU TICKETS</a>
+        <Nav class="navbar">
+             <a href="../other pages/Trailer.html">Trailer</a>
+             <a href="../other pages/about.html">About</a>
+             <a href="../other pages/theatres.html">Theatres</a>
+        </Nav>
+     
+     </header>
 
   <section class="content">
             <!-- <div class="img1">
@@ -148,13 +52,11 @@
 
   <div class="main">
 
-  <!-- <div class="theatre">
+ <div class="theatre">
     <div class="nametime">
-      <h2>PVR SKLS Galaxy mall,Redhills,chennai</h2>
+      <h2>VAATHI</h2>
       <h3>Tamil-2D</h3>
     </div>
-   
-
     <div class="time">
    <a href="../other pages/avatarseats.html"><p>10:00am</p></a>
    <a href="../other pages/Seats.html"><p>1:00pm</p></a>
@@ -162,11 +64,11 @@
     <a href="../other pages/Seats.html"><p>10:00pm</p></a>
     </div>
     <hr>
-  </div>
+  </div> 
 
   <div class="theatre">
    <div>
-    <h2>Vetri Dolby 4K,Chrompet,chennai</h2>
+    <h2>THUNIVU</h2>
     <h3>Tamil-2D</h3>
    </div>
     
@@ -179,7 +81,7 @@
     </div>
     <hr>
   </div>
-
+<!--
   <div class="theatre">
     <div>
       <h2>Sri Venkateshwaraa,Guduvanchery,chennai</h2>
@@ -249,9 +151,9 @@
         <div class="box">
             <h3>Quick links</h3>
             <a href="../../index.html"> <i class="fas fa-chevron-right"></i> Movies </a>
-            <a href="./Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
-            <a href="./about.html"> <i class="fas fa-chevron-right"></i> About us </a>
-            <a href="./theatres.html"> <i class="fas fa-chevron-right"></i> Cinemas </a>    
+            <a href="../other pages/Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
+            <a href="../other pages/about.html"> <i class="fas fa-chevron-right"></i> About us </a>
+            <a href="../other pages/theatres.html"> <i class="fas fa-chevron-right"></i> theatres </a>    
         </div>
         <div class="box">
             <h3>contact info</h3>
@@ -386,23 +288,18 @@
 
           //   }
           // ]
-          let  movie_row1 = JSON.parse(localStorage.getItem('Movie_detail'));
+
           const urlParam = new URLSearchParams(window.location.search)
           const thisId = urlParam.get("id")
-          const thisMovie = JSON.parse(localStorage.getItem("Movie_detail")).find((e)=> e.uuid == thisId)
-          window.localStorage.setItem("image_link",JSON.stringify(thisMovie["image_link"]))
-           
+          const thisMovie = JSON.parse(localStorage.getItem("Theater_detail")).find((e)=> e.uuid == thisId)
             let div_img1 = document.createElement("div");
             div_img1.setAttribute("class","img1");
             document.querySelector("section.content").append(div_img1);
 
-            
-
-
             let img = document.createElement("img");
             img.setAttribute("class","img");
             img.setAttribute("src",thisMovie["image_link"])
-            img.setAttribute("alt",thisMovie["movie_name"])
+            img.setAttribute("alt",thisMovie["image_link"])
             div_img1.append(img);
 
             let div_text = document.createElement("div");
@@ -415,9 +312,9 @@
             h2.innerText = thisMovie["movie_name"]
             div_text.append(h2);
 
-            let h3 = document.createElement("h3");
-            h3.innerText = "TAMIL| U/A"
-            div_text.append(h3);
+            // let h3 = document.createElement("h3");
+            // h3.innerText = "English | U/A"
+            // div_text.append(h3);
             
             let p_genre = document.createElement("p");
             p_genre.innerText = thisMovie["genre"]
@@ -429,9 +326,9 @@
             div_text.append(p_director);
 
                         
-            let p_musicDirector = document.createElement("p");
-            p_musicDirector.innerText = thisMovie["music_Director"]
-            div_text.append(p_musicDirector);
+            // let p_musicdirector = document.createElement("p");
+            // p_musicdirector.innerText = thisMovie["music_director"]
+            // div_text.append(p_musicdirector);
 
             let p_synopsis = document.createElement("p");
             p_synopsis.innerText = thisMovie["synopsis"]
@@ -455,95 +352,72 @@
   //            </div>
 
 
-  let theatre_list=
-  [{
-                name:"PVR SKLS Galaxy mall,Redhills,chennai"      
-            },
-          {
-              name:"Vetri Dolby 4K,Chrompet,chennai"
-          },
-          {
-              name:"Rohini,Koyambedu,chennai"
-          },
-          {
-              name:"Janatha,Pallavaram,chennai"
-          },
-          {
-              name:"Laurel mall,Paranur,chennai"
-          }
-        ]
-            
-   
-
+  
     
-                for(i=0; i < 5; i++){
+                for(i=0; i<5; i++){
                   let div_theatre = document.createElement("div");
             div_theatre.setAttribute("class","theatre");
 
 
-            div_nametime = document.createElement("div");
-            div_nametime.setAttribute("class","nametime");
-            div_theatre.append(div_nametime);
+            // div_nametime = document.createElement("div");
+            // div_nametime.setAttribute("class","nametime");
+            // div_theatre.append(div_nametime);
 
-            h2 = document.createElement("h2");
-            h2.innerText= theatre_list[i]["name"];
-            div_nametime.append(h2);
+            // h2 = document.createElement("h2");
+            // h2.innerText= theatre_list[i]["name"];
+            // div_nametime.append(h2);
 
-            h3 = document.createElement("h3");
-            h3.innerText="Tamil-2D";
-            div_nametime.append(h3);
+            // h3 = document.createElement("h3");
+            // h3.innerText="Tamil-2D";
+            // div_nametime.append(h3);
 
-            div_time = document.createElement("div");
-            div_time.setAttribute("class","time");
-            div_theatre.append(div_time);
+            // div_time = document.createElement("div");
+            // div_time.setAttribute("class","time");
+            // div_theatre.append(div_time);
 
-            a = document.createElement("a");
-            a.setAttribute("href",`./avatarseats.html?id=${movie_row1[i]["uuid"]}`);
-            div_time.append(a);
+          //   a = document.createElement("a");
+          //   a.setAttribute("href","../other pages/avatarseats.html");
+          //   div_time.append(a);
 
-            para = document.createElement("p");
-            para.innerText="10.00 AM";
-            a.append(para);
+          //   para = document.createElement("p");
+          //   para.innerText="10.00 AM";
+          //   a.append(para);
 
-            a2 = document.createElement("a");
-            a2.setAttribute("href",`./avatarseats.html?id=${movie_row1[i]["uuid"]}`);
-            div_time.append(a2);
+          //   a2 = document.createElement("a");
+          //   a2.setAttribute("href","../other pages/avatarseats.html");
+          //   div_time.append(a2);
 
-           para2 = document.createElement("p");
-           para2.innerText="01.00 PM";
-            a2.append(para2);
+          //  para2 = document.createElement("p");
+          //  para2.innerText="01.00 PM";
+          //   a2.append(para2);
 
-            a3 = document.createElement("a");
-            a3.setAttribute("href","../other pages/avatarseats.html");
-            div_time.append(a3);
+          //   a3 = document.createElement("a");
+          //   a3.setAttribute("href","../other pages/avatarseats.html");
+          //   div_time.append(a3);
 
-            para3 = document.createElement("p");
-            para3.innerText="07.00 PM";
-            a3.append(para3);
+          //   para3 = document.createElement("p");
+          //   para3.innerText="07.00 PM";
+          //   a3.append(para3);
 
-            a4 = document.createElement("a");
-            a4.setAttribute("href","../other pages/avatarseats.html");
-            div_time.append(a4);
+          //   a4 = document.createElement("a");
+          //   a4.setAttribute("href","../other pages/avatarseats.html");
+          //   div_time.append(a4);
 
-            para4 = document.createElement("p");
-            para4.innerText="10.00 PM";
-            a4.append(para4);
+          //   para4 = document.createElement("p");
+          //   para4.innerText="10.00 PM";
+          //   a4.append(para4);
 
-            hr = document.createElement("hr");
+            // hr = document.createElement("hr");
             
-            div_theatre.append(hr);
+            // div_theatre.append(hr);
             
             
             document.querySelector("div.main").append(div_theatre);
-                }
-
-       
-
-
-            
-
+                }     
                         
 </script>
+
+
 
 </body>
 </html>
