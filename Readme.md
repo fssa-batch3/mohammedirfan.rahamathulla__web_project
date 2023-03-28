@@ -77,6 +77,99 @@ User CRUD features :
  Edit profile
  Delete profile
 
+ <h2>View home page</h2>
+    Scenario 1 : Successfully view home page
+    Steps : 
+         a. Without login user can see our website full features only booking time user will register give his/her details.
+         b. There are options in home page : Cinemas,Trailer,Review,Actors,Movielist,Staidum.
+    
+    Expected result : 
+        The user can view the features in home page.
+    
+ <h2>View Cinemas page</h2>
+   Scenario 1 : Successfully view Cinemas page
+   Steps : 
+        a. Without login user can see cinemas page.
+        b. list out the theatres in chennai user can choose the theatres what they what .
+        c. user can choose the movie then book tickets.
+    
+Expected result :
+        The user can view the theatres page.
+    
+  <h2>View Trailer page</h2>
+   Scenario 1 : Successfully view Trailer page 
+   Steps : 
+        a. Without login user can see trailer page.
+        b. movie cards are show in this page user can click the movie card then watch trailer and they book tickets.
+    
+Expected result :
+        The user can view the trailer page.
+
+  <h2>View Review</h2>
+   Scenario 1 : Successfully view Review page
+   Steps : 
+        a. Without login user can view review page.
+        b. In this page movie cards list out with star reviews user can view the movie card which movie is rated high then they book tickets what they want.
+        c.User also put the review star for movies.
+    
+Expected result :
+        The user can view the review page.
+
+    <h2>View Actors page</h2>
+   Scenario 1 : Successfully view actors page
+   Steps : 
+        a. Without login user can view actors page.
+        b. In this page actors cards list out user can choose card what they want then click the view more button user can see small wikipedia about actors,directors,actress,comedians.
+        c. User just for know  about actors.
+    
+Expected result :
+        The user can view actors page.
+
+    
+
+ <h2>View movie cards</h2>
+   Scenario 1 : Successfully view movie cards
+   Steps : 
+        a. Without login First see our movie card.
+        b. Navigate to the movie card page.
+        c. View the list of movie card.
+    
+Expected result :
+        The user can view the list of movie cards.
+
+  <h2>View movie details</h2>
+   Scenario 1 : Successfully view movie card details
+   Steps :
+        a. Without login First see our movie card details.
+        b. Navigate to the movie card page.
+        c. Click the movie of user choice then the page redirect to movie detail page.
+        d. View the list of movie card details.
+    Expected result :
+       The user can view the movie details page.
+
+   <h2>Book a movie</h2>
+   Scenario 1 : Successfully booked movie
+   Steps :
+        a. Login in as a user.
+        b. Navigate to the movie card page.
+        c. View the list of movie card details.
+        d. Click the "Buy Now" button.
+        e. Confirm the address and payment method.
+        f. Click the "Book Tickets" button.
+    Expected result :
+         The user is redirected to Book Tickets page.
+         This go to theater owner page he accepted finished.
+         One popup came Successfully booked tickets.
+         An order confirmation email is sent to the user's email address.
+
+
+    
+
+
+
+
+
+
 
 
 
