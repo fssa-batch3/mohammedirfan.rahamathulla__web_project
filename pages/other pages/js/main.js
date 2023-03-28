@@ -1,14 +1,12 @@
-if(localStorage.getItem("Movie_detail")){
-    return
-}else{
+const movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
+if(!movie_detail){
+
     localStorage.setItem("Movie_detail",JSON.stringify([{
 actors: 
 "Simbu,Sayeesha,Gautam karthik",
-dates
-: 
+dates: 
 "",
-director
-: 
+director: 
 "Krishna",
 genre
 : 
