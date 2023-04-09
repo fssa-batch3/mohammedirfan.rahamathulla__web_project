@@ -16,8 +16,6 @@ body{
         align-items: center;
         justify-content: space-between;
         border: black;
-        z-index: 1;
-       
 }
 .header .logo{
         font-size: 25px;

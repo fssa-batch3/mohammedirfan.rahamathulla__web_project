@@ -49,7 +49,6 @@
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <p><button>IRFU TICKETS</button></p>
 
-
                 <!-- <label>Last Name</label>
     <input type="text" placeholder="Enter your last name"><br><br> -->
                 <!-- <label>Date</label>
@@ -59,8 +58,9 @@
 
                 <a href="editprofile.html"><input type="button" name="" id="" value="EDIT PROFILE"
                         style="background-color: black;color: white;padding: 12px;cursor:pointer;"></a>
-                <button type="submit" onclick="del(event)">Delete</button>
-                <a href="../other pages/signin.html"><input type="button" value="Logout"></a>
+                <button type="button" onclick="del(event)">Delete</button>
+
+                <button type="button" id="logout">Log out</button>
             </form>
         </div>
 
@@ -99,12 +99,12 @@
                 return e.email == unique_id;
             }
             person_data = userData.find(profile_data);
-            console.log(person_data);
+            // console.log(person_data);
 
             document.getElementById("name").value = person_data["name"];
             document.getElementById("email").value = person_data["email"];
             document.getElementById("password").value = person_data["password"];
-            document.getElementById("number").value = person_data["number"];
+            // document.getElementById("number").value = person_data["number"];
 
 
             function del(e) {
@@ -122,9 +122,22 @@
                     userData.splice(indexOfUser, 1);
                     localStorage.setItem("userData", JSON.stringify(userData));
                 }
+            };
+
+            
+            let logout_btn = document.getElementById("logout");
+            console.log(logout_btn);
+
+            logout_btn.addEventListener("click",logout)
+
+            function logout(){
+                localStorage.setItem("unique_id","");
+
+                location.href = "/index.html" ;
             }
 
         </script>
+       
     </body>
 
 </html>
