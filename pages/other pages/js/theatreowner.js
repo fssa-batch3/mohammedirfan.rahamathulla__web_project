@@ -8,19 +8,14 @@ function upload(e) {
     dates=document.getElementById("Dates").value.trim();
     actors = document.getElementById("Actors").value.trim();
     director = document.getElementById("Director").value.trim();
-    music_Director = document.getElementById("MusicDirector").value.trim();
-    synopsis = document.getElementById("Synopsis").value.trim();
-    image_link = document.getElementById("image_url").value;
-    link_file = document.getElementById("link_file").value;
-    timing = document.getElementById("timing").value;
     uuid = uuidv4();
      
 
     // hear i give var name for local storage data (initially there is no data so we mentioned or (||) symbol to get empty array)
-    let Theatreowner_detail = JSON.parse(localStorage.getItem('Theatreowner_detail')) || [];
+    let theatreowner_detail = JSON.parse(localStorage.getItem('theatreowner_detail')) || [];
 
     // hear we give some condition for uploading details to restict same unique id
-    let exist = Theatreowner_detail.some(data =>
+    let exist = theatreowner_detail.some(data =>
             data.movie_name  == movie_name.toLowerCase()
             // data.Genre.toLowerCase() === Genre.toLowerCase() ||
             // data.Language.toLowerCase() === Language.toLowerCase() ||
@@ -34,18 +29,18 @@ function upload(e) {
     // if condition fail
     if(!exist){
         
-        Theatreowner_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,timing,uuid});
+        theatreowner_detail.push({movie_name,genre,language,dates,actors,director,uuid});
         localStorage.setItem('unique_id',uuid);
-        localStorage.setItem('Theatreowner_detail', JSON.stringify(Theatreowner_detail));
+        localStorage.setItem('theatreowner_detail', JSON.stringify(theatreowner_detail));
        
         document.querySelector('form').reset();
         alert('Detail submitted Successfully✅' );
-        location.href="../other pages/theatreform2.html";
+        location.href="../other pages/theatreownerform2.html";
 
     }
     // if condition pass
     else{
-        alert('Theatre detail already exist!!');
+        alert('hospital detail already exist!!');
         document.querySelector('form').reset();
     }
 
