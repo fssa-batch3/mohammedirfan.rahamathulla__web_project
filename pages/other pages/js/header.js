@@ -32,7 +32,7 @@ let after_login = `
                 <a href="${root}/pages/other pages/Trailer.html">Trailer</a>
                 <a href="${root}/pages/other pages/movielist.html">Movie list</a>
                 <a href="${root}/pages/other pages/review.html">Review</a>
-                <a href="${root}/pages/other pages/stadium.html">Stadium</a>
+                <a href="${root}/pages/other pages/banners.html">Stadium</a>
                 <a href="${root}/pages/other pages/profile.html" id="p">Profile</a>
                 <div class="search-container">
                   

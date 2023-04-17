@@ -211,7 +211,7 @@ genre
 "Thriller",
 image_link
 : 
-"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA",
+"https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/03/sdsdewswddddsdd-1679670807.jpg~",
 language
 : 
 "Hindi",
