@@ -29,11 +29,12 @@ let after_login = `
               <div class="topnav">
                 <a href="${root}" class="logo"> <i class="fa fa-ticket"></i>IRFU TICKETS</a>
                 <a href="${root}/pages/other pages/Theatres.html">Cinemas</a>
-                <a href="${root}/pages/other pages/Trailer.html">Trailer</a>
+                <a href="${root}/pages/other pages/Trailer.html">Trailers</a>
                 <a href="${root}/pages/other pages/movielist.html">Movie list</a>
                 <a href="${root}/pages/other pages/review.html">Review</a>
-                <a href="${root}/pages/other pages/banners.html">Stadium</a>
-                <a href="${root}/pages/other pages/profile.html" id="p">Profile</a>
+                <a href="${root}/pages/other pages/banners.html">Banner</a>
+                <a href="${root}/pages/other pages/signup.html" id="p">Signup</a>
+                <a href="${root}/pages/other pages/signin.html" id="p">Signin</a>
                 <div class="search-container">
                   
                     <input type="text" placeholder="Search what you want" name="search">

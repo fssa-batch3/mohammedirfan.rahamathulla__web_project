@@ -21,10 +21,10 @@ function upload(e) {
      
 
     // hear i give var name for local storage data (initially there is no data so we mentioned or (||) symbol to get empty array)
-    let Movie_detail = JSON.parse(localStorage.getItem('Movie_detail')) || [];
+    let Theatre_detail = JSON.parse(localStorage.getItem('Theatre_detail')) || [];
 
     // hear we give some condition for uploading details to restict same unique id
-    let exist = Movie_detail.some(data =>
+    let exist = Theatre_detail.some(data =>
             data.movie_name  == movie_name.toLowerCase()
             // data.Genre.toLowerCase() === Genre.toLowerCase() ||
             // data.Language.toLowerCase() === Language.toLowerCase() ||
@@ -38,18 +38,18 @@ function upload(e) {
     // if condition fail
     if(!exist){
         
-        Movie_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,morningTiming,afternoonTiming,eveningTiming,nightTiming,theatreName,uuid});
+        Theatre_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,morningTiming,afternoonTiming,eveningTiming,nightTiming,theatreName,uuid});
         localStorage.setItem('unique_id',uuid);
-        localStorage.setItem('Movie_detail', JSON.stringify(Movie_detail));
+        localStorage.setItem('Theatre_detail', JSON.stringify(Theatre_detail));
        
         document.querySelector('form').reset();
         alert('Detail submitted Successfully✅' );
-        location.href="../other pages/movieform2.html";
+        location.href="../other pages/Theatreform2.html";
 
     }
     // if condition pass
     else{
-        alert('hospital detail already exist!!');
+        alert('Theatre detail already exist!!');
         document.querySelector('form').reset();
     }
 

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Owner detail edit</title>
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 
                 <label>Enter UUID</label>
                 <input type="text" id="uuid">
-                <button type="submit" id="find_Movie_detail">Find movie</button>
+                <button type="submit" id="find_owner_detail">Find movie</button>
 
                 <label>Movie_name</label>
                 <input type="text" id="Movie_name">
@@ -41,6 +41,38 @@
                 <label>Image url</label>
                 <input type="url" id="image_url">
 
+                <!-- <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                        <option value="">am</option>
+                        <option value="">pm</option>
+                </select> -->
+
                 <label>link file</label>
                 <input type="text" id="link_file">
 
@@ -56,7 +88,7 @@
 
                 // let Movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
 
-                const findTheaterDetails = document.getElementById("find_Theater_detail");
+                const findOwnerDetails = document.getElementById("find_owner_detail");
                 const movie_name = document.getElementById("Movie_name")
                 const genre = document.getElementById("Genre")
                 const date = document.getElementById("Dates")
@@ -65,15 +97,16 @@
                 const director = document.getElementById("Director")
                 const music_director = document.getElementById("MusicDirector")
                 const synopsis = document.getElementById("Synopsis")
+                // const timing = document.getElementById("Timing")
                 const image_url = document.getElementById("image_url")
                 const link_file = document.getElementById("link_file")
 
-                findTheaterDetails.addEventListener("click", (event) => {
+                findOwnerDetails.addEventListener("click", (event) => {
                         event.preventDefault()
                         const uniqueId = unique_id.value;
-                        const theater_detail = JSON.parse(localStorage.getItem('Theater_detail'));
-                        console.log(theater_detail);
-                        const movie = theater_detail.find(details =>
+                        const Owner_detail = JSON.parse(localStorage.getItem('Owner_detail'));
+                        console.log(Owner_detail);
+                        const movie = Owner_detail.find(details =>
                                 details.uuid === uniqueId
                         );
 
@@ -119,9 +152,9 @@
                                         // movie.timing = movTiming;
                                         movie.image_url = movLinkFile;
                                         movie.link_file = movImageUrl;
-                                        localStorage.setItem('Theater_detail', JSON.stringify(theater_detail));
+                                        localStorage.setItem('Owner_detail', JSON.stringify(Owner_detail));
 
-                                        alert("Updated movie details successfully!!✅")
+                                        alert("Updated owner details successfully!!✅")
 
                                         document.querySelector("form").reset();
                                         document.getElementById("edit").setAttribute("disabled", true);
@@ -138,15 +171,15 @@
                         event.preventDefault();
 
                         const uniqueId = unique_id.value;
-                        const theater_detail = JSON.parse(localStorage.getItem('Theater_detail'));
-                        const movieIndex = Movie_detail.findIndex(detail =>
+                        const Owner_detail = JSON.parse(localStorage.getItem('Owner_detail'));
+                        const ownerIndex = Owner_detail.findIndex(detail =>
                                 detail.uuid === uniqueId
                         );
 
-                        if (movieIndex > -1) {
-                                theater_detail.splice(movieIndex, 1);
-                                localStorage.setItem('Theater_detail', JSON.stringify(theater_detail));
-                                alert("Movie details deleted successfully");
+                        if (ownerIndex > -1) {
+                                Owner_detail.splice(ownerIndex, 1);
+                                localStorage.setItem('Owner_detail', JSON.stringify(Owner_detail));
+                                alert("Owner details deleted successfully");
                                 document.querySelector('form').reset();
 
 

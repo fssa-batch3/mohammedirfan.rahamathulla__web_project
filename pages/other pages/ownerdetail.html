@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Owner Form</title>
 </head>
 <body>
         <form role="form" onsubmit="upload(event)">
-            <label>Theater_name</label>
+            <label>Movie_name</label>
             <input type="text" id="Movie_name">
 
-            <label>Address</label>
+            <label>Genre</label>
             <input type="text" id="Genre">
 
             <label>Language</label>
@@ -35,36 +35,24 @@
             <input type="url" id="image_url">
 
             <label for="">timing</label>
-            <input type="time">
+            <input type="time"class="timing" id="morning_show">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            
 
             <label for="">timing</label>
-            <input type="time">
+            <input type="time" class="timing" id="afternoon_show">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            
 
             <label for="">timing</label>
-            <input type="time">
+            <input type="time" class="timing" id="evening_show">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            
 
             <label for="">timing</label>
-            <input type="time">
+            <input type="time"class="timing" id="night_show">
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            
 
             <label>link file</label>
             <input type="text" id="link_file">
@@ -72,7 +60,8 @@
             <button type="submit">click</button>
 
         </form>
+
 <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
-<script src="./js/cinemaform.js"></script>
+<script src="./js/owner.js"></script>
 </body>
 </html>

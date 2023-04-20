@@ -12,15 +12,18 @@ function upload(e) {
     synopsis = document.getElementById("Synopsis").value.trim();
     image_link = document.getElementById("image_url").value;
     link_file = document.getElementById("link_file").value;
-    timing = document.getElementById("timing").value;
+    mornTiming = document.getElementById("morning_show").value;
+    afterTiming = document.getElementById("afternoon_show").value;
+    evenTiming = document.getElementById("evening_show").value;
+    nightTiming = document.getElementById("night_show").value;
     uuid = uuidv4();
      
 
     // hear i give var name for local storage data (initially there is no data so we mentioned or (||) symbol to get empty array)
-    let theater_detail = JSON.parse(localStorage.getItem('Theater_detail')) || [];
+    let Owner_detail = JSON.parse(localStorage.getItem('Owner_detail')) || [];
 
     // hear we give some condition for uploading details to restict same unique id
-    let exist = theater_detail.some(data =>
+    let exist = Owner_detail.some(data =>
             data.movie_name  == movie_name.toLowerCase()
             // data.Genre.toLowerCase() === Genre.toLowerCase() ||
             // data.Language.toLowerCase() === Language.toLowerCase() ||
@@ -34,18 +37,18 @@ function upload(e) {
     // if condition fail
     if(!exist){
         
-        theater_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,timing,uuid});
+        Owner_detail.push({movie_name,genre,language,dates,actors,director,music_Director,synopsis,image_link,link_file,mornTiming,afterTiming,evenTiming,nightTiming,uuid});
         localStorage.setItem('unique_id',uuid);
-        localStorage.setItem('Theater_detail', JSON.stringify(theater_detail));
+        localStorage.setItem('Owner_detail', JSON.stringify(Owner_detail));
        
         document.querySelector('form').reset();
         alert('Detail submitted Successfully✅' );
-        location.href="../other pages/cinemaform2.html";
+        location.href="../other pages/movieform2.html";
 
     }
     // if condition pass
     else{
-        alert('hospital detail already exist!!');
+        alert('Owner detail already exist!!');
         document.querySelector('form').reset();
     }
 

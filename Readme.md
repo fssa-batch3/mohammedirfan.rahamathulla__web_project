@@ -50,7 +50,6 @@
   - Steps : 
       1. Without login user can see cinemas page.
       2. list out the theatres in chennai user can choose the theatres what they what.
-      3. user can choose the movie then book tickets.
     
 - Expected result :
         
@@ -62,7 +61,8 @@
    - Scenario 1 : Successfully view Trailer page.
    - Steps : 
       1. Without login user can see trailer page.
-      2. movie cards are show in this page user can click the movie card then watch trailer and they book tickets.
+      2. movie cards are show in this page user can click the movie cards then go to movie details page.
+      3. In future I will add trailer video in Movie details page.
     
   - Expected result :
 
@@ -70,49 +70,47 @@
 
        1. The user can view the features in trailer page.
 
-  ### View Review
-     - Scenario 1 : Successfully view Review page.
-     - Steps : 
-        1. Without login user can view review page.
-        2. In this page movie cards list out with star reviews user can view the movie card which movie is rated high then they book tickets what they want.
-        3. User also put the review star for movies.
-    
-  - Expected result :
+   ### View Movie Cards
+   - Scenario 1 : Successfully view Movie cards.
+   - Steps :
+       1. In the home page there are many movie cards showing.
+       2. user can click the card its go to movie details page.
+       3. in this details page below timings showing with theatre name if user click that timings its go to seats page.
 
-        1. View review features : (completed ✅)
+    - Expected result :
 
-        1. The user can view the features in review page.
+       1. View Movie cards features : (completed ✅) 
 
-    
+       1. The user can view the features in movie cards page.
 
-  ### View movie cards
-     - Scenario 1 : Successfully view movie cards.
-     - Steps : 
-        1. Without login First see our movie card.
-        2. Navigate to the movie card page.
-        3. View the list of movie card.
-    
-  - Expected result :
-        
-        1.View movie cards features : (completed ✅) 
+    ### View Movie Form
+    - Scenario 1 : Successfully view Movie cards.
+    - Steps :
+         1. In the movie form page admin can fill details about movie.
+         2. After creating in home page card created then click that card it go movie detail page.
+         3. In this page what admin entered in movie form that all are shown.
 
-        1. The user can view the list of movie cards.
+    - Expected result :
+
+       1. View home page movie cards features : (completed ✅) 
+
+       1. The user can view the cards in home page.
 
   ### View movie details
      - Scenario 1 : Successfully view movie card details.
      - Steps :</h3>
          1. Without login First see our movie card details.
          2. Navigate to the movie card page.
-         3. Click the movie of user choice then the page redirect to movie detail page.
-         4. View the list of movie card details.
-   
+         3. View the list of movie card details.
+         4. Click the movie of user choice then the page redirect to movie detail page.
+            
    - Expected result :
 
         1. View movie details features : (completed ✅)
 
         1. The user can view the movie details page.
 
-   ### Book a movie
+   <!-- ### Book a movie
       - Scenario 1 : Successfully booked movie.
       - Steps :
          1.  Login in as a user.
@@ -127,7 +125,7 @@
         1. The user is redirected to Book Tickets page.
         2. This go to theater owner page he accepted finished.
         3. One popup came Successfully booked tickets.
-        4. An order confirmation email is sent to the user's email address.
+        4. An order confirmation email is sent to the user's email address. -->
 
         
 
