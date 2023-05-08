@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <script src="./js/jquerymin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://smtpjs.com/v3/smtp.js" integrity="sha256-/DPGssear6kw6EGWKuPCW/j1bLwg7Ej8Kw3dCqbuI7Y="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/css/seats.css">
+
+</head>
+
+<body class="opac">
+    <div class="movie-container">
+        <label>Pick a movie</label>
+        <select id="movie">
+            <option value="60">Eternals (60rs)</option>
+            <option value="50">Jail (50rs)</option>
+            <option value="40">Ikk (40rs)</option>
+            <option value="40">kurup (40rs)</option>
+            <option value="60">Maanadu (60rs)</option>
+            <option value="50">Spider-Man (50rs)</option>
+            <option value="40">Anti-Indian (40rs)</option>
+            <option value="40">Bachelor (40rs)</option>
+            <option value="60">Chandigarh (60rs)</option>
+            <option value="50">Clifford (50rs)</option>
+            <option value="40">Dune (40rs)</option>
+            <option value="40">Encanto (40rs)</option>
+            <option value="60">Maraikkayar (60rs)</option>
+            <option value="50">Muddy (50rs)</option>
+            <option value="40">Murungakkai-Chips (40rs)</option>
+            <option value="40">Puspha (40rs)</option>
+            <option value="60">Resident-Evil (60rs)</option>
+            <option value="50">Sooriyavanshi (50rs)</option>
+        </select>
+    </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+
+        </div>
+
+
+    </div>
+
+    <p class="text">
+        you have selected <span id="count">0</span> seats for a price of Rs <span id="total">0</span>
+    </p>
+
+    <div>
+        <!-- <button class="back"><a href="../pages/spider.html">Back</a></button> -->
+        <button class="proceed" onclick="onTicket()">Proceed</button>
+    </div>
+
+    <div class="check" id="check"></div>
+
+
+    <!-- card Details------------------------------------------------------------------------------------------>
+
+
+    <div class="bookBg">
+        <form>
+            <div class="bms"><img src="https://github.com/fwsa-batch2/mohamed.musaraf__web_project/blob/main/assets/img/logo.png?raw=true" alt="logo"></div>
+            <em class="fas fa-times-circle show"></em>
+            <div class="ticketDetail">
+                <div><strong>SEAT NO :</strong> <span class="noSeat"></span> </div><br>
+                <div><strong>Amount Payable : RS</strong> <span class="seatPrice"></span></div>
+            </div>
+            <hr>
+            <div class="cards">
+                <div class="card">
+                    <h3>Card Number</h3>
+                    <div class="visa"><em class="fab fa-cc-visa"></em></div>
+                    <input type="number" class="cardInt" placeholder="XXXXXXXXXXXX4151" maxlength="16" required />
+                </div>
+                <div class="expiry">
+                    <h4>Expiry Date</h4>
+                    <input type="tel" class="cardIntExp" placeholder="01/24" minlength="5" maxlength="5" required>
+                </div>
+                <div class="cvv">
+                    <h4>CVV</h4>
+                    <input type="tel" class="cardIntCvv" placeholder="333" minlength="3" maxlength="3" required>
+                </div>
+                <div class="cardHolder">
+                    <h4>Card Holder Name</h4>
+                    <input type="text" class="cardIntName" placeholder="Virat Kohli" title="Please Enter Your Name"
+                        minlength="3" maxlength="20" required>
+                </div>
+                <div class="pay">
+                    <button type="submit" class="paynow" id="paynow">Pay Now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="otp">
+        <div class="bms1"><img src="https://github.com/fwsa-batch2/mohamed.musaraf__web_project/blob/main/assets/img/logo.png?raw=true" alt="logo"></div>
+        <em class="fas fa-times-circle show1"></em>
+        <div class="generateOtp">
+            <h2 class="revealOtp" onclick="otpGenerate()">Click to Sent OTP</h2>
+        </div>
+        <div class="otpInput">
+            <input type="number" id="num" required><br>
+            <button type="submit" class="closeOtp" onclick="verifyOtp()">Verify OTP</button>
+        </div>
+        <div class="otpAlert">
+
+        </div>
+    </div>
+    <script src="./js/seats.js"></script>
+    <script src="./js/bookticket.js"></script>
+</body>
+
+</html>

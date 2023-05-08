@@ -51,11 +51,15 @@ body{
 }
 
 .img1{
-    width: 400px;
-    height: 250px;
+    width: 700px;
+    height: 450px;
     border: 5px solid wheat;
     border-radius: 20px;
+    margin-top: 30px;
     
+}
+.row1{
+        display: flex;
 }
 h2{
     font-weight: bold;
@@ -69,28 +73,15 @@ p{
     color: white;
     width: 300px;
 }
-.vikram{
-    margin-top: 60px;
-}
-.text1{
-        margin-left: 430px;
-        margin-top: -280px;
-}
 
 .img2{
-    width: 400px;
-    height: 250px;
+    width: 700px;
+    height: 450px;
     border: 5px solid wheat;
-    border-radius: 20px; 
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
       
-}
-.text2{
-    margin-left: 430px;
-    margin-top: -280px;
-}
-.thunivu{
-    margin-left: 750px;
-    margin-top: -230px;
 }
 
 .img3{

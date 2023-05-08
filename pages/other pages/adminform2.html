@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form class="form">
+
+            <label>Enter UUID</label>
+            <input type="text" id="uuid">
+            <button type="submit" id="find_Movie_detail">Find movie</button>
+
+            <label>Name</label>
+            <input type="text" id="name">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Password</label>
+            <input type="password" id="password">
+
+            <!-- <label>Dates</label>
+                <input type="date" id="Dates">
+
+                <label>Actors</label>
+                <input type="text" id="Actors">
+
+                <label>Director</label>
+                <input type="text" id="Director">
+
+                <label>Music_Director</label>
+                <input type="text" id="MusicDirector">
+
+                <label>Synopsis</label>
+                <input type="text" id="Synopsis">
+
+                <label>Image url</label>
+                <input type="url" id="image_url"> -->
+
+            <!-- <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                <option value="">am</option>
+                <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                <option value="">am</option>
+                <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                <option value="">am</option>
+                <option value="">pm</option>
+                </select>
+
+                <label for="">timing</label>
+                <input type="time">
+
+                <select name="" id="timing">
+                <option value="">am</option>
+                <option value="">pm</option>
+                </select> -->
+
+            <!-- <label>link file</label>
+                <input type="text" id="link_file"> -->
+
+            <button type="submit" id="edit">Edit details</button>
+            <button type="submit" id="delete">Delete Details</button>
+
+        </form>
+
+        <script>
+                //get value from local storage
+                const form = document.querySelector(".form");
+                const unique_id = document.getElementById("uuid");
+
+                // let Movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
+
+                const findAdminDetails = document.getElementById("find_Admin_detail");
+                const name = document.getElementById("name");
+                const email = document.getElementById("email");
+                const password = document.getElementById("password");
+                // const language = document.getElementById("Language")
+                // const actors = document.getElementById("Actors")
+                // const director = document.getElementById("Director")
+                // const music_director = document.getElementById("MusicDirector")
+                // const synopsis = document.getElementById("Synopsis")
+                // const timing = document.getElementById("Timing")
+                // const image_url = document.getElementById("image_url")
+                // const link_file = document.getElementById("link_file")
+
+                findAdminDetails.addEventListener("click", (event) => {
+                  event.preventDefault();
+                  const uniqueId = unique_id.value;
+                  const Admin_detail = JSON.parse(localStorage.getItem("Admin_detail"));
+                  console.log(Admin_detail);
+                  const movie = Admin_detail.find((details) => details.uuid === uniqueId);
+
+                  if (admin) {
+                    name.value = admin.name;
+                    email.value = admin.email;
+                    password.value = admin.password;
+                    // language.value = admin.language;
+                    // actors.value = admin.actors;
+                    // director.value = admin.director;
+                    // music_director.value = admin.music_Director;
+                    // synopsis.value = admin.synopsis;
+                    // timing.value = admin.timing;
+                    // image_url.value = admin.image_url;
+                    // link_file.value = admin.link_file;
+
+                    document.getElementById("edit").addEventListener("click", (event) => {
+                      event.preventDefault();
+
+                      const adminName = name.value;
+                      adminEmail = email.value;
+                      adminPassword = password.value;
+                      // movLanguage = language.value;
+                      // movActors = actors.value;
+                      // movDirector = director.value;
+                      // movMusicDirector = music_director.value;
+                      // movSynopsis = synopsis.value;
+                      // movTiming = timing.value;
+                      // movLinkFile = image_url.value;
+                      // movImageUrl = link_file.value;
+
+                      // Update movie deatils in localstorage
+                      admin.name = adminName;
+                      admin.email = adminEmail;
+                      admin.password = adminPassword;
+                      // admin.language = movLanguage;
+                      // admin.actors = movActors;
+                      // admin.director = movDirector;
+                      // admin.music_director = movMusicDirector;
+                      // admin.synopsis = movSynopsis;
+                      // admin.timing = movTiming;
+                      // admin.image_url = movLinkFile;
+                      // admin.link_file = movImageUrl;
+                      localStorage.setItem("Admin_detail", JSON.stringify(Admin_detail));
+
+                      alert("Updated admin details successfully!!✅");
+
+                      document.querySelector("form").reset();
+                      document.getElementById("edit").setAttribute("disabled", true);
+                    });
+  }
+                });
+
+                //delete page
+                //  delete page
+                document.getElementById("delete").addEventListener("click", (event) => {
+                  event.preventDefault();
+
+                  const uniqueId = unique_id.value;
+                  const Admin_detail = JSON.parse(localStorage.getItem("Admin_detail"));
+                  const adminIndex = Admin_detail.findIndex(
+    (detail) => detail.uuid === uniqueId
+                  );
+
+                  if (adminIndex > -1) {
+                    Admin_detail.splice(adminIndex, 1);
+                    localStorage.setItem("Admin_detail", JSON.stringify(Admin_detail));
+                    alert("Admin details deleted successfully");
+                    document.querySelector("form").reset();
+  }
+                });
+        </script>
+
+    </body>
+
+</html>

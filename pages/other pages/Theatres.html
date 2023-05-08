@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THEATRES PAGE</title>
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./pages/other pages/js/main.js"></script>
+
+    </head>
+
+            <section>
+                
+                <div class="movies-one"></div> 
+                <div class="movies-two"></div>
+                <div class="movies-three"></div>
+                <div class="movies-four"></div>
+
+            </section>
+       
+            <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Quick links</h3>
+                        <a href="./index.html">
+                            <i class="fas fa-chevron-right"></i> Home 
+                        </a>
+                        <a href="/pages/other pages/Trailer.html">
+                            <i class="fas fa-chevron-right"></i> Trailers 
+                        </a>
+                        <a href="/pages/other pages/about.html">
+                            <i class="fas fa-chevron-right"></i> About us 
+                        </a>
+                        <a href="/pages/other pages/Theatres.html">
+                            <i class="fas fa-chevron-right"></i> Cinemas 
+                        </a>    
+                    </div>
+                    <div class="box">
+                        <h3>contact info</h3>
+                        <a href="#">
+                            <i class="fas fa-phone"></i> +91-8939470586 
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> mohammedirfan.rahamthulla@fssa.freshworks.com 
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i> Chennai-603202 
+                        </a>
+                    </div>
+                    <div class="box">
+                        <h3>follow us</h3>
+                        <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f"></i> facebook 
+                        </a>
+                        <a href="https://twitter.com/Mohammed_Irfu?s=09">
+                            <i class="fab fa-twitter"></i> twitter 
+                        </a>
+                        <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM=">
+                            <i class="fab fa-instagram"></i> instagram 
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264">
+                            <i class="fab fa-linkedin"></i> linkedin 
+                        </a>
+                    </div>
+                </div>
+                <div class="credit">
+                    Created by <span> Mr. Irfu</span> | All Rights Reserved 
+                </div>
+            </section>
+            </main>
+            <script src="./js/header.js"></script>
+            <script>
+                        const movie_row1 = JSON.parse(localStorage.getItem("Theatre_detail"));
+                        for (i = 0; i <= movie_row1.length - 1; i++) {
+                          let div_movielist;
+                          let anchor;
+                          let image;
+                          let para;
+
+                          div_movielist = document.createElement("div");
+                          div_movielist.setAttribute("class", "movielist");
+                          document.querySelector("div.movies-one").append(div_movielist);
+
+                          anchor = document.createElement("a");
+                          // anchor.setAttribute("href",`./pages/other pages/details.html?id=${movie_row1[i]["uuid"]}`);
+                          anchor.setAttribute("href", `./details2.html?uuid=${movie_row1[i].uuid}`);
+                          div_movielist.append(anchor);
+
+                          image = document.createElement("img");
+                          image.setAttribute("src", movie_row1[i].image_link);
+                          anchor.append(image);
+
+                          para = document.createElement("p");
+                          para.innerText = movie_row1[i].movie_name;
+                        
+                          div_movielist.append(para);
+                        }
+            </script>
+
+            <script src="./js/theatreform.js"></script>
+
+        </body>
+</html>

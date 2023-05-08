@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCYEE7Q_BoyYH7-4627KY3v3CP0OEymfkZg&usqp=CAU);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCYEE7Q_BoyYH7-4627KY3v3CP0OEymfkZg&usqp=CAU); */
 }
 h2{
     color: white;
@@ -56,4 +56,55 @@ hr{
 }
 h5{
     color: white;
+}
+.footer .box-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:5rem;
+    margin-right: .8rem;
+}
+.footer .box-container .box h3{
+    font-size: 20px;
+    color: gray;
+    padding: 1rem 0;
+    margin-left: 8.5rem;
+    
+}
+.footer .box-container .box h3:hover{
+    color:#FFCE26;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 20px;
+    color: gray;
+    padding: 1rem 0;
+    margin-right: 2rem;
+    margin-left: 7.5rem;
+    text-decoration: none;    
+}
+
+.footer .box-container .box a:hover{
+    color: #FFCE26;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: gray;
+}
+.footer .box-container .box a:hover i{
+    padding-right:1rem;
+    color: #FFCE26;
+}
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 20px;
+  color: gray;
+    border-top: .1rem solid gray;
+}
+.footer .credit span{
+    color:var(--green);
 }
