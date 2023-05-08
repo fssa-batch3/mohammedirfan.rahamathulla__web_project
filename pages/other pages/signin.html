@@ -1,19 +1,19 @@
  <!DOCTYPE html>
 
 <head lan="eng">
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SIGN IN</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="../../assets/css/signup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/signup.css">
 
 </head>
 
 <body>
 
-  <header>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
     * {box-sizing: border-box;}
     
     body {
@@ -39,7 +39,6 @@
       margin-left: 10px;
       
     }
-    
     
     .topnav a:hover {
       background-color: #9c9696;
@@ -100,104 +99,122 @@
     }
     </style>
     </head>
-    <body>
+        <body>
     
-    <div class="topnav">
-        <a href="../../index.html" class="logo"> <i class="fa fa-ticket"></i>IRFU TICKETS</a>
-      <a href="./Theatres.html">Cinemas</a>
-      <a href="./movielist.html">Movies list</a>
-      <a href="./Trailer.html">Trailers</a>
-      <a href="./review.html">Review page</a>         
-      <a href="./signup.html">Signup</a>
-      <a href="./signin.html">Signin</a>
+            <div class="topnav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa fa-ticket"></i>IRFU TICKETS
+                </a>
+                <a href="./Theatres.html">Cinemas</a>
+                <a href="./movielist.html">Movies list</a>
+                <a href="./Trailer.html">Trailers</a>
+                <a href="./review.html">Review page</a>         
+                <a href="./signup.html">Signup</a>
+                <a href="./signin.html">Signin</a>
     
-    </div> 
+            </div> 
   </header>   
-    <div class="main">
+            <div class="main">
 
-        <h1>BOOK IRFU TICKETS</h1>
-<form role="form" onsubmit="signIn(event)">
-        <div class="input">
-            <h2>SIGN IN</h2>
-
+                <h1>BOOK IRFU TICKETS</h1>
+                <form role="form" onsubmit="signIn(event)">
+                    <div class="input">
+                        <h2>SIGN IN</h2>
             
-            <div class="email" >
-                <input required type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required id="emailid" />
-                <label>EMAIL</label>
+                        <div class="email">
+                            <input required type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required id="emailid">
+                            <label>EMAIL</label>
+                        </div>
+
+                        <div class="email">
+                            <input required type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" placeholder="Enter your password" required id="password">
+                            <label>PASSWORD</label>
+                        </div>
+
+                        <button type="submit">SUBMIT</button>
+
+                    </div>
+                </form>
             </div>
 
-            
+            <script>
+        const signIn = (e) => {
+          const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-            <div class="email" >
-                <input required type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" placeholder="Enter your password" required id="password" />
-                <label>PASSWORD</label>
-            </div>
+          const userData = JSON.parse(localStorage.getItem("userData")) || [];
 
+          const exist =
+    userData.length &&
+    JSON.parse(localStorage.getItem("userData")).some(
+      (data) =>
+        data.email.toLowerCase() == email.toLowerCase() &&
+        data.password.toLowerCase() == password.toLowerCase()
+    );
 
-            
-
-            <button type="submit">SUBMIT</button>
-
-
-
-        </div>
-    </form>
-    </div>
-
-    <script>
-        const signIn = e => {
-            
-            let email = document.getElementById("email").value,
-                password = document.getElementById('password').value;
-
-            let userData = JSON.parse(localStorage.getItem('userData')) || [];
-
-            let exist = userData.length && 
-            JSON.parse(localStorage.getItem('userData')).some(data =>
-            data.email.toLowerCase() == email.toLowerCase()&& 
-            data.password.toLowerCase() == password.toLowerCase()
-            );
-
-            if(!exist){
-                alert("Incorrect User Credentials");
-                // document.querySelector('form').reset();
-            }
-            else{
-                localStorage.setItem("unique_id", JSON.stringify(email))
-                alert("Your Login is Successful");
-                location.href = "./profile.html";
-            }
-            e.preventDefault();
-            
-        }
+          if (!exist) {
+            alert("Incorrect User Credentials");
+            // document.querySelector('form').reset();
+          } else {
+            localStorage.setItem("unique_id", JSON.stringify(email));
+            alert("Your Login is Successful");
+            location.href = "../../index.html";
+          }
+          e.preventDefault();
+        };
     </script>
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>Quick links</h3>
-            <a href="./index.html"> <i class="fas fa-chevron-right"></i> Movies </a>
-            <a href="./pages/other pages/Trailer.html"> <i class="fas fa-chevron-right"></i> Trailers </a>
-            <a href="./pages/other pages/about.html"> <i class="fas fa-chevron-right"></i> About us </a>
-            <a href="./pages/other pages/Theaters.html"> <i class="fas fa-chevron-right"></i> Theaters </a>    
-        </div>
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +91-8939470586 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> mohammedirfan.rahamthulla@fssa.freshworks.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai-603202 </a>
-        </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="https://twitter.com/Mohammed_Irfu?s=09"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM="> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264"> <i class="fab fa-linkedin"></i> linkedin </a>
-        </div>
-    </div>
-    <div class="credit"> Created by <span> Mr. Irfu</span> | All Rights Reserved </div>
-</section>
+    
+            <section class="footer">
 
-</body>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Quick links</h3>
+                        <a href="./index.html">
+                            <i class="fas fa-chevron-right"></i> Movies 
+                        </a>
+                        <a href="./pages/other pages/Trailer.html">
+                            <i class="fas fa-chevron-right"></i> Trailers 
+                        </a>
+                        <a href="./pages/other pages/about.html">
+                            <i class="fas fa-chevron-right"></i> About us 
+                        </a>
+                        <a href="./pages/other pages/Theaters.html">
+                            <i class="fas fa-chevron-right"></i> Theaters 
+                        </a>    
+                    </div>
+                    <div class="box">
+                        <h3>contact info</h3>
+                        <a href="#">
+                            <i class="fas fa-phone"></i> +91-8939470586 
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> mohammedirfan.rahamthulla@fssa.freshworks.com 
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i> Chennai-603202 
+                        </a>
+                    </div>
+                    <div class="box">
+                        <h3>follow us</h3>
+                        <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f"></i> facebook 
+                        </a>
+                        <a href="https://twitter.com/Mohammed_Irfu?s=09">
+                            <i class="fab fa-twitter"></i> twitter 
+                        </a>
+                        <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM=">
+                            <i class="fab fa-instagram"></i> instagram 
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264">
+                            <i class="fab fa-linkedin"></i> linkedin 
+                        </a>
+                    </div>
+                </div>
+                <div class="credit">
+                    Created by <span> Mr. Irfu</span> | All Rights Reserved 
+                </div>
+            </section>
 
+        </body>
 
 </html>

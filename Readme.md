@@ -98,7 +98,7 @@
 
   ### View movie details
      - Scenario 1 : Successfully view movie card details.
-     - Steps :</h3>
+     - Steps :
          1. Without login First see our movie card details.
          2. Navigate to the movie card page.
          3. View the list of movie card details.
@@ -109,6 +109,13 @@
         1. View movie details features : (completed ✅)
 
         1. The user can view the movie details page.
+
+   ### Admin Register/Login
+      - Scenario 1 : Successfully view movie form.
+      - Steps :
+            1. Admin register details.
+            2. then go to login page.
+            3. then go to movie form admin can fill details in the movie form card created in home page.
 
    <!-- ### Book a movie
       - Scenario 1 : Successfully booked movie.

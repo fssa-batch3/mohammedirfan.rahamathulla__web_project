@@ -1,108 +1,102 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-</head>
+    </head>
 
-<body>
+    <body>
         <form class="form">
 
-                <label>Enter UUID</label>
-                <input type="text" id="uuid">
-                <button type="submit" id="find_Movie_detail">Find movie</button>
+            <label>Enter UUID</label>
+            <input type="text" id="uuid">
+            <button type="submit" id="find_Movie_detail">Find movie</button>
 
-                <label>Movie_name</label>
-                <input type="text" id="Movie_name">
+            <label>Movie_name</label>
+            <input type="text" id="Movie_name">
 
-                <input type="checkbox" id="Tamil">
-                <label>Tamil</label>
+            <input type="checkbox" id="Tamil">
+            <label>Tamil</label>
     
-                <input type="checkbox" id="English">
-                <label>English</label>
-                
+            <input type="checkbox" id="English">
+            <label>English</label>
 
-                <button type="submit" id="edit">Edit details</button>
-                <button type="submit" id="delete">Delete Details</button>
+            <button type="submit" id="edit">Edit details</button>
+            <button type="submit" id="delete">Delete Details</button>
 
         </form>
 
         <script>
                 //get value from local storage
-                const form = document.querySelector('.form');
+                const form = document.querySelector(".form");
                 const unique_id = document.getElementById("uuid");
 
                 // let Movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
 
                 const findMovieListDetails = document.getElementById("find_Movie_list_detail");
-                const movie_name = document.getElementById("Movie_name")
-                const tamil = document.getElementById("Tamil")
-                const english = document.getElementById("English")
+                const movie_name = document.getElementById("Movie_name");
+                const tamil = document.getElementById("Tamil");
+                const english = document.getElementById("English");
 
                 findMovieListDetails.addEventListener("click", (event) => {
-                        event.preventDefault()
-                        const uniqueId = unique_id.value;
-                        const Movielist_detail = JSON.parse(localStorage.getItem('Movielist_detail'));
-                        console.log(Movielist_detail);
-                        const movie = Movielist_detail.find(details =>
-                                details.uuid === uniqueId
-                        );
+                  event.preventDefault();
+                  const uniqueId = unique_id.value;
+                  const Movielist_detail = JSON.parse(localStorage.getItem("Movielist_detail"));
+                  console.log(Movielist_detail);
+                  const movie = Movielist_detail.find((details) => details.uuid === uniqueId);
 
-                        if (movie) {
-                                movie_name.value = movie.movie_name;
-                                tamil.value = movie.tamil;
-                                english.value = movie.english;
+                  if (movie) {
+                    movie_name.value = movie.movie_name;
+                    tamil.value = movie.tamil;
+                    english.value = movie.english;
 
-                                document.getElementById("edit").addEventListener("click", (event) => {
-                                        event.preventDefault();
+                    document.getElementById("edit").addEventListener("click", (event) => {
+                      event.preventDefault();
 
-                                        let movName = movie_name.value;
-                                        movTamil = tamil.value;
-                                        movEnglish = english.value;
+                      const movName = movie_name.value;
+                      movTamil = tamil.value;
+                      movEnglish = english.value;
 
-                                        // Update movie deatils in localstorage
-                                        movie.movie_name = movName;
-                                        movie.tamil = movTamil;
-                                        movie.english = movEnglish;
-                                        localStorage.setItem('Movielist_detail', JSON.stringify(Movielist_detail));
+                      // Update movie deatils in localstorage
+                      movie.movie_name = movName;
+                      movie.tamil = movTamil;
+                      movie.english = movEnglish;
+                      localStorage.setItem(
+        "Movielist_detail",
+        JSON.stringify(Movielist_detail)
+                      );
 
-                                        alert("Updated movielist details successfully!!✅")
+      alert("Updated movielist details successfully!!✅");
 
-                                        document.querySelector("form").reset();
-                                        document.getElementById("edit").setAttribute("disabled", true);
-                                }
-
-                                );
-
-                        }
+                      document.querySelector("form").reset();
+                      document.getElementById("edit").setAttribute("disabled", true);
+                    });
+  }
                 });
 
                 //delete page
                 //  delete page
                 document.getElementById("delete").addEventListener("click", (event) => {
-                        event.preventDefault();
+                  event.preventDefault();
 
-                        const uniqueId = unique_id.value;
-                        const Movielist_detail = JSON.parse(localStorage.getItem('Movielist_detail'));
-                        const movieListIndex = Movielist_detail.findIndex(detail =>
-                                detail.uuid === uniqueId
-                        );
+                  const uniqueId = unique_id.value;
+                  const Movielist_detail = JSON.parse(localStorage.getItem("Movielist_detail"));
+                  const movieListIndex = Movielist_detail.findIndex(
+    (detail) => detail.uuid === uniqueId
+                  );
 
-                        if (movieListIndex > -1) {
-                                Movielist_detail.splice(movieListIndex, 1);
-                                localStorage.setItem('Movielist_detail', JSON.stringify(Movielist_detail));
-                                alert("Movielist details deleted successfully");
-                                document.querySelector('form').reset();
-
-
-                        }
-
-                })
-
+                  if (movieListIndex > -1) {
+                    Movielist_detail.splice(movieListIndex, 1);
+                    localStorage.setItem("Movielist_detail", JSON.stringify(Movielist_detail));
+                    alert("Movielist details deleted successfully");
+                    document.querySelector("form").reset();
+  }
+                });
         </script>
 
-</body>
+    </body>
 
 </html>

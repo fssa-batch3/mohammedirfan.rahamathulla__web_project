@@ -11,6 +11,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
+  padding: 5px;
+  height: 60px;
 }
 
 .topnav a {
@@ -50,7 +52,7 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
-  height: 40px;
+  height: 33px;
 }
 
 @media screen and (max-width: 600px) {
@@ -102,6 +104,28 @@ body {
     70% {left: -300%;}
 } 
 
+.various{
+    background-color:white;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+.various a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    border-color:white;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.various a:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    color: #FFCE26;
+}
 .movies-one,.movies-two,.movies-three,.movies-four{
 margin: 1% 2%;
 /* height: 40vh; */
