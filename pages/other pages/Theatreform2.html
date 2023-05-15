@@ -9,99 +9,103 @@
         <link rel="stylesheet" href="../../assets/css/editmovieform.css">
     </head>
 
-    <body> 
+    <body>
       <div class="box">
+
+        <h2>Edit Theatre Form</h2>
         <form class="form">
 
-          <label>Enter UUID</label>
-          <input type="text" id="uuid">
-          <div class="btn1">
-                        <button type="submit" id="find_Theatre_detail">Find movie</button>
-          </div>
+            <label>Enter UUID</label>
+            <input type="text" id="uuid">
+            <div class="btn1">
+            <button type="submit" id="find_Theatre_detail">Find movie</button>
+            </div>
+
 
             <label>Theatre_name</label>
             <input type="text" id="theatre_name">
 
-            <div class="genrelabel"><label>Genre</label>
-              <input type="text" id="Genre">
-            </div>
-            <div>
-              <label>Language</label>
-              <input type="text" id="Language">
-            </div>
-  
-            <div>
-              <label>Dates</label>
-              <input type="date" id="Dates">
-            </div>
-  
-            <div>
-              <label>Actors</label>
-              <input type="text" id="Actors">
-            </div>
-  
-            <div>
-              <label>Director</label>
-              <input type="text" id="Director">
-            </div>
-  
-            <div>
-              <label>Music_Director</label>
-              <input type="text" id="MusicDirector">
-            </div>
-  
-            <div>
-              <label>Synopsis</label>
-              <input type="text" id="Synopsis">
-            </div>
-  
-            <div>
-              <label>Image url</label>
-              <input type="url" id="image_url">
-            </div>
-  
-            <div>
-              <label for="">Movie_name</label>
-              <input type="text" id="Movie_name">
-            </div>
-  
-            <div>
-              <label for="">timing</label>
-              <input type="time" id="morning_timing">
-            </div>
-      
-            <div>
-              <label for="">timing</label>
-              <input type="time" id="afternoon_timing">
-            </div>
-  
-            <div>
-              <label for="">timing</label>
-              <input type="time" id="evening_timing">
-            </div>
-      
-            <div>
-              <label for="">timing</label>
-              <input type="time" id="night_timing">
-            </div>
-                  
-            <div>
-              <label for="">Seats</label>
-              <input type="time" id="seats">
-            </div>
-  
-            <div>
-              <label>link file</label>
-              <input type="text" id="link_file">
-            </div>
-  
-            <div>
-              <button type="submit" id="edit">Edit details</button>
-              <button type="submit" id="delete">Delete Details</button>
-            </div>
-  
-          </form>
-      </div>
+         <div class="genrelabel"><label>Address</label>
+            <input type="text" id="Genre">
+          </div>
+
+          <div>
+            <label>Language</label>
+            <input type="text" id="Language">
+          </div>
+
+          <div>
+            <label>Dates</label>
+            <input type="date" id="Dates">
+          </div>
+
+          <div>
+            <label>Actors</label>
+            <input type="text" id="Actors">
+          </div>
+
+          <div>
+            <label>Director</label>
+            <input type="text" id="Director">
+          </div>
+
+          <div>
+            <label>Music_Director</label>
+            <input type="text" id="MusicDirector">
+          </div>
+
+          <div>
+            <label>Synopsis</label>
+            <input type="text" id="Synopsis">
+          </div>
+
+          <div>
+            <label>Image url</label>
+            <input type="url" id="image_url">
+          </div>
+
+          <div>
+            <label for="">Movie_name</label>
+            <input type="text" id="Movie_name">
+          </div>
+
+          <div>
+            <label for="">timing</label>
+            <input type="time" id="morning_timing">
+          </div>
+    
+          <div>
+            <label for="">timing</label>
+            <input type="time" id="afternoon_timing">
+          </div>
+
+          <div>
+            <label for="">timing</label>
+            <input type="time" id="evening_timing">
+          </div>
+    
+          <div>
+            <label for="">timing</label>
+            <input type="time" id="night_timing">
+          </div>
+                
+          <div>
+            <label for="">Seats</label>
+            <input type="time" id="seats">
+          </div>
+
+          <div>
+            <label>link file</label>
+            <input type="text" id="link_file">
+          </div>
+
+          <div>
+            <button type="submit" id="edit">Edit details</button>
+            <button type="submit" id="delete">Delete Details</button>
+          </div>
+
+        </form>
+    </div>
 
         <script>
                 //get value from local storage
@@ -199,7 +203,7 @@
 
                       localStorage.setItem("Theatre_detail", JSON.stringify(Theatre_detail));
 
-                      alert("Updated theatre details successfully!!✅");
+                      alert("Updated Theatre Details Successfully!!✅");
 
                       document.querySelector("form").reset();
                       document.getElementById("edit").setAttribute("disabled", true);
@@ -221,7 +225,7 @@
                   if (theatreIndex > -1) {
                     Theatre_detail.splice(theatreIndex, 1);
                     localStorage.setItem("Theatre_detail", JSON.stringify(Theatre_detail));
-                    alert("Theatre details deleted successfully");
+                    alert("Theatre Details Deleted Successfully");
                     document.querySelector("form").reset();
   }
                 });

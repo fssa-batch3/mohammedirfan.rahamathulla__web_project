@@ -1,7 +1,7 @@
 function upload(e) {
   e.preventDefault();
   // hear i collect value from details form
-  const movie_name = document.getElementById("Movie_name").value.trim();
+  const movie_name = document.getElementById("theatre_name").value.trim();
 
   genre = document.getElementById("Genre").value.trim();
   language = document.getElementById("Language").value.trim();
@@ -16,13 +16,11 @@ function upload(e) {
   afternoonTiming = document.getElementById("afternoon_timing").value;
   eveningTiming = document.getElementById("evening_timing").value;
   nightTiming = document.getElementById("night_timing").value;
-  theatreName = document.getElementById("theatre_name").value;
-  seats = document.getElementById("seats").value;
+  theatreName = document.getElementById("Movie_name").value;
   uuid = uuidv4();
 
   // hear i give var name for local storage data (initially there is no data so we mentioned or (||) symbol to get empty array)
-  const Theatre_detail =
-    JSON.parse(localStorage.getItem("Theatre_detail")) || [];
+  const Theatre_detail = JSON.parse(localStorage.getItem("Theatre_detail")) || [];
 
   // hear we give some condition for uploading details to restict same unique id
   const exist = Theatre_detail.some(
@@ -54,7 +52,6 @@ function upload(e) {
       eveningTiming,
       nightTiming,
       theatreName,
-      seats,
       uuid,
     });
     localStorage.setItem("unique_id", uuid);
@@ -62,11 +59,11 @@ function upload(e) {
 
     document.querySelector("form").reset();
     alert("Detail submitted Successfully✅");
-    location.href = "../other pages/Theatreform2.html";
+    location.href = "../other pages/theatreform2.html";
   }
   // if condition pass
   else {
-    alert("theatre detail already exist!!");
+    alert("Theatre Detail Already Exist!!");
     document.querySelector("form").reset();
   }
 }
