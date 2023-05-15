@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="../../assets/css/bookdetails.css">
+</head>
+<body>
+            <div class="box">
+                    <img src="https://igimages.gumlet.io/tamil/home/simbu301220_1.jpg?w=376&dpr=2.6" alt="">
+                    <h3>PATHU THALA</h3>
+                    <h4>Tamil - 2D</h4>
+                    <h5 id="hfive"></h5>
+                    <p>Price : 100</p>
+                   <a href="./confirmbook.html"><input type="button" value="Book"></a> 
+            </div>
+
+
+</body>
+<script>
+    let selectedseats = JSON.parse(window.localStorage.getItem("SelectedSeatsIndex"))
+    let hfive = document.getElementById("hfive");
+    hfive.innerHTML = "Seat no :" + selectedseats
+</script>
+</html>

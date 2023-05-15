@@ -26,7 +26,7 @@ div h2{
     color: white;
     text-align: center;
 }
-#Movie_name{
+#Theatre_name{
     margin-top: 20px;
 }
 label{
@@ -57,7 +57,7 @@ label{
 #image_url{
     margin-top: 20px;
 }
-#theatre_name{
+#Movie_name{
     margin-top: 20px;
 }
 #morning_timing{

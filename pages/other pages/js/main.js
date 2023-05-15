@@ -16,7 +16,10 @@ if (!movie_detail) {
         music_Director: "A.R. Rahman",
         synopsis:
           "Pathu Thala is a Tamil movie starring Silambarasan T. R. and Gautham Karthik in prominent roles. It is an action drama directed by Obeli N. Krishna and produced by Dr. Jayantilal Gada and K. E. Gnanavel Raja forming part of the crew.",
-        timing: "",
+          morningTiming : "11:15",
+          afternoonTiming : "01:15",
+          eveningTiming : "04:15",
+          theatreName:"Sundar Theatre",
         uuid: "de46612e-4ef2-4333-9fe5-9f15d4c955eb",
       },
       {
@@ -35,7 +38,10 @@ if (!movie_detail) {
         music_director: "Tyler Bates",
         synopsis:
           "John Wick (Keanu Reeves) takes on his most lethal adversaries yet in the upcoming fourth installment of the series. With the price on his head ever increasing, Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Osaka to Berlin.",
-        timing: "",
+          morningTiming : "11:00",
+          afternoonTiming : "02:00",
+          eveningTiming : "05:15",
+          theatreName : "Vetri Theatre",
         uuid: "55d10c81-ab23-48c9-9116-40256bf9df42",
       },
       {
@@ -51,6 +57,10 @@ if (!movie_detail) {
         music_Director: "Bheems Ceciroleo",
         synopsis:
           "Ravanasura is a drama film directed by Sudheer Varma, featuring Ravi Teja and Mandava Sai Kumar in prominent roles.",
+          morningTiming : "11:30",
+          afternoonTiming : "02:30",
+          eveningTiming : "05:30",
+          theatreName : "Rohini Theatre",
         timing: "",
         uuid: "52161c76-0519-4e62-9591-4e80bb656269",
       },
@@ -67,7 +77,10 @@ if (!movie_detail) {
         music_Director: "Ilayaraja",
         synopsis:
           "Viduthalai is a Tamil movie starring Vijay Sethupathi and Soori in prominent roles. It is a drama directed by Vetrimaaran.",
-        timing: "",
+          morningTiming : "11:15",
+          afternoonTiming : "01:15",
+          eveningTiming : "04:15",
+          theatreName : "Radha Theatre",
         uuid: "b6e81045-7309-48e8-9e92-331bcbf99638",
       },
       {
@@ -83,7 +96,10 @@ if (!movie_detail) {
         music_Director: "B.Ajaneesh Loknath",
         synopsis:
           "Gurudev Hoysala, an upright police officer, is transferred to Athani to investigate a case of a fellow missing officer. While working on the case, a young couple is brought to the station by one of his subordinates suspecting them of foul play.",
-        timing: "",
+          morningTiming : "12:15",
+          afternoonTiming : "03:15",
+          eveningTiming : "07:15",
+          theatreName : "Jothi Theatre",
         uuid: "c39885b4-8e04-41e7-b9cd-a85fdec90302",
       },
       {
@@ -98,7 +114,10 @@ if (!movie_detail) {
         music_Director: "Mithun Sharma",
         synopsis:
           "Bhola, a prisoner, is finally going home after 10 years of imprisonment to meet his young daughter. His journey gets difficult when he is arrested mid-way. At first, he is not aware of the grave situation he has got himself into but after a crazy incident takes place, he must travel a pathway full of crazy obstacles with death lurking around every corner.",
-        timing: "",
+          morningTiming : "11:15",
+          afternoonTiming : "01:15",
+          eveningTiming : "04:15",
+          theatreName : "Mayajaal",
         uuid: "8686ac0a-07b3-42f0-b11a-05696df65aec",
       },
       {
@@ -114,7 +133,10 @@ if (!movie_detail) {
         music_Director: "AR Rahman",
         synopsis:
           "Directed by Mani Ratnam Ponniyin Selvan - Part 2 features Vikram, Karthi and Aishwarya Bachchan in prominent roles.",
-        timing: "",
+          morningTiming : "10:00",
+          afternoonTiming : "01:00",
+          eveningTiming : "04:00",
+          theatreName : "Pvr Cinemas",
         uuid: "4773b171-b02e-4756-bb9b-854e1fa4c7aa",
       },
       {
@@ -129,7 +151,10 @@ if (!movie_detail) {
         music_Director: "GV Prakash Kumar",
         synopsis:
           "Rudhran is a Tamil movie starring Lawrence Raghavendra and Priya Bhavani Shankar in prominent roles. It is a drama directed by Kathireshan forming part of the crew.",
-        timing: "",
+          morningTiming : "11:15",
+          afternoonTiming : "02:15",
+          eveningTiming : "05:15",
+          theatreName : "Raj Theatre",
         uuid: "c64e3e2e-e02a-4aa0-92d9-e095a5b93412",
       },
     ])
