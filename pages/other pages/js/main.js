@@ -177,9 +177,9 @@ if (!movie_detail) {
       },
     ])
   );
-},
-const Theatre_detail = JSON.parse(localStorage.getItem("Theatre_detail"));
-if (!Theatre_detail) {
+}
+const theatre_detail = JSON.parse(localStorage.getItem("Theatre_detail"));
+if (!theatre_detail) {
   localStorage.setItem(
     "Theatre_detail",
     JSON.stringify([
@@ -222,3 +222,7 @@ if (!Theatre_detail) {
     ])
     );
   }
+
+
+
+
