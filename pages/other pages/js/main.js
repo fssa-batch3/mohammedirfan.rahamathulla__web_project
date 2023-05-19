@@ -157,6 +157,68 @@ if (!movie_detail) {
           theatreName : "Raj Theatre",
         uuid: "c64e3e2e-e02a-4aa0-92d9-e095a5b93412",
       },
+      {
+        actors: "Lawrence Raghavendra,Priya Bhavani Shankar",
+        dates: "",
+        director: "Kathireshan",
+        genre: "Thriller",
+        image_link: "https://static.toiimg.com/photo/94483777.cms?resizemode=4",
+        language: "Tamil",
+        link_file: "",
+        movie_name: "RUDHRAN",
+        music_Director: "GV Prakash Kumar",
+        synopsis:
+          "Rudhran is a Tamil movie starring Lawrence Raghavendra and Priya Bhavani Shankar in prominent roles. It is a drama directed by Kathireshan forming part of the crew.",
+          morningTiming : "11:15",
+          afternoonTiming : "02:15",
+          eveningTiming : "05:15",
+          theatreName : "Raj Theatre",
+        uuid: "c64e3e2e-e02a-4aa0-92d9-e095a5b93412",
+      },
     ])
   );
-}
+},
+const Theatre_detail = JSON.parse(localStorage.getItem("Theatre_detail"));
+if (!Theatre_detail) {
+  localStorage.setItem(
+    "Theatre_detail",
+    JSON.stringify([
+      {
+        actors: "",
+        afternoonTiming: "2:30",
+        dates:"",
+        director:"",
+        eveningTiming : "05:30",
+        genre : "Koyambedu Chennai - 600107",
+        image_link : "https://images.indianexpress.com/2022/12/Dhanush.jpg?resize=600,338",
+        language : "",
+        link_file: "",
+        morningTiming :"11:30",
+        movie_name : "ROHINI",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "There are only one screen in Rohini Theatre.",
+        theatreName : "Custody - Tamil(2D)",
+        uuid : "3a7c6382-ed3e-4dc3-8592-d8bd06d0a456",
+      },
+      {
+        actors: "",
+        afternoonTiming: "02:00",
+        dates:"",
+        director:"",
+        eveningTiming : "05:00",
+        genre : "8, Thiruvika Rd, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014",
+        image_link : "https://s01.sgp1.digitaloceanspaces.com/large/890563-wxhoacbhrp-1534318918.jpeg",
+        language : "",
+        link_file: "",
+        morningTiming :"11:00",
+        movie_name : "Sathyam",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "The company is often lauded for its premium quality and inexpensive pricing. Its theatres, primarily PVR Sathyam Cinemas, are often used by filmmakers for film premieres and audio launch events. Popcorn served at SPI Cinemas has received considerable praise from film goers and the media.",
+        theatreName : "Pichaikaran - 2 Tamil(2D)",
+        uuid : "da7c3eae-72d1-4fb1-937d-6fd8837b9412",
+      },
+    ])
+    );
+  }

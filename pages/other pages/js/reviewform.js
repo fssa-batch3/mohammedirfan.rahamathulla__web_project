@@ -27,7 +27,7 @@ function upload(e) {
   
     // hear we give some condition for uploading details to restict same unique id
     const exist = Review_detail.some(
-      (data) => data.movie_name == movie_name.toLowerCase()
+      (data) => data.movie_image == movie_image.toLowerCase()
       // data.Genre.toLowerCase() === Genre.toLowerCase() ||
       // data.Language.toLowerCase() === Language.toLowerCase() ||
       // data.Dates.toLowerCase() == Dates.toLowerCase() ||
@@ -40,7 +40,7 @@ function upload(e) {
     // if condition fail
     if (!exist) {
       Review_detail.push({
-        movie_name,
+        movie_image,
         title,
         language,
         moviedescription,

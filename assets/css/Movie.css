@@ -102,8 +102,22 @@ color: yellow;
     background-color: black;
     /* height:300%; */
 }
+.heading{
+    color: yellow; 
+   /* background-color: gray; */
+   cursor: pointer;
+   display: flex;
+   gap: 30px;
+   width: 1100px;
+   font-size: 18px;
+   font-weight: bold;
+   border: 3px solid wheat;
+   margin-left: 230px;
+   margin-top: 50px;
+   padding: 10px;
+   padding-left: 20px;
+}
 .theatre{
-    padding-top: 20px;
     margin-top: 40px;
     display: flex;
     align-items: center;
