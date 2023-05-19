@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorded Movies</title>
+    <link rel="stylesheet" href="../../assets/css/recordedmovies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Movie review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+     <section>
+<!--         
+        <img src="../../assets/Images/desktop-wallpaper-master-movie-backgrounds-master-movie-poster.jpg" alt="masterimg" id="img">
+
+        <div class="details" id="details">
+               <h1 id="title">MASTER - Tamil(2D)</h1>
+               <h3 id="budget">Grossover : 300 Crores</h3>
+               <p id="firstday">First day collection : 100 Crores</p>
+               <p id="firstweek">First week collection : 150 Crores</p>
+               <p id="time">Duration : 2hr 30mins</p>
+               <p id="stars">Stars : Vijay,Malavika Mohan,Vijay Sethupathi,Arjun Das</p>
+               <p id="rundate">Running date : 13/01/2021 - 13/03/2021</p>
+               <p id="totaldays">Total Days : 60</p>
+        </div> -->
+
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="./index.html">
+                    <i class="fas fa-chevron-right"></i> Home 
+                </a>
+                <a href="/pages/other pages/Trailer.html">
+                    <i class="fas fa-chevron-right"></i> Trailers 
+                </a>
+                <a href="/pages/other pages/about.html">
+                    <i class="fas fa-chevron-right"></i> About us 
+                </a>
+                <a href="/pages/other pages/Theatres.html">
+                    <i class="fas fa-chevron-right"></i> Cinemas 
+                </a>    
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">
+                    <i class="fas fa-phone"></i> +91-8939470586 
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope"></i> mohammedirfan.rahamthulla@fssa.freshworks.com 
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i> Chennai-603202 
+                </a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL">
+                    <i class="fab fa-facebook-f"></i> facebook 
+                </a>
+                <a href="https://twitter.com/Mohammed_Irfu?s=09">
+                    <i class="fab fa-twitter"></i> twitter 
+                </a>
+                <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM=">
+                    <i class="fab fa-instagram"></i> instagram 
+                </a>
+                <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264">
+                    <i class="fab fa-linkedin"></i> linkedin 
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="credit">
+            Created by <span> Mr. Irfu</span> | All Rights Reserved 
+    </div>
+
+    <script src="./js/header.js"></script>
+
+<script>
+     const Recorded_movies = JSON.parse(localStorage.getItem("Recorded_movies"));
+          img = document.createElement("img");
+          img.setAttribute("id","img");
+          img.setAttribute("src","../../assets/Images/desktop-wallpaper-master-movie-backgrounds-master-movie-poster.jpg");
+          img.setAttribute("alt","masterimg")
+          document.querySelector("section").append(img);
+
+          
+          div_details = document.createElement("div");
+          div_details.setAttribute("class","details");
+          div_details.setAttribute("id","details");
+          document.querySelector("section").append(div_details);
+
+         
+         h1_title = document.createElement("h1");
+         h1_title.setAttribute("id","title");
+         h1_title.innerText = "MASTER - Tamil(2D)";
+         div_details.append(h1_title);
+
+         h3_budget = document.createElement("h3");
+         h3_budget.setAttribute("id","budget");
+         h3_budget.innerText = "Grossover : 300 Crores";
+         div_details.append(h3_budget);
+ 
+         para_1 = document.createElement("p");
+         para_1.setAttribute("id","firstday");
+         para_1.innerText = "First day collection : 100 Crores";
+         div_details.append(para_1);
+
+         para_2 = document.createElement("p");
+         para_2.setAttribute("id","firstweek");
+         para_2.innerText = "First week collection : 150 Crores";
+         div_details.append(para_2);
+
+         para_3 = document.createElement("p");
+         para_3.setAttribute("id","time");
+         para_3.innerText = "Duration : 2hr 30mins";
+         div_details.append(para_3);
+
+         para_4 = document.createElement("p");
+         para_4.setAttribute("id","stars");
+         para_4.innerText = "Stars : Vijay,Malavika Mohan,Vijay Sethupathi,Arjun Das";
+         div_details.append(para_4);
+
+         para_5 = document.createElement("p");
+         para_5.setAttribute("id","rundate");
+         para_5.innerText = "Running date : 13/01/2021 - 13/03/2021";
+         div_details.append(para_5);
+
+         para_6 = document.createElement("p");
+         para_6.setAttribute("id","totaldays");
+         para_6.innerText = "Total Days : 60";
+         div_details.append(para_6);
+
+
+</script>
+
+</body>
+</html>

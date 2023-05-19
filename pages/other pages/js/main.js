@@ -4,18 +4,18 @@ if (!movie_detail) {
     "Movie_detail",
     JSON.stringify([
       {
-        actors: "Simbu,Sayeesha,Gautam karthik",
+        actors: "Actors : Simbu,Sayeesha,Gautam karthik",
         dates: "",
-        director: "Krishna",
-        genre: "Thriller",
+        director: "Director : Krishna",
+        genre: "Genre : Thriller",
         image_link:
           "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/pathu-thala-et00333005-1672646997.jpg",
-        language: "Tamil",
+        language: "Language : Tamil",
         link_file: "",
         movie_name: "PATHU THALA",
-        music_Director: "A.R. Rahman",
+        music_Director: " Music Director : A.R. Rahman",
         synopsis:
-          "Pathu Thala is a Tamil movie starring Silambarasan T. R. and Gautham Karthik in prominent roles. It is an action drama directed by Obeli N. Krishna and produced by Dr. Jayantilal Gada and K. E. Gnanavel Raja forming part of the crew.",
+          "Movie Description : Pathu Thala is a Tamil movie starring Silambarasan T. R. and Gautham Karthik in prominent roles. It is an action drama directed by Obeli N. Krishna and produced by Dr. Jayantilal Gada and K. E. Gnanavel Raja forming part of the crew.",
           morningTiming : "11:15",
           afternoonTiming : "01:15",
           eveningTiming : "04:15",
@@ -23,7 +23,7 @@ if (!movie_detail) {
         uuid: "de46612e-4ef2-4333-9fe5-9f15d4c955eb",
       },
       {
-        actors: "Bill Skarsgard,John Leguizamo,Keanu Reeves",
+        actors: " Actors : Bill Skarsgard,John Leguizamo,Keanu Reeves",
         date: "",
         dates: "",
         director: "Chad Stahelski",

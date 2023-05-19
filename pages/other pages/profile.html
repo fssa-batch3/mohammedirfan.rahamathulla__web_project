@@ -106,6 +106,7 @@ border: 1px solid #ccc;
 }
     }
     </style>
+  
     </head>
         <body>
     
@@ -249,11 +250,13 @@ border: 1px solid #ccc;
 
             logout_btn.addEventListener("click", logout);
 
-            function logout() {
-              localStorage.setItem("unique_id", "");
+      
+     function logout() {
+      localStorage.removeItem("unique_id");
 
-              location.href = "/index.html";
-            }
+      location.href = "/index.html";
+    }
+
         </script>
 
             </body>

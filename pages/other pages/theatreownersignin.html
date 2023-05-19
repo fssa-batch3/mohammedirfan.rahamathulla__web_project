@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <head lan="eng">
     <meta charset="utf-8">
@@ -137,33 +137,35 @@
                 </form>
             </div>
 
-            <script>const signIn = (e) => {
-        const email = document.getElementById("email").value;
+            <script>
+        const signIn = (e) => {
+          const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-        const theatreOwnerData =
-    JSON.parse(localStorage.getItem("theatreOwnerData")) || [];
+          const theatreOwnerData = JSON.parse(localStorage.getItem("TheatreOwnerData")) || [];
 
-        const exist =
-    theatreOwnerData.length &&
-    JSON.parse(localStorage.getItem("theatreOwnerData")).some(
+          const exist =
+          theatreOwnerData.length &&
+    JSON.parse(localStorage.getItem("TheatreOwnerData")).some(
       (data) =>
-        data.email.toLowerCase() == email.toLowerCase() &&
-        data.password.toLowerCase() == password.toLowerCase()
+        data.email.toLowerCase() === email.toLowerCase() &&
+        data.password.toLowerCase() === password.toLowerCase()
     );
 
-        if (!exist) {
-          alert("Incorrect User Credentials");
+          if (!exist) {
+            alert("Incorrect User Credentials");
             // document.querySelector('form').reset();
-        } else {
+          } else {
             localStorage.setItem("unique_id", JSON.stringify(email));
-          alert("Your Login is Successful");
-            location.href = "./profile.html";
-        }
-        e.preventDefault();
-};
+            alert("Your Login is Successful");
+            location.href = "../other pages/ownerprofile.html";
+          }
+          e.preventDefault();
+        };
     </script>
-            <section class="footer">
+    
+            <section class="footer"> 
+
                 <div class="box-container">
                     <div class="box">
                         <h3>Quick links</h3>
