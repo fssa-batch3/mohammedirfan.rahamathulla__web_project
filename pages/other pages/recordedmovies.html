@@ -12,10 +12,10 @@
 </head>
 <body>
      <section>
-<!--         
+<!--    <div class = "all">     
         <img src="../../assets/Images/desktop-wallpaper-master-movie-backgrounds-master-movie-poster.jpg" alt="masterimg" id="img">
-
-        <div class="details" id="details">
+        <div class="details" id="details"></div>
+      
                <h1 id="title">MASTER - Tamil(2D)</h1>
                <h3 id="budget">Grossover : 300 Crores</h3>
                <p id="firstday">First day collection : 100 Crores</p>
@@ -23,7 +23,7 @@
                <p id="time">Duration : 2hr 30mins</p>
                <p id="stars">Stars : Vijay,Malavika Mohan,Vijay Sethupathi,Arjun Das</p>
                <p id="rundate">Running date : 13/01/2021 - 13/03/2021</p>
-               <p id="totaldays">Total Days : 60</p>
+               <p id="totaldays">Total Days : 60</p></div>
         </div> -->
 
     </section>
@@ -83,18 +83,25 @@
     <script src="./js/header.js"></script>
 
 <script>
+    let Recorded_movies = JSON.parse(localStorage.getItem("Recorded_movies"));
+                        for (i = 0; i <= Recorded_movies.length - 1; i++){
      const Recorded_movies = JSON.parse(localStorage.getItem("Recorded_movies"));
+                        
+         div_all = document.createElement("div");
+         div_all.setAttribute("class","all");
+         document.querySelector("section").append(div_all);
+     
           img = document.createElement("img");
           img.setAttribute("id","img");
           img.setAttribute("src","../../assets/Images/desktop-wallpaper-master-movie-backgrounds-master-movie-poster.jpg");
           img.setAttribute("alt","masterimg")
-          document.querySelector("section").append(img);
+          div_all.append(img);
 
           
           div_details = document.createElement("div");
           div_details.setAttribute("class","details");
           div_details.setAttribute("id","details");
-          document.querySelector("section").append(div_details);
+          div_all.append(div_details);
 
          
          h1_title = document.createElement("h1");
@@ -136,7 +143,7 @@
          para_6.setAttribute("id","totaldays");
          para_6.innerText = "Total Days : 60";
          div_details.append(para_6);
-
+                        }
 
 </script>
 

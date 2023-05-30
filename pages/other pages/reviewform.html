@@ -4,18 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Form</title>
-    <link rel="stylesheet" href="../../assets/css/movieform.css">
+    <link rel="stylesheet" href="../../assets/css/reviewform.css">
 </head>
 <body>
-    <div>
+    <div class="all">
         <h2>Review Create Form</h2>
         <form role="form" onsubmit="upload(event)">
+
         <label>Movieimg</label>
         <input type="url" id="movie_img"><br>
-
+<div  class="title">
         <label>Title</label>
-        <input type="text" id="title"><br>
-
+        <input type="text"><br>
+</div>
         <label>Language</label>
         <input type="text" id="Language"><br>
 
@@ -55,9 +56,10 @@
 
         <label>3.Man comment</label>
         <input type="text" id="deepikacon"><br>
-
+ 
         <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
         <script src="./js/reviewform.js"></script>
+        
         <button type="submit">click</button>
     </form>
 

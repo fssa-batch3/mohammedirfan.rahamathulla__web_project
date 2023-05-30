@@ -174,15 +174,12 @@ if (!movie_detail) {
           eveningTiming : "05:15",
           theatreName : "Raj Theatre",
         uuid: "c64e3e2e-e02a-4aa0-92d9-e095a5b93412",
-      },
+      }
     ])
   );
 }
-const theatre_detail = JSON.parse(localStorage.getItem("Theatre_detail"));
-if (!theatre_detail) {
-  localStorage.setItem(
-    "Theatre_detail",
-    JSON.stringify([
+
+  localStorage.setItem("Theatre_detail",JSON.stringify([
       {
         actors: "",
         afternoonTiming: "2:30",
@@ -219,9 +216,116 @@ if (!theatre_detail) {
         theatreName : "Pichaikaran - 2 Tamil(2D)",
         uuid : "da7c3eae-72d1-4fb1-937d-6fd8837b9412",
       },
+      {
+        actors: "",
+        afternoonTiming: "02:30",
+        dates:"",
+        director:"",
+        eveningTiming : "05:30",
+        genre : "",
+        image_link : "https://cdn3.ticketnew.com/partners/img/Vettri_theatre/zoom2.jpg",
+        language : "",
+        link_file: "",
+        morningTiming :"11:00",
+        movie_name : "Vetri",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "Open since 1973, a cinema with 2 air-conditioned theatres screening Indian language movies.",
+        theatreName : "Rudhran - Tamil(2D)",
+        uuid : "",
+      },{
+        actors: "",
+        afternoonTiming: "02:30",
+        dates:"",
+        director:"",
+        eveningTiming : "05:30",
+        genre : "",
+        image_link : "https://s01.sgp1.digitaloceanspaces.com/large/890563-wxhoacbhrp-1534318918.jpeg",
+        language : "",
+        link_file: "",
+        morningTiming :"11:00",
+        movie_name : "Sathyam",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "Open since 1973, a cinema with 2 air-conditioned theatres screening Indian language movies.",
+        theatreName : "Rudhran - Tamil(2D)",
+        uuid : "",
+      },
+      {
+        actors: "",
+        afternoonTiming: "02:00",
+        dates:"",
+        director:"",
+        eveningTiming : "05:00",
+        genre : "8, Thiruvika Rd, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014",
+        image_link : "https://s01.sgp1.digitaloceanspaces.com/large/890563-wxhoacbhrp-1534318918.jpeg",
+        language : "",
+        link_file: "",
+        morningTiming :"11:00",
+        movie_name : "Sathyam",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "The company is often lauded for its premium quality and inexpensive pricing. Its theatres, primarily PVR Sathyam Cinemas, are often used by filmmakers for film premieres and audio launch events. Popcorn served at SPI Cinemas has received considerable praise from film goers and the media.",
+        theatreName : "Pichaikaran - 2 Tamil(2D)",
+        uuid : "da7c3eae-72d1-4fb1-937d-6fd8837b9412",
+      },
+      {
+        actors: "",
+        afternoonTiming: "02:00",
+        dates:"",
+        director:"",
+        eveningTiming : "05:00",
+        genre : "8, Thiruvika Rd, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014",
+        image_link : "https://s01.sgp1.digitaloceanspaces.com/large/890563-wxhoacbhrp-1534318918.jpeg",
+        language : "",
+        link_file: "",
+        morningTiming :"11:00",
+        movie_name : "Sathyam",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "The company is often lauded for its premium quality and inexpensive pricing. Its theatres, primarily PVR Sathyam Cinemas, are often used by filmmakers for film premieres and audio launch events. Popcorn served at SPI Cinemas has received considerable praise from film goers and the media.",
+        theatreName : "Pichaikaran - 2 Tamil(2D)",
+        uuid : "da7c3eae-72d1-4fb1-937d-6fd8837b9412",
+      },
+      {
+        actors: "",
+        afternoonTiming: "2:30",
+        dates:"",
+        director:"",
+        eveningTiming : "05:30",
+        genre : "Koyambedu Chennai - 600107",
+        image_link : "https://images.indianexpress.com/2022/12/Dhanush.jpg?resize=600,338",
+        language : "",
+        link_file: "",
+        morningTiming :"11:30",
+        movie_name : "ROHINI",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "There are only one screen in Rohini Theatre.",
+        theatreName : "Custody - Tamil(2D)",
+        uuid : "3a7c6382-ed3e-4dc3-8592-d8bd06d0a456",
+      },
+      {
+        actors: "",
+        afternoonTiming: "2:30",
+        dates:"",
+        director:"",
+        eveningTiming : "05:30",
+        genre : "Koyambedu Chennai - 600107",
+        image_link : "https://images.indianexpress.com/2022/12/Dhanush.jpg?resize=600,338",
+        language : "",
+        link_file: "",
+        morningTiming :"11:30",
+        movie_name : "ROHINI",
+        music_Director : "",
+        nightTiming : "",
+        synopsis : "There are only one screen in Rohini Theatre.",
+        theatreName : "Custody - Tamil(2D)",
+        uuid : "3a7c6382-ed3e-4dc3-8592-d8bd06d0a456",
+      }
     ])
     );
-  }
+  
 
 
 

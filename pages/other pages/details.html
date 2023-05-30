@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MOVIE DETAILS</title>
         <link rel="stylesheet" href="../../assets/css/Movie.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>        
@@ -27,7 +26,6 @@
                 <p id="friday2">MONDAY (29th May)</p>
             </div>
             <div class="main"></div>
-
             <section class="footer">
                 <div class="box-container">
                     <div class="box">
@@ -51,7 +49,7 @@
                             <i class="fas fa-phone"></i> +91-8939470586 
                         </a>
                         <a href="#">
-                            <i class="fas fa-envelope"></i> mohammedirfan.rahamthulla@fssa.freshworks.com 
+                            <i class="fas fa-envelope"></i> mohammedirfan.rahamathulla@fssa.freshworks.com 
                         </a>
                         <a href="#">
                             <i class="fas fa-map-marker-alt"></i> Chennai-603202 
@@ -78,14 +76,9 @@
                 </div>
             </section>  
            
-            <script>// let  movie_row1 = JSON.parse(localStorage.getItem('Movie_detail'));
-          // const urlParam = new URLSearchParams(window.location.search)
-          // const thisId = urlParam.get("id")
-          // const thisMovie = JSON.parse(localStorage.getItem("Movie_detail")).find((e)=> e.uuid == thisId)
-          // window.localStorage.setItem("image_link",JSON.stringify(thisMovie["image_link"]))
+<script>
 
-          const movie_row1 = JSON.parse(localStorage.getItem("Movie_detail"));
-
+const movie_row1 = JSON.parse(localStorage.getItem("Movie_detail"));
 console.log(movie_row1);
 const url = window.location.search;
 console.log(url);
@@ -96,22 +89,12 @@ console.log(username);
 const thisMovie = movie_row1.find((data) => data.uuid === username);
 console.log(thisMovie);
 
+localStorage.setItem("movieid",JSON.stringify(thisMovie["uuid"]));
+localStorage.setItem("theatreName",JSON.stringify(thisMovie["theatreName"]));
 const movie = thisMovie.movie_name;
 
 const thismovie = movie_row1.filter((data) => data.movie_name === movie);
 console.log(thismovie);
-// const urlParam= new URLSearchParams(window.location.search);
-// console.log(urlParams);
-// const user = urlParam.get("director");
-// console.log(user);
-// const thismovie = movie_row1.filter((data) => data["director"] === user);
-// console.log(thisMovie);
-
-          // const urlParam = new URLSearchParams(window.location.search)
-          // const thisId = urlParam.get("movie_name")
-          // console.log(thisId)
-          // const thisMovie = JSON.parse(localStorage.getItem("Movie_detail")).find((e)=> e.movie_name == thisId)
-          // window.localStorage.setItem("image_link",JSON.stringify(thisMovie["image_link"]))
 
           const div_img1 = document.createElement("div");
           div_img1.setAttribute("class", "img1");
@@ -132,10 +115,6 @@ console.log(thismovie);
           h2.innerText = thisMovie.movie_name;
           div_text.append(h2);
 
-          // let h3 = document.createElement("h3");
-          // h3.innerText = thisMovie["movie_name"]
-          // div_text.append(h3);
-          
           const p_genre = document.createElement("p");
           p_genre.innerText = thisMovie.genre;
           div_text.append(p_genre);
@@ -156,28 +135,6 @@ console.log(thismovie);
           p_synopsis.innerText = thisMovie.synopsis;
           div_text.append(p_synopsis);
 
-          // thisMovie
-
-// let theatre_list=
-// [{
-//               name:"PVR SKLS Galaxy mall,Redhills,chennai"
-//           },
-//         {
-//             name:"Vetri Dolby 4K,Chrompet,chennai"
-//         },
-//         {
-//             name:"Rohini,Koyambedu,chennai"
-//         },
-//         {
-//             name:"Janatha,Pallavaram,chennai"
-//         },
-//         {
-//             name:"Laurel mall,Paranur,chennai"
-//         }
-//       ]
-
-// let Movie_detail = JSON.parse(localStorage.getItem('Movie_detail'));
-
           for (let i = 0; i < thismovie.length; i++) {
             const div_theatre = document.createElement("div");
             div_theatre.setAttribute("class", "theatre");
@@ -189,14 +146,6 @@ console.log(thismovie);
             h2 = document.createElement("h2");
             h2.innerText = thismovie[i].theatreName;
             div_nametime.append(h2);
-
-            // p2 = document.createElement("p");
-            // p2.innerText = "12/10/2023";
-            // h2.append(p2);
-
-            // h3 = document.createElement("h3");
-            // h3.innerText="Tamil-2D";
-            // div_nametime.append(h3);
 
             div_time = document.createElement("div");
             div_time.setAttribute("class", "time");
@@ -233,14 +182,6 @@ console.log(thismovie);
             para3.innerText = thismovie[i].eveningTiming;
             a3.append(para3);
 
-            // a4 = document.createElement("a");
-            // a4.setAttribute("href", `./morning.html?id=${username}&show=${thismovie[i].nightTiming}`);
-            // div_time.append(a4);
-
-            // para4 = document.createElement("p");
-            // para4.innerText = thismovie[i].nightTiming;
-            // a4.append(para4);
-
             hr = document.createElement("hr");
           
             div_theatre.append(hr);
@@ -248,6 +189,7 @@ console.log(thismovie);
             document.querySelector("div.main").append(div_theatre);
           }
      </script>
+     
       <script src="./js/header.js"></script>
         </body>
 </html>
