@@ -169,16 +169,13 @@
                     });
   }
                 });
-
-                //delete page
-                //  delete page
                 document.getElementById("delete").addEventListener("click", (event) => {
                   event.preventDefault();
 
                   const uniqueId = unique_id.value;
                   const Review_detail = JSON.parse(localStorage.getItem("Review_detail"));
                   const reviewIndex = Review_detail.findIndex(
-    (detail) => detail.uuid === uniqueId
+                   (detail) => detail.uuid === uniqueId
                   );
 
                   if (reviewIndex > -1) {

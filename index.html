@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="/pages/other pages/js/main.js"></script>
+      
 ​
     </head>
 ​
@@ -29,10 +29,6 @@
                 <a href="/pages/other pages/recordedmovies.html">Recorded movies</a>
                 <a href="/pages/other pages/movielist.html">List of movies</a>
             </div>
-​
-            <a href="./pages/other pages/movieform.html"><button>Add Movie</button></a>
-            <a href="./pages/other pages/movieform2.html"><button>Edit Movie</button></a>
-            
 ​
             <h2 class="text">NOW SHOWING</h2>
                 
@@ -96,37 +92,42 @@
                 Created by <span> Mr. Irfu</span> | All Rights Reserved 
             </div>
         </section>
-            
+
+        
         <script src="./pages/other pages/js/header.js"></script>
+
+       
         <script>
+            console.log("Inba")
                         const movie_row1 = JSON.parse(localStorage.getItem("Movie_detail"));
-                        for (i = 0; i <= movie_row1.length - 1; i++) {
-                          let div_movielist;
+                        const list = document.querySelector("div.movies-one");
+                        console.log(movie_row1);
+                        let div_movielist;
                           let anchor;
                           let image;
                           let para;
-​
+                        for (i = 0; i < movie_row1.length; i++) {
                           div_movielist = document.createElement("div");
                           div_movielist.setAttribute("class", "movielist");
-                          document.querySelector("div.movies-one").append(div_movielist);
-​
+                          console.log(div_movielist);
                           anchor = document.createElement("a");
                           // anchor.setAttribute("href",`./pages/other pages/details.html?id=${movie_row1[i]["uuid"]}`);
-                          anchor.setAttribute("href",`./pages/other pages/details.html?uuid=${movie_row1[i].uuid}`
-  );
+                          anchor.setAttribute("href",`./pages/other pages/details.html?uuid=${movie_row1[i].uuid}`);
                           div_movielist.append(anchor);
-​
+
                           image = document.createElement("img");
                           image.setAttribute("src", movie_row1[i].image_link);
                           anchor.append(image);
-​
+
                           para = document.createElement("p");
                           para.innerText = movie_row1[i].movie_name;
                         
                           div_movielist.append(para);
+
+                          list.append(div_movielist);
                         }
             </script>
-​
+​ <script src="./pages/other pages/js/main.js"></script>
         <script src="./pages/other pages/js/movieform.js"></script>
 ​
     </body>

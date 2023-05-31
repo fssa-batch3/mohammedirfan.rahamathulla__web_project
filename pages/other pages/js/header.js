@@ -48,13 +48,4 @@ if (!unique_id) {
 } else {
   document.body.insertAdjacentHTML("afterbegin", after_login);
   //     location.href = "./pages/homepage/account.html"
-
-  const logout_btn = document.getElementById("logout");
-
-
-            logout_btn?.addEventListener("click", () =>{
-              localStorage.removeItem("unique_id");
-              document.body.innerHTML = before_login
-              location.href = "/index.html";
-            });
 }
