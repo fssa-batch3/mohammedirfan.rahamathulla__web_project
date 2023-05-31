@@ -1,81 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        
-  <title>Home page</title>
-</head>
-
-<body>
-<main>
-<div class="all-content">
- <header>
-    <div class="topnav">
-      <a href="#" class="logo"> <i class="fa fa-ticket"></i>IRFU TICKETS</a>
-      <a href="./pages/other pages/recordedmovies.html">Recorder Movies</a>
-      <a href="./pages/other pages/Trailer.html">Trailer</a>
-      <a href="./pages/other pages/review.html">Review</a>
-      <a href="./pages/other pages/about.html">About us</a>
-     
-    </div>        
-
-        <div class="buttons">
-          <a href="./pages/other pages/log.html">
-            <button id="log-in-button">Log in </button>
-          </a>
-          <br>
-        </div>
-
-        
-        <div id="sidebar">
-        
-          <div class="toggle-btn" onclick="togglemenu()">
-  
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-  
-                  <div class="profile-a">
-
-        </div>
-          <ul>
-            <div class="navigation">
-             
+        <script src="/pages/other pages/js/main.js"></script>
+​
+    </head>
+​
+    <body>
+​
+        <section>
+            <div class="image-slider">
+                <figure>
+                    <img src="https://images.indulgexpress.com/uploads/user/imagelibrary/2022/12/29/original/PonniyinSelvan2toreleaseonthisdatewatchteaserfeaturingAishwaryaRa.jpg" alt="ponniyin selvan -2 banner">
+                    <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/03/pjimage-2022-03-20t152556-1647770165.jpg" alt="dasara banner"> 
+                    <img src="https://i.ytimg.com/vi/qN3wfuPYTI4/maxresdefault.jpg" alt="bloodysweetbanner">     
+                    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/pathu-thala-et00333005-1672646997.jpg" alt="pathu thala banner">
+                </figure>
+                    
             </div>
-          </ul>
-      </div>
-  </header>
-      <div class="image-slider">
-        <figure>
-          <img src="data:image/jpeg;base64,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" alt="image not found" id="banner1">
-          <img src="https://www.filmibeat.com/imgh/560x292/2019/01/indian-2_154778571220.jpg" alt="image not found">
-          <img src="https://i.ytimg.com/vi/qN3wfuPYTI4/maxresdefault.jpg" alt="image not found">
-          <img src="https://images.indianexpress.com/2022/06/Jailer-concept-poster-1200by667.jpg" alt="image not found" id="banner1">
-        </figure>
-
-      </div>
-     
-      <div class="show-button">
-        <h2> Now showing </h2>
-      </div>
-
-      <div class="movie-list-container1">
-          <div class="movie-list-wrapper">
-                   <div class="movie-list"> </div>
-          </div>
-      </div>
-
-    </div>
-  </main>
-  <script src="./pages/other pages/js/mainn.js"> </script>
-</body>
-
+​
+            <div class="various">
+                <a href="/pages/other pages/recordedmovies.html">Recorded movies</a>
+                <a href="/pages/other pages/movielist.html">List of movies</a>
+            </div>
+​
+            <a href="./pages/other pages/movieform.html"><button>Add Movie</button></a>
+            <a href="./pages/other pages/movieform2.html"><button>Edit Movie</button></a>
+            
+​
+            <h2 class="text">NOW SHOWING</h2>
+                
+            <div class="movies-one"></div> 
+            <div class="movies-two"></div>
+            <div class="movies-three"></div>
+            <div class="movies-four"></div>
+​
+            <h2 class="text">UPCOMING SHOWING</h2>
+​
+            <div class="movies-two"></div> 
+​
+        </section>
+       
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="./index.html">
+                        <i class="fas fa-chevron-right"></i> Home 
+                    </a>
+                    <a href="/pages/other pages/Trailer.html">
+                        <i class="fas fa-chevron-right"></i> Trailers 
+                    </a>
+                    <a href="/pages/other pages/about.html">
+                        <i class="fas fa-chevron-right"></i> About us 
+                    </a>
+                    <a href="/pages/other pages/Theatres.html">
+                        <i class="fas fa-chevron-right"></i> Cinemas 
+                    </a>    
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#">
+                        <i class="fas fa-phone"></i> +91-8939470586 
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i> mohammedirfan.rahamathulla@fssa.freshworks.com 
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i> Chennai-603202 
+                    </a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL">
+                        <i class="fab fa-facebook-f"></i> facebook 
+                    </a>
+                    <a href="https://twitter.com/Mohammed_Irfu?s=09">
+                        <i class="fab fa-twitter"></i> twitter 
+                    </a>
+                    <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM=">
+                        <i class="fab fa-instagram"></i> instagram 
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264">
+                        <i class="fab fa-linkedin"></i> linkedin 
+                    </a>
+                </div>
+            </div>
+            <div class="credit">
+                Created by <span> Mr. Irfu</span> | All Rights Reserved 
+            </div>
+        </section>
+            
+        <script src="./pages/other pages/js/header.js"></script>
+        <script>
+                        const movie_row1 = JSON.parse(localStorage.getItem("Movie_detail"));
+                        for (i = 0; i <= movie_row1.length - 1; i++) {
+                          let div_movielist;
+                          let anchor;
+                          let image;
+                          let para;
+​
+                          div_movielist = document.createElement("div");
+                          div_movielist.setAttribute("class", "movielist");
+                          document.querySelector("div.movies-one").append(div_movielist);
+​
+                          anchor = document.createElement("a");
+                          // anchor.setAttribute("href",`./pages/other pages/details.html?id=${movie_row1[i]["uuid"]}`);
+                          anchor.setAttribute("href",`./pages/other pages/details.html?uuid=${movie_row1[i].uuid}`
+  );
+                          div_movielist.append(anchor);
+​
+                          image = document.createElement("img");
+                          image.setAttribute("src", movie_row1[i].image_link);
+                          anchor.append(image);
+​
+                          para = document.createElement("p");
+                          para.innerText = movie_row1[i].movie_name;
+                        
+                          div_movielist.append(para);
+                        }
+            </script>
+​
+        <script src="./pages/other pages/js/movieform.js"></script>
+​
+    </body>
 </html>
+​
