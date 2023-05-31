@@ -1,0 +1,51 @@
+*{
+    background-color:black ;
+}
+.box{
+    border: 5px solid wheat;
+    border-radius: 20px;
+    width: 400px;
+    height: 890px;
+    margin-top: 50px;
+    margin-left: 550px;
+}
+h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+label{
+    color: white;
+}
+#uuid{
+    margin-top: 20px;
+}
+.btn1{
+    color: black;
+    margin-top: -32px;
+    margin-left: 270px;
+}
+#Movie_name{
+    margin-top: 20px;
+}
+.genrelabel{
+    margin-top: 15px;
+}
+#Genre{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+div{
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+div input{
+    background-color: white;
+}
+div button{
+    background-color: #FFCE26;
+    font-weight: bold;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}

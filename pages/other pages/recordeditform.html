@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../../assets/css/editrecordedmovie.css">
+    </head>
+
+    <body>
+      <div class="box">
+
+        <h2>Edit Movie Form</h2>
+        <form class="form">
+
+            <label>Enter UUID</label>
+            <input type="text" id="uuid">
+            <div class="btn1">
+                          <button type="submit" id="find_Recorded_detail">Find movie</button>
+            </div>
+
+
+            <label>Movie Image</label>
+            <input type="text" id="img">
+
+            <label>Title</label>
+            <input type="text" id="title">
+          
+
+          <div>
+            <label>Gross Over</label>
+            <input type="text" id="budget">
+          </div>
+
+          <div>
+            <label>First Day Collection</label>
+            <input type="date" id="firstday">
+          </div>
+
+          <div>
+            <label>First Week Collection</label>
+            <input type="text" id="firstweek">
+          </div>
+
+          <div>
+            <label>Time</label>
+            <input type="text" id="time">
+          </div>
+
+          <div>
+            <label>Stars</label>
+            <input type="text" id="stars">
+          </div>
+
+          <div>
+            <label>Running Date</label>
+            <input type="text" id="rundate">
+          </div>
+
+          <div>
+            <label>Total Days</label>
+            <input type="url" id="totaldays">
+          </div>
+
+          <div>
+            <button type="submit" id="edit">Edit details</button>
+            <button type="submit" id="delete">Delete Details</button>
+          </div>
+
+        </form>
+    </div>
+
+        <script>
+                //get value from local storage
+                const form = document.querySelector(".form");
+                const unique_id = document.getElementById("uuid");
+
+                // let Movie_detail = JSON.parse(localStorage.getItem("Movie_detail"));
+
+                const findRecordedMovies = document.getElementById("find_Recorded_detail");
+                const movie_image = document.getElementById("img");
+                const title = document.getElementById("title");
+                const grossover = document.getElementById("budget");
+                const firstdaycollection = document.getElementById("firstday");
+                const firstweekcollection = document.getElementById("firstweek");
+                const time = document.getElementById("time");
+                const stars = document.getElementById("stars");
+                const runningdays = document.getElementById("rundate");
+                const totaldays = document.getElementById("totaldays");
+                
+                findRecordedDetails.addEventListener("click", (event) => {
+                  event.preventDefault();
+                  const uniqueId = unique_id.value;
+                  const Recorded_movies = JSON.parse(localStorage.getItem("Recorded_movies"));
+                  console.log(Recorded_movies);
+                  const movie = Recorded_movies.find((details) => details.uuid === uniqueId);
+                  console.log(movie);
+
+                  if (movie) {
+                    movie_image.value = movie.movie_image;
+                    title.value = movie.title;
+                    grossover.value = movie.grossover;
+                    firstdaycollection.value = movie.firstdaycollection;
+                    firstweekcollection.value = movie.firstweekcollection;
+                    time.value = movie.time;
+                    stars.value = movie.stars;
+                    runningdays.value = movie.runningdays;
+                    totaldays.value = movie.totaldays;
+
+                    document.getElementById("edit").addEventListener("click", (event) => {
+                      event.preventDefault();
+
+                      const movImage = movie_image.value;
+                      movTitle = title.value;
+                      movGrossover = grossover.value;
+                      movFirstDayCollection = firstdaycollection.value;
+                      movFirstWeekCollection = firstweekcollection.value;
+                      movTime = time.value;
+                      movStars = stars.value;
+                      movRunningDays = runningdays.value;
+                      // movTiming = timing.value;
+                      movTotalDays = totaldays.value;
+
+                      // Update movie deatils in localstorage
+                      movie.movie_image = movImage;
+                      movie.title = movTitle;
+                      movie.grossover = movGrossover;
+                      movie.firstdaycollection = movFirstDayCollection;
+                      movie.firstweekcollection = movFirstWeekCollection;
+                      movie.time = movTime;
+                      movie.stars = movStars;
+                      movie.runningdays = movRunningDays;
+                      // movie.timing = movTiming;
+                      movie.totaldays = movTotalDays;
+                     
+                      localStorage.setItem("Recorded_movies", JSON.stringify(Recorded_movies));
+
+                      alert("Updated recorded movies details successfully!!✅");
+
+                      document.querySelector("form").reset();
+                      document.getElementById("edit").setAttribute("disabled", true);
+                    });
+  }
+                });
+
+                //delete page
+                //  delete page
+                document.getElementById("delete").addEventListener("click", (event) => {
+                  event.preventDefault();
+
+                  const uniqueId = unique_id.value;
+                  const Recorded_movies = JSON.parse(localStorage.getItem("Recorded_movies"));
+                  const recordedmovieIndex = Recorded_movies.findIndex(
+    (detail) => detail.uuid === uniqueId
+                  );
+
+                  if (recordedmovieIndex > -1) {
+                    Recorded_movies.splice(recordedmovieIndex, 1);
+                    localStorage.setItem("Recorded_movies", JSON.stringify(Recorded_movies));
+                    alert("Recorded movies details deleted successfully");
+                    document.querySelector("form").reset();
+  }
+                });
+        </script>
+
+    </body>
+
+</html>

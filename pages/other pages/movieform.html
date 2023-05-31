@@ -1,78 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-        <form role="form" onsubmit="upload(event)">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../assets/css/movieform.css">
+        <title>Create Movie Form</title>
+    </head>
+    <body>
+        <div>
+            <h2>Movie Create Form</h2>
+            <form role="form" onsubmit="upload(event)">
             <label>Movie_name</label>
-            <input type="text" id="Movie_name">
+            <input type="text" id="Movie_name"><br>
 
             <label>Genre</label>
-            <input type="text" id="Genre">
+            <input type="address" id="Genre"><br>
 
             <label>Language</label>
-            <input type="text" id="Language">
+            <input type="text" id="Language"><br>
 
             <label>Dates</label>
-            <input type="date" id="Dates">
+            <input type="date" id="Dates"><br>
 
             <label>Actors</label>
-            <input type="text" id="Actors">
+            <input type="text" id="Actors"><br>
 
             <label>Director</label>
-            <input type="text" id="Director">
+            <input type="text" id="Director"><br>
             
             <label>Music_Director</label>
-            <input type="text" id="MusicDirector">
+            <input type="text" id="MusicDirector"><br>
 
             <label>Synopsis</label>
-            <input type="text" id="Synopsis">
+            <input type="text" id="Synopsis"><br>
 
             <label>Image url</label>
-            <input type="url" id="image_url">
+            <input type="url" id="image_url"><br>
+
+            <label for="">Theatre_name</label>
+            <input type="text" id="theatre_name"><br>
 
             <label for="">timing</label>
-            <input type="time">
-
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            <input type="time" id="morning_timing"><br>
 
             <label for="">timing</label>
-            <input type="time">
-
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            <input type="time" id="afternoon_timing"><br>
 
             <label for="">timing</label>
-            <input type="time">
-
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            <input type="time" id="evening_timing"><br>
 
             <label for="">timing</label>
-            <input type="time">
+            <input type="time" id="night_timing"><br>
 
-            <select name="" id="timing">
-                    <option value="">am</option>
-                    <option value="">pm</option>
-            </select>
+            <label for="">Seats</label>
+            <input type="text" id="seats"><br>
 
             <label>link file</label>
-            <input type="text" id="link_file">
+            <input type="text" id="link_file"><br>
+
+            <label>Date</label>
+            <input type="date" id="date">
 
             <button type="submit">click</button>
-
         </form>
-<script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
-<script src="../other pages/js/movieform.js"></script>
-</body>
+
+    </div>
+ 
+
+        <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+        <script src="./js/movieform.js"></script>
+    </body>
 </html>

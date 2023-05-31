@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="../../assets/css/seats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+</head>
+
+<body>
+    <div class="opac">
+    <div class="movie-container">
+        <label> movie</label>
+        <select id="movie">
+            <option class="Pathu thala"value="100">Pathu thala</option>
+        </select>
+    </div>
+<div class="all">
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat">A1</div>
+            <div class="seat">A2</div>
+            <div class="seat">A3</div>
+            <div class="seat">A4</div>
+            <div class="seat">A5</div>
+            <div class="seat">A6</div>
+            <div class="seat occupied">A7</div>
+            <div class="seat">A8</div>
+            <div class="seat">A9</div>
+            <div class="seat occupied">B1</div>
+            <div class="seat">B2</div>
+            <div class="seat">B3</div>
+            <div class="seat occupied">B4</div>
+            <div class="seat">B5</div>
+            <div class="seat">B6</div>
+            <div class="seat">B7</div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat">B8</div>
+            <div class="seat">B9</div>
+            <div class="seat">C1</div>
+            <div class="seat">C2</div>
+            <div class="seat">C3</div>
+            <div class="seat">C4</div>
+            <div class="seat">C5</div>
+            <div class="seat">C6</div>
+            <div class="seat">C7</div>
+            <div class="seat">C8</div>
+            <div class="seat">C9</div>
+            <div class="seat">D1</div>
+            <div class="seat occupied">D2</div>
+            <div class="seat occupied">D3</div>
+            <div class="seat">D4</div>
+            <div class="seat">D5</div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat">D6</div>
+            <div class="seat occupied">D7</div>
+            <div class="seat occupied">D8</div>
+            <div class="seat occupied">D9</div>
+            <div class="seat occupied">E1</div>
+            <div class="seat occupied">E2</div>
+            <div class="seat">E3</div>
+            <div class="seat">E4</div>
+            <div class="seat">E5</div>
+            <div class="seat">E6</div>
+            <div class="seat">E7</div>
+            <div class="seat">E8</div>
+            <div class="seat">E9</div>
+            <div class="seat">F1</div>
+            <div class="seat">F2</div>
+            <div class="seat">F3</div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat">F4</div>
+            <div class="seat">F5</div>
+            <div class="seat">F6</div>
+            <div class="seat">F7</div>
+            <div class="seat">F8</div>
+            <div class="seat">F9</div>
+            <div class="seat">G1</div>
+            <div class="seat">G2</div>
+            <div class="seat">G3</div>
+            <div class="seat">G4</div>
+            <div class="seat">G5</div>
+            <div class="seat">G6</div>
+            <div class="seat">G7</div>
+            <div class="seat">G8</div>
+            <div class="seat">G9</div>
+            <div class="seat">H1</div>
+
+
+        </div>
+        <div class="row">
+            <div class="seat">H2</div>
+            <div class="seat">H3</div>
+            <div class="seat">H4</div>
+            <div class="seat">H5</div>
+            <div class="seat">H6</div>
+            <div class="seat">H7</div>
+            <div class="seat occupied">H8</div>
+            <div class="seat occupied">H9</div>
+            <div class="seat occupied">I1</div>
+            <div class="seat occupied">I2</div>
+            <div class="seat occupied">I3</div>
+            <div class="seat">I4</div>
+            <div class="seat">I5</div>
+            <div class="seat">I6</div>
+            <div class="seat">I7</div>
+            <div class="seat">I8</div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="seat">I9</div>
+            <div class="seat">J1</div>
+            <div class="seat">J2</div>
+            <div class="seat">J3</div>
+            <div class="seat">J4</div>
+            <div class="seat occupied">J5</div>
+            <div class="seat occupied">J6</div>
+            <div class="seat occupied">J7</div>
+            <div class="seat occupied">J8</div>
+            <div class="seat occupied">J9</div>
+            <div class="seat occupied">K1</div>
+            <div class="seat">K2</div>
+            <div class="seat">K3</div>
+            <div class="seat">K4</div>
+            <div class="seat">K5</div>
+            <div class="seat">K6</div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="seat">K7</div>
+            <div class="seat">K8</div>
+            <div class="seat">K9</div>
+            <div class="seat">L1</div>
+            <div class="seat occupied">L2</div>
+            <div class="seat occupied">L3</div>
+            <div class="seat occupied">L4</div>
+            <div class="seat occupied">L5</div>
+            <div class="seat occupied">L6</div>
+            <div class="seat">L7</div>
+            <div class="seat">L8</div>
+            <div class="seat">L9</div>
+            <div class="seat">M1</div>
+            <div class="seat">M2</div>
+            <div class="seat">M3</div>
+            <div class="seat">M4</div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="seat">M5</div>
+            <div class="seat">M6</div>
+            <div class="seat">M7</div>
+            <div class="seat">M8</div>
+            <div class="seat">M9</div>
+            <div class="seat ">N1</div>
+            <div class="seat">N2</div>
+            <div class="seat">N3</div>
+            <div class="seat">N4</div>
+            <div class="seat">N5</div>
+            <div class="seat">N6</div>
+            <div class="seat">N7</div>
+            <div class="seat">N8</div>
+            <div class="seat occupied">N9</div>
+            <div class="seat occupied">O1</div>
+            <div class="seat occupied">O2</div>
+
+
+        </div>
+
+
+    </div>
+
+    <p class="text">
+        you have selected <span id="count">0</span> seats for a price of Rs <span id="total">0</span>
+    </p>
+
+    <div>
+    </div>
+        <a href="../other pages/bookdetails.html"><button class="proceed" onclick="onTicket()">Book</button></a>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="./index.html">
+                    <i class="fas fa-chevron-right"></i> Home 
+                </a>
+                <a href="/pages/other pages/Trailer.html">
+                    <i class="fas fa-chevron-right"></i> Trailers 
+                </a>
+                <a href="/pages/other pages/about.html">
+                    <i class="fas fa-chevron-right"></i> About us 
+                </a>
+                <a href="/pages/other pages/Theatres.html">
+                    <i class="fas fa-chevron-right"></i> Cinemas 
+                </a>    
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">
+                    <i class="fas fa-phone"></i> +91-8939470586 
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope"></i> mohammedirfan.rahamathulla@fssa.freshworks.com 
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i> Chennai-603202 
+                </a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100053565876863&mibextid=ZbWKwL">
+                    <i class="fab fa-facebook-f"></i> facebook 
+                </a>
+                <a href="https://twitter.com/Mohammed_Irfu?s=09">
+                    <i class="fab fa-twitter"></i> twitter 
+                </a>
+                <a href="https://instagram.com/irfan_swagz?igshid=ZDdkNTZiNTM=">
+                    <i class="fab fa-instagram"></i> instagram 
+                </a>
+                <a href="https://www.linkedin.com/in/mohammedirfan-rahamathulla-26b796264">
+                    <i class="fab fa-linkedin"></i> linkedin 
+                </a>
+            </div>
+        </div>
+        <div class="credit">
+            Created by <span> Mr. Irfu</span> | All Rights Reserved 
+        </div>
+    </section>
+
+    </div>
+
+
+<script src="./js/header.js"></script>
+    <script>
+
+const url = window.location.search;
+console.log(url);
+const urlParams = new URLSearchParams(url);
+console.log(urlParams);
+const showtime = urlParams.get("show");
+console.log(showtime);
+localStorage.setItem("showtime",JSON.stringify(showtime))
+
+const container = document.querySelector('.container');
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
+const count = document.getElementById('count');
+const total = document.getElementById('total');
+const movieSelect = document.getElementById('movie');
+
+let ticketPrice = +movieSelect.value;
+
+
+onPageLoad();
+
+// onpagload function
+
+function onPageLoad() {
+    let seatIndex = JSON.parse(localStorage.getItem('SelectedSeatsIndex'));
+    if (seatIndex !== null) {
+        seats.forEach((seat, index) => {
+            if (seatIndex.indexOf(index) > -1) {
+                seat.classList.add('selected')
+
+            }
+        })
+    }
+    let movieIndex = localStorage.getItem('seletedMovieIndex');
+    if (movieIndex !== null) {
+        movieSelect.selectedIndex = movieIndex;
+    }
+
+
+}
+
+// seave selected movie index and price
+
+function setMovieData(movieIndex, moviePrice) {
+
+    let seatObj = {
+        movieIndex,
+        moviePrice,
+    }
+    console.error(seatObj);
+    localStorage.setItem('seletedMovieIndex', JSON.stringify(seatObj));
+  
+}
+
+function updateSelectedCount() {
+    const selectedSeats = document.querySelectorAll('.row .seat.selected');
+    const selectedSeatsCount = selectedSeats.length
+    count.innerHTML = selectedSeatsCount;
+    total.innerHTML = selectedSeatsCount * ticketPrice;
+    let seatIndex = [...selectedSeats].map(function (seat) {
+        return [...seats].indexOf(seat);
+    })
+    localStorage.setItem('SelectedSeatsIndex', JSON.stringify(seatIndex));
+    localStorage.setItem('SelectedSeatsTotalPrice', (total.innerHTML));
+
+    console.log("seatIndex",seatIndex);
+
+
+}
+
+movieSelect.addEventListener('change', (e) => {
+    ticketPrice = +e.target.value;
+    updateSelectedCount()
+    setMovieData(e.target.selectedIndex, e.target.value)
+
+    
+})
+container.addEventListener('click', (e) => {
+    if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
+        e.target.classList.toggle('selected')
+    }
+
+    updateSelectedCount()
+})
+
+updateSelectedCount();
+
+function onTicket() {
+
+    const select = document.getElementById("movie");
+    console.log(select);
+// Get the selected option
+const option = select.options[select.selectedIndex];
+// Get the movie name
+const movieName = option.text;
+// Print the movie name
+console.log(movieName);
+
+
+    let noseat = JSON.parse(localStorage.getItem('SelectedSeatsIndex'));
+    console.log(noseat);
+    let ar =[];
+    ar.push(noseat)
+    let seatPrice = localStorage.getItem('SelectedSeatsTotalPrice');
+console.log(seatPrice);
+    let innerSeat = document.getElementsById("count");
+    console.log(innerSeat);
+    let innerPrice = document.getElementsById('total');
+console.log(innerPrice);
+    innerSeat.innerHTML = ar.length;
+    innerPrice.innerHTML = seatPrice;
+
+  
+
+    bookTicket();
+
+}
+
+
+let theatreName = JSON.parse(window.localStorage.getItem("theatreName"));
+let SelectedSeatsIndex = JSON.parse(window.localStorage.getItem("SelectedSeatsIndex"));
+let showtiming = JSON.parse(window.localStorage.getItem("showtime"));
+let  movieid = JSON.parse(window.localStorage.getItem("movieid"));
+let selectedSeatsTotalPrice = JSON.parse(window.localStorage.getItem("SelectedSeatsTotalPrice"));
+let uniq_id = window.localStorage.getItem("unique_id");   
+
+
+
+let bookedticket = {
+    theatreName,
+    SelectedSeatsIndex,
+    showtiming,
+    movieid,
+    selectedSeatsTotalPrice,
+    uniq_id,
+ }
+ let bookeddetails = [];
+
+ bookeddetails.push(bookedticket);
+ localStorage.setItem("bookeddetails",JSON.stringify(bookeddetails));
+
+
+
+
+    </script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../assets/css/recordedform.css">
+        <title>Recorded Movie Form</title>
+    </head>
+    <body>
+        <div class="all">
+            <h2>Recorded Movie Form</h2>
+            <form role="form" onsubmit="upload(event)">
+            <label>Movie Image</label>
+            <input type="text" id="img"><br>
+        <div class="title">
+            <label>Title</label>
+            <input type="text"><br>
+        </div>
+        <div class= "budget">
+            <label>Gross Over</label>
+            <input type="text" id="budget"><br>
+        </div>
+ 
+        <div class="firstday">
+            <label>First Day Collection</label>
+            <input type="text"><br>
+        </div>
+
+        <div class="firstweek">
+            <label>First Week Collection</label>
+            <input type="text"><br>
+        </div>
+
+        <div class="time">
+            <label>Time</label>
+            <input type="text"><br>
+        </div>
+
+        <div class="stars">
+            <label>Stars</label>
+            <input type="text"><br>
+        </div>
+
+        <div class="rundate">
+            <label>Running Date</label>
+            <input type="text"><br>
+        </div>
+
+        <div class="totaldays">
+            <label>Total Days</label>
+            <input type="text"><br>
+        </div>
+
+            <button type="submit" class="btn">click</button>
+        </form>
+
+    </div>
+ 
+
+        <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+        <script src="./js/recordedform.js"></script>
+    </body>
+</html>
